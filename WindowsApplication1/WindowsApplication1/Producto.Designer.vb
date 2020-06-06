@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class Producto
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -27,7 +27,7 @@ Partial Class Form2
         Dim Nombre_prodLabel As System.Windows.Forms.Label
         Dim PrecioLabel As System.Windows.Forms.Label
         Dim DescripcionLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Producto))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BodegaDataSet = New WindowsApplication1.bodegaDataSet()
         Me.TableAdapterManager = New WindowsApplication1.bodegaDataSetTableAdapters.TableAdapterManager()

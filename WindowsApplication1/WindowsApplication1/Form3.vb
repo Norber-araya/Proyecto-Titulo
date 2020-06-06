@@ -15,6 +15,7 @@
         'TODO: esta línea de código carga datos en la tabla 'BodegaDataSet.proveedor' Puede moverla o quitarla según sea necesario.
         Me.ProveedorTableAdapter.Fill(Me.BodegaDataSet.proveedor)
         'ProveedorDataGridView.ClearSelection()
+        Rut_provTextBox.Text = ""
 
     End Sub
 
