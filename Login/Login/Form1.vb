@@ -2,8 +2,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'LoginnDataSet.Usuario' Puede moverla o quitarla según sea necesario.
         Me.UsuarioTableAdapter.Fill(Me.LoginnDataSet.Usuario)
-        PasswordTextBox.Text = ""
-        ID_UsuarioTextBox.Text = ""
+
 
 
 
@@ -28,7 +27,7 @@
 
     End Sub
 
-    Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
+    Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -37,11 +36,11 @@
     End Sub
 
     Private Sub Iniciar_Click_1(sender As Object, e As EventArgs) Handles Iniciar.Click
-        If Me.UsuarioTableAdapter.BuscarDatos(Me.LoginnDataSet.Usuario, ID_UsuarioTextBox.Text, PasswordTextBox.Text) Then
+        If Me.UsuarioTableAdapter.BuscarDatos(Me.LoginnDataSet.Usuario, Usuario.Text, Password.Text) Then
+            MsgBox("Bienvenido", MsgBoxStyle.Information)
 
-            Form3.Show()
         Else
-            MsgBox("datos incorectos")
+            MsgBox("datos incorectos", MsgBoxStyle.Critical)
 
 
         End If

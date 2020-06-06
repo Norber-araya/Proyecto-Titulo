@@ -43,11 +43,11 @@ Partial Class Form1
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.UsuarioBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.ID_UsuarioTextBox = New System.Windows.Forms.TextBox()
         Me.Iniciar = New System.Windows.Forms.Button()
         Me.Registrarse = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
+        Me.Password = New System.Windows.Forms.TextBox()
+        Me.Usuario = New System.Windows.Forms.TextBox()
         ID_UsuarioLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
         CType(Me.LoginnDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -208,14 +208,6 @@ Partial Class Form1
         Me.UsuarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.UsuarioBindingNavigatorSaveItem.Text = "Guardar datos"
         '
-        'ID_UsuarioTextBox
-        '
-        Me.ID_UsuarioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsuarioBindingSource, "ID_Usuario", True))
-        Me.ID_UsuarioTextBox.Location = New System.Drawing.Point(115, 107)
-        Me.ID_UsuarioTextBox.Name = "ID_UsuarioTextBox"
-        Me.ID_UsuarioTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ID_UsuarioTextBox.TabIndex = 2
-        '
         'Iniciar
         '
         Me.Iniciar.Location = New System.Drawing.Point(61, 186)
@@ -243,27 +235,33 @@ Partial Class Form1
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "login"
         '
-        'PasswordTextBox
+        'Password
         '
-        Me.PasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsuarioBindingSource, "Password", True))
-        Me.PasswordTextBox.Location = New System.Drawing.Point(115, 136)
-        Me.PasswordTextBox.Name = "PasswordTextBox"
-        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.PasswordTextBox.TabIndex = 8
+        Me.Password.Location = New System.Drawing.Point(124, 140)
+        Me.Password.Name = "Password"
+        Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.Password.Size = New System.Drawing.Size(100, 20)
+        Me.Password.TabIndex = 9
+        '
+        'Usuario
+        '
+        Me.Usuario.Location = New System.Drawing.Point(124, 107)
+        Me.Usuario.Name = "Usuario"
+        Me.Usuario.Size = New System.Drawing.Size(100, 20)
+        Me.Usuario.TabIndex = 10
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(321, 264)
+        Me.Controls.Add(Me.Usuario)
+        Me.Controls.Add(Me.Password)
         Me.Controls.Add(PasswordLabel)
-        Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Registrarse)
         Me.Controls.Add(Me.Iniciar)
         Me.Controls.Add(ID_UsuarioLabel)
-        Me.Controls.Add(Me.ID_UsuarioTextBox)
         Me.Controls.Add(Me.UsuarioBindingNavigator)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -294,9 +292,9 @@ Partial Class Form1
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents UsuarioBindingNavigatorSaveItem As ToolStripButton
-    Friend WithEvents ID_UsuarioTextBox As TextBox
     Friend WithEvents Iniciar As Button
     Friend WithEvents Registrarse As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents PasswordTextBox As TextBox
+    Friend WithEvents Password As TextBox
+    Friend WithEvents Usuario As TextBox
 End Class
