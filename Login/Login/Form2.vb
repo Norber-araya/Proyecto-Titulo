@@ -13,4 +13,8 @@
         Me.Detalle_UsuarioTableAdapter.Fill(Me.LoginnDataSet.Detalle_Usuario)
 
     End Sub
+
+    Private Sub ID_UsuarioLabel1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

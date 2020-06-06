@@ -1,0 +1,14 @@
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\bin\Debug\Login.exe.config
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\bin\Debug\Login.exe
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\bin\Debug\Login.pdb
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\bin\Debug\Login.xml
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.vbprojAssemblyReference.cache
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.Form1.resources
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.Form2.resources
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.Form3.resources
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.Resources.resources
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.vbproj.GenerateResource.cache
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.vbproj.CoreCompileInputs.cache
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.exe
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.xml
+C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\Login\Login\obj\Debug\Login.pdb

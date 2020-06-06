@@ -23,7 +23,6 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Dim ID_UsuarioLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
         Dim ApelllidoLabel As System.Windows.Forms.Label
@@ -33,22 +32,24 @@ Partial Class Form2
         Dim ID_UsuarioLabel1 As System.Windows.Forms.Label
         Dim PasswordLabel As System.Windows.Forms.Label
         Dim ID_TipoUsuarioLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.LoginnDataSet = New Login.LoginnDataSet()
         Me.Detalle_UsuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Detalle_UsuarioTableAdapter = New Login.LoginnDataSetTableAdapters.Detalle_UsuarioTableAdapter()
         Me.TableAdapterManager = New Login.LoginnDataSetTableAdapters.TableAdapterManager()
+        Me.UsuarioTableAdapter = New Login.LoginnDataSetTableAdapters.UsuarioTableAdapter()
         Me.Detalle_UsuarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.Detalle_UsuarioBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ID_UsuarioTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
@@ -57,7 +58,6 @@ Partial Class Form2
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
         Me.CargoTextBox = New System.Windows.Forms.TextBox()
         Me.UsuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.UsuarioTableAdapter = New Login.LoginnDataSetTableAdapters.UsuarioTableAdapter()
         Me.ID_UsuarioTextBox1 = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.ID_TipoUsuarioTextBox = New System.Windows.Forms.TextBox()
@@ -76,6 +76,88 @@ Partial Class Form2
         Me.Detalle_UsuarioBindingNavigator.SuspendLayout()
         CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ID_UsuarioLabel
+        '
+        ID_UsuarioLabel.AutoSize = True
+        ID_UsuarioLabel.Location = New System.Drawing.Point(64, 47)
+        ID_UsuarioLabel.Name = "ID_UsuarioLabel"
+        ID_UsuarioLabel.Size = New System.Drawing.Size(60, 13)
+        ID_UsuarioLabel.TabIndex = 1
+        ID_UsuarioLabel.Text = "ID Usuario:"
+        '
+        'NombreLabel
+        '
+        NombreLabel.AutoSize = True
+        NombreLabel.Location = New System.Drawing.Point(64, 73)
+        NombreLabel.Name = "NombreLabel"
+        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.TabIndex = 3
+        NombreLabel.Text = "Nombre:"
+        '
+        'ApelllidoLabel
+        '
+        ApelllidoLabel.AutoSize = True
+        ApelllidoLabel.Location = New System.Drawing.Point(64, 99)
+        ApelllidoLabel.Name = "ApelllidoLabel"
+        ApelllidoLabel.Size = New System.Drawing.Size(49, 13)
+        ApelllidoLabel.TabIndex = 5
+        ApelllidoLabel.Text = "Apelllido:"
+        '
+        'ContactoLabel
+        '
+        ContactoLabel.AutoSize = True
+        ContactoLabel.Location = New System.Drawing.Point(64, 125)
+        ContactoLabel.Name = "ContactoLabel"
+        ContactoLabel.Size = New System.Drawing.Size(53, 13)
+        ContactoLabel.TabIndex = 7
+        ContactoLabel.Text = "Contacto:"
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Location = New System.Drawing.Point(64, 151)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.TabIndex = 9
+        DireccionLabel.Text = "Direccion:"
+        '
+        'CargoLabel
+        '
+        CargoLabel.AutoSize = True
+        CargoLabel.Location = New System.Drawing.Point(64, 177)
+        CargoLabel.Name = "CargoLabel"
+        CargoLabel.Size = New System.Drawing.Size(38, 13)
+        CargoLabel.TabIndex = 11
+        CargoLabel.Text = "Cargo:"
+        '
+        'ID_UsuarioLabel1
+        '
+        ID_UsuarioLabel1.AutoSize = True
+        ID_UsuarioLabel1.Location = New System.Drawing.Point(52, 236)
+        ID_UsuarioLabel1.Name = "ID_UsuarioLabel1"
+        ID_UsuarioLabel1.Size = New System.Drawing.Size(60, 13)
+        ID_UsuarioLabel1.TabIndex = 13
+        ID_UsuarioLabel1.Text = "ID Usuario:"
+        AddHandler ID_UsuarioLabel1.Click, AddressOf Me.ID_UsuarioLabel1_Click
+        '
+        'PasswordLabel
+        '
+        PasswordLabel.AutoSize = True
+        PasswordLabel.Location = New System.Drawing.Point(52, 262)
+        PasswordLabel.Name = "PasswordLabel"
+        PasswordLabel.Size = New System.Drawing.Size(56, 13)
+        PasswordLabel.TabIndex = 15
+        PasswordLabel.Text = "Password:"
+        '
+        'ID_TipoUsuarioLabel
+        '
+        ID_TipoUsuarioLabel.AutoSize = True
+        ID_TipoUsuarioLabel.Location = New System.Drawing.Point(52, 288)
+        ID_TipoUsuarioLabel.Name = "ID_TipoUsuarioLabel"
+        ID_TipoUsuarioLabel.Size = New System.Drawing.Size(84, 13)
+        ID_TipoUsuarioLabel.TabIndex = 17
+        ID_TipoUsuarioLabel.Text = "ID Tipo Usuario:"
         '
         'LoginnDataSet
         '
@@ -99,6 +181,10 @@ Partial Class Form2
         Me.TableAdapterManager.UpdateOrder = Login.LoginnDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuarioTableAdapter = Me.UsuarioTableAdapter
         '
+        'UsuarioTableAdapter
+        '
+        Me.UsuarioTableAdapter.ClearBeforeFill = True
+        '
         'Detalle_UsuarioBindingNavigator
         '
         Me.Detalle_UsuarioBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -116,6 +202,31 @@ Partial Class Form2
         Me.Detalle_UsuarioBindingNavigator.Size = New System.Drawing.Size(337, 25)
         Me.Detalle_UsuarioBindingNavigator.TabIndex = 0
         Me.Detalle_UsuarioBindingNavigator.Text = "BindingNavigator1"
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -149,17 +260,10 @@ Partial Class Form2
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 15)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -167,7 +271,7 @@ Partial Class Form2
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -176,48 +280,21 @@ Partial Class Form2
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'Detalle_UsuarioBindingNavigatorSaveItem
         '
         Me.Detalle_UsuarioBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.Detalle_UsuarioBindingNavigatorSaveItem.Image = CType(resources.GetObject("Detalle_UsuarioBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.Detalle_UsuarioBindingNavigatorSaveItem.Name = "Detalle_UsuarioBindingNavigatorSaveItem"
-        Me.Detalle_UsuarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.Detalle_UsuarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.Detalle_UsuarioBindingNavigatorSaveItem.Text = "Guardar datos"
-        '
-        'ID_UsuarioLabel
-        '
-        ID_UsuarioLabel.AutoSize = True
-        ID_UsuarioLabel.Location = New System.Drawing.Point(64, 47)
-        ID_UsuarioLabel.Name = "ID_UsuarioLabel"
-        ID_UsuarioLabel.Size = New System.Drawing.Size(60, 13)
-        ID_UsuarioLabel.TabIndex = 1
-        ID_UsuarioLabel.Text = "ID Usuario:"
         '
         'ID_UsuarioTextBox
         '
@@ -227,15 +304,6 @@ Partial Class Form2
         Me.ID_UsuarioTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_UsuarioTextBox.TabIndex = 2
         '
-        'NombreLabel
-        '
-        NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(64, 73)
-        NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
-        NombreLabel.TabIndex = 3
-        NombreLabel.Text = "Nombre:"
-        '
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Detalle_UsuarioBindingSource, "Nombre", True))
@@ -243,15 +311,6 @@ Partial Class Form2
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NombreTextBox.TabIndex = 4
-        '
-        'ApelllidoLabel
-        '
-        ApelllidoLabel.AutoSize = True
-        ApelllidoLabel.Location = New System.Drawing.Point(64, 99)
-        ApelllidoLabel.Name = "ApelllidoLabel"
-        ApelllidoLabel.Size = New System.Drawing.Size(49, 13)
-        ApelllidoLabel.TabIndex = 5
-        ApelllidoLabel.Text = "Apelllido:"
         '
         'ApelllidoTextBox
         '
@@ -261,15 +320,6 @@ Partial Class Form2
         Me.ApelllidoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ApelllidoTextBox.TabIndex = 6
         '
-        'ContactoLabel
-        '
-        ContactoLabel.AutoSize = True
-        ContactoLabel.Location = New System.Drawing.Point(64, 125)
-        ContactoLabel.Name = "ContactoLabel"
-        ContactoLabel.Size = New System.Drawing.Size(53, 13)
-        ContactoLabel.TabIndex = 7
-        ContactoLabel.Text = "Contacto:"
-        '
         'ContactoTextBox
         '
         Me.ContactoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Detalle_UsuarioBindingSource, "Contacto", True))
@@ -278,15 +328,6 @@ Partial Class Form2
         Me.ContactoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ContactoTextBox.TabIndex = 8
         '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(64, 151)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
-        DireccionLabel.TabIndex = 9
-        DireccionLabel.Text = "Direccion:"
-        '
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Detalle_UsuarioBindingSource, "Direccion", True))
@@ -294,15 +335,6 @@ Partial Class Form2
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 10
-        '
-        'CargoLabel
-        '
-        CargoLabel.AutoSize = True
-        CargoLabel.Location = New System.Drawing.Point(64, 177)
-        CargoLabel.Name = "CargoLabel"
-        CargoLabel.Size = New System.Drawing.Size(38, 13)
-        CargoLabel.TabIndex = 11
-        CargoLabel.Text = "Cargo:"
         '
         'CargoTextBox
         '
@@ -317,19 +349,6 @@ Partial Class Form2
         Me.UsuarioBindingSource.DataMember = "Usuario"
         Me.UsuarioBindingSource.DataSource = Me.LoginnDataSet
         '
-        'UsuarioTableAdapter
-        '
-        Me.UsuarioTableAdapter.ClearBeforeFill = True
-        '
-        'ID_UsuarioLabel1
-        '
-        ID_UsuarioLabel1.AutoSize = True
-        ID_UsuarioLabel1.Location = New System.Drawing.Point(52, 236)
-        ID_UsuarioLabel1.Name = "ID_UsuarioLabel1"
-        ID_UsuarioLabel1.Size = New System.Drawing.Size(60, 13)
-        ID_UsuarioLabel1.TabIndex = 13
-        ID_UsuarioLabel1.Text = "ID Usuario:"
-        '
         'ID_UsuarioTextBox1
         '
         Me.ID_UsuarioTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsuarioBindingSource, "ID_Usuario", True))
@@ -338,15 +357,6 @@ Partial Class Form2
         Me.ID_UsuarioTextBox1.Size = New System.Drawing.Size(100, 20)
         Me.ID_UsuarioTextBox1.TabIndex = 14
         '
-        'PasswordLabel
-        '
-        PasswordLabel.AutoSize = True
-        PasswordLabel.Location = New System.Drawing.Point(52, 262)
-        PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New System.Drawing.Size(56, 13)
-        PasswordLabel.TabIndex = 15
-        PasswordLabel.Text = "Password:"
-        '
         'PasswordTextBox
         '
         Me.PasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsuarioBindingSource, "Password", True))
@@ -354,15 +364,6 @@ Partial Class Form2
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.Size = New System.Drawing.Size(100, 20)
         Me.PasswordTextBox.TabIndex = 16
-        '
-        'ID_TipoUsuarioLabel
-        '
-        ID_TipoUsuarioLabel.AutoSize = True
-        ID_TipoUsuarioLabel.Location = New System.Drawing.Point(52, 288)
-        ID_TipoUsuarioLabel.Name = "ID_TipoUsuarioLabel"
-        ID_TipoUsuarioLabel.Size = New System.Drawing.Size(84, 13)
-        ID_TipoUsuarioLabel.TabIndex = 17
-        ID_TipoUsuarioLabel.Text = "ID Tipo Usuario:"
         '
         'ID_TipoUsuarioTextBox
         '
