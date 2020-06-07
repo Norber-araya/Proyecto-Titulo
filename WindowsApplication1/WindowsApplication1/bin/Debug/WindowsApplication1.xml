@@ -27,11 +27,6 @@ WindowsApplication1
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:WindowsApplication1.bodegaDataSet.productoDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:WindowsApplication1.bodegaDataSet.proveedorDataTable">
 <summary>
 Represents the strongly named DataTable class.
@@ -40,11 +35,6 @@ Represents the strongly named DataTable class.
 <member name="T:WindowsApplication1.bodegaDataSet.productosDataTable">
 <summary>
 Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:WindowsApplication1.bodegaDataSet.productoRow">
-<summary>
-Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:WindowsApplication1.bodegaDataSet.proveedorRow">
@@ -57,11 +47,6 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:WindowsApplication1.bodegaDataSet.productoRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:WindowsApplication1.bodegaDataSet.proveedorRowChangeEvent">
 <summary>
 Row event argument class
@@ -70,11 +55,6 @@ Row event argument class
 <member name="T:WindowsApplication1.bodegaDataSet.productosRowChangeEvent">
 <summary>
 Row event argument class
-</summary>
-</member>
-<member name="T:WindowsApplication1.bodegaDataSetTableAdapters.productoTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:WindowsApplication1.bodegaDataSetTableAdapters.proveedorTableAdapter">
