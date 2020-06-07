@@ -77,12 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD_conexion.vb" />
-    <Compile Include="Bodega.Designer.vb">
-      <DependentUpon>Bodega.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Bodega.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="bodegaDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -95,16 +89,16 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos.Designer.vb">
-      <DependentUpon>Productos.vb</DependentUpon>
+    <Compile Include="Producto.Designer.vb">
+      <DependentUpon>Producto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Productos.vb">
+    <Compile Include="Producto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Provedores.Designer.vb">
-      <DependentUpon>Provedores.vb</DependentUpon>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Provedores.vb">
+    <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -127,11 +121,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos.resx">
-      <DependentUpon>Productos.vb</DependentUpon>
+    <EmbeddedResource Include="Producto.resx">
+      <DependentUpon>Producto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Provedores.resx">
-      <DependentUpon>Provedores.vb</DependentUpon>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

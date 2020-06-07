@@ -1,4 +1,4 @@
-﻿Public Class Productos
+﻿Public Class Producto
     Dim bdconexion As New BD_conexion
     Private Sub ProductoBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()

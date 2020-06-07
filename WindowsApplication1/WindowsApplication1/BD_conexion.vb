@@ -26,7 +26,7 @@ Public Class BD_conexion
 
         If validar > 0 Then
 
-            'Si existe el Proveedor 
+            'Si existe el Cliente
             MsgBox("El Proveedor: " & UCase(nombre_prov) & " ya existe en la base de datos")
 
         Else
@@ -102,7 +102,7 @@ Public Class BD_conexion
 
         If validar > 0 Then
 
-            'Si existe el Producto
+            'Si existe el Cliente
             MsgBox("El Producto: " & UCase(nombre_prod) & " ya existe en la base de datos")
 
         Else
