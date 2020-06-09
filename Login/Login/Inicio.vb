@@ -1,4 +1,5 @@
 ﻿Public Class Inicio
+    Dim bdconexion As New BD_conexion
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'LoginnDataSet.Usuario' Puede moverla o quitarla según sea necesario.
         Me.UsuarioTableAdapter.Fill(Me.LoginnDataSet.Usuario)
