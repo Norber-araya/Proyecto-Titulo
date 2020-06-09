@@ -107,7 +107,7 @@ Public Class BD_conexion
 
         Else
 
-            comando = New OleDbCommand("INSERT INTO productos (`id`, `nombre_prod`, `precio`, `descripcion`) VALUES ('" + id + "','" + nombre_prod + "','" & precio & "','" + descripcion + "')", conexion)
+            comando = New OleDbCommand("INSERT INTO productos (`id`, `nombre_prod`, `precio`, `descripcion`) VALUES ('" + id + "','" + nombre_prod + "','" + precio + "','" + descripcion + "')", conexion)
             comando.ExecuteNonQuery()
             MsgBox("El Producto: " & UCase(nombre_prod) & " ha sido ingresado con exito")
 
@@ -160,6 +160,58 @@ Public Class BD_conexion
             MsgBox("El Producto: " & UCase(id) & " no existe")
         End If
 
+        desconectar()
+    End Sub
+    Public Sub insertar_bod(cod_bodega As String, id_producto As String, nombre_prod As String, cantidad As String, fecha As String)
+
+        conectar()
+
+        comando = New OleDbCommand(" select count(*) from bodega where id_producto ='" + id_producto + "'", conexion)
+
+        Dim validar As Integer
+
+        validar = CInt(comando.ExecuteScalar)
+
+        comando.ExecuteNonQuery()
+
+        If validar > 0 Then
+
+            'Si existe el Cliente
+            MsgBox("El Producto: " & UCase(nombre_prod) & " ya existe en la base de datos")
+
+        Else
+
+            comando = New OleDbCommand("INSERT INTO bodega (`cod_bodega`,`id_producto`, `nombre_prod`, `cantidad`, `fecha `) VALUES ('" + cod_bodega + "','" + id_producto + "','" + nombre_prod + "','" + cantidad + "','" + fecha + "')", conexion)
+            comando.ExecuteNonQuery()
+            MsgBox("El Producto: " & UCase(nombre_prod) & " ha sido ingresado a bodega con exito")
+
+
+        End If
+
+        desconectar()
+    End Sub
+    Public Sub insertar_detalleprov(id_prod As String, id_prov As String)
+
+        conectar()
+
+        comando = New OleDbCommand(" select count(*) from detalle_prov where id_prod ='" + id_prod + "'", conexion)
+
+        Dim validar As Integer
+
+        validar = CInt(comando.ExecuteScalar)
+
+        If validar > 0 Then
+
+            'Si existe el Cliente
+            MsgBox("El Producto: " & UCase(id_prod) & " ya existe en la base de datos")
+
+        Else
+            comando.ExecuteNonQuery()
+
+            comando = New OleDbCommand("INSERT INTO detalle_prov (`id_prod`, `id_prov`) VALUES ('" + id_prod + "','" + id_prov + "')", conexion)
+            comando.ExecuteNonQuery()
+            MsgBox("El Producto: " & UCase(id_prod) & " ha sido ingresadoal detalle con exito")
+        End If
         desconectar()
     End Sub
     Sub desconectar()

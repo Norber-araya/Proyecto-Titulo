@@ -24,6 +24,7 @@
         Else
             'llamo al insertar que esta en bd_conexion
             bdconexion.insertar_prov(Rut_provTextBox.Text, Nombre_provTextBox.Text, DireccionTextBox.Text, ContactoTextBox.Text)
+
         End If
         Me.ProveedorTableAdapter.Fill(Me.BodegaDataSet.proveedor)
     End Sub
