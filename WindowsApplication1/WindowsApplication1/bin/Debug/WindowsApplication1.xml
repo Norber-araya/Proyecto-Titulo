@@ -47,6 +47,16 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:WindowsApplication1.bodegaDataSet.detalle_facDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.bodegaDataSet.facturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:WindowsApplication1.bodegaDataSet.proveedorRow">
 <summary>
 Represents strongly named DataRow class.
@@ -63,6 +73,16 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:WindowsApplication1.bodegaDataSet.bodegaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.bodegaDataSet.detalle_facRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.bodegaDataSet.facturaRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -87,6 +107,16 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:WindowsApplication1.bodegaDataSet.detalle_facRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.bodegaDataSet.facturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:WindowsApplication1.bodegaDataSetTableAdapters.proveedorTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -103,6 +133,16 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:WindowsApplication1.bodegaDataSetTableAdapters.bodegaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.bodegaDataSetTableAdapters.detalle_facTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.bodegaDataSetTableAdapters.facturaTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

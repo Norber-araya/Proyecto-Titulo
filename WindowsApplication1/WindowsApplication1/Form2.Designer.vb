@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form2
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form2
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim IdLabel As System.Windows.Forms.Label
@@ -35,8 +35,6 @@ Partial Class Form2
         Me.Button3 = New System.Windows.Forms.Button()
         Me.ProductosBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BodegaDataSet = New WindowsApplication1.bodegaDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -49,13 +47,7 @@ Partial Class Form2
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ProductosBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ProductosDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TableAdapterManager = New WindowsApplication1.bodegaDataSetTableAdapters.TableAdapterManager()
-        Me.ProductosTableAdapter = New WindowsApplication1.bodegaDataSetTableAdapters.productosTableAdapter()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.IdTextBox = New System.Windows.Forms.TextBox()
         Me.Nombre_prodTextBox = New System.Windows.Forms.TextBox()
@@ -65,15 +57,26 @@ Partial Class Form2
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ProveedorDataGridView = New System.Windows.Forms.DataGridView()
-        Me.RutprovDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreprovDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DireccionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContactoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProveedorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Rut_provTextBox = New System.Windows.Forms.TextBox()
-        Me.ProveedorTableAdapter = New WindowsApplication1.bodegaDataSetTableAdapters.proveedorTableAdapter()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.ProveedorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BodegaDataSet = New WindowsApplication1.bodegaDataSet()
+        Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TableAdapterManager = New WindowsApplication1.bodegaDataSetTableAdapters.TableAdapterManager()
+        Me.ProductosTableAdapter = New WindowsApplication1.bodegaDataSetTableAdapters.productosTableAdapter()
+        Me.ProveedorTableAdapter = New WindowsApplication1.bodegaDataSetTableAdapters.proveedorTableAdapter()
+        Me.ProveedorDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         IdLabel = New System.Windows.Forms.Label()
         Nombre_prodLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
@@ -81,12 +84,12 @@ Partial Class Form2
         Rut_provLabel = New System.Windows.Forms.Label()
         CType(Me.ProductosBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ProductosBindingNavigator.SuspendLayout()
-        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BodegaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BodegaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'IdLabel
@@ -200,16 +203,6 @@ Partial Class Form2
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
-        'ProductosBindingSource
-        '
-        Me.ProductosBindingSource.DataMember = "productos"
-        Me.ProductosBindingSource.DataSource = Me.BodegaDataSet
-        '
-        'BodegaDataSet
-        '
-        Me.BodegaDataSet.DataSetName = "bodegaDataSet"
-        Me.BodegaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
@@ -311,34 +304,6 @@ Partial Class Form2
         Me.ProductosDataGridView.Size = New System.Drawing.Size(465, 224)
         Me.ProductosDataGridView.TabIndex = 22
         '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Id"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Id"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "nombre_prod"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "nombre_prod"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "precio"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "precio"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "descripcion"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "descripcion"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        '
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(106, 262)
@@ -348,25 +313,12 @@ Partial Class Form2
         Me.Button4.Text = "Seleccionar proveedor"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.bodegaTableAdapter = Nothing
-        Me.TableAdapterManager.Connection = Nothing
-        Me.TableAdapterManager.detalle_provTableAdapter = Nothing
-        Me.TableAdapterManager.productosTableAdapter = Nothing
-        Me.TableAdapterManager.proveedorTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.bodegaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'ProductosTableAdapter
-        '
-        Me.ProductosTableAdapter.ClearBeforeFill = True
-        '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(588, 27)
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(755, 28)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(249, 22)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(98, 22)
         Me.DateTimePicker1.TabIndex = 24
         '
         'IdTextBox
@@ -403,15 +355,15 @@ Partial Class Form2
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.ProveedorDataGridView)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Controls.Add(Me.ProveedorDataGridView)
         Me.Panel1.Controls.Add(Rut_provLabel)
         Me.Panel1.Controls.Add(Me.Rut_provTextBox)
         Me.Panel1.Location = New System.Drawing.Point(240, 88)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(613, 374)
+        Me.Panel1.Size = New System.Drawing.Size(613, 394)
         Me.Panel1.TabIndex = 32
         '
         'Button5
@@ -439,56 +391,6 @@ Partial Class Form2
         Me.TextBox1.Size = New System.Drawing.Size(327, 22)
         Me.TextBox1.TabIndex = 3
         '
-        'ProveedorDataGridView
-        '
-        Me.ProveedorDataGridView.AllowUserToAddRows = False
-        Me.ProveedorDataGridView.AllowUserToDeleteRows = False
-        Me.ProveedorDataGridView.AutoGenerateColumns = False
-        Me.ProveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ProveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.RutprovDataGridViewTextBoxColumn, Me.NombreprovDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn, Me.ContactoDataGridViewTextBoxColumn})
-        Me.ProveedorDataGridView.DataSource = Me.ProveedorBindingSource
-        Me.ProveedorDataGridView.Location = New System.Drawing.Point(55, 65)
-        Me.ProveedorDataGridView.Name = "ProveedorDataGridView"
-        Me.ProveedorDataGridView.ReadOnly = True
-        Me.ProveedorDataGridView.RowHeadersVisible = False
-        Me.ProveedorDataGridView.RowTemplate.Height = 24
-        Me.ProveedorDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.ProveedorDataGridView.Size = New System.Drawing.Size(506, 211)
-        Me.ProveedorDataGridView.TabIndex = 0
-        '
-        'RutprovDataGridViewTextBoxColumn
-        '
-        Me.RutprovDataGridViewTextBoxColumn.DataPropertyName = "rut_prov"
-        Me.RutprovDataGridViewTextBoxColumn.HeaderText = "rut_prov"
-        Me.RutprovDataGridViewTextBoxColumn.Name = "RutprovDataGridViewTextBoxColumn"
-        Me.RutprovDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'NombreprovDataGridViewTextBoxColumn
-        '
-        Me.NombreprovDataGridViewTextBoxColumn.DataPropertyName = "nombre_prov"
-        Me.NombreprovDataGridViewTextBoxColumn.HeaderText = "nombre_prov"
-        Me.NombreprovDataGridViewTextBoxColumn.Name = "NombreprovDataGridViewTextBoxColumn"
-        Me.NombreprovDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DireccionDataGridViewTextBoxColumn
-        '
-        Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "direccion"
-        Me.DireccionDataGridViewTextBoxColumn.HeaderText = "direccion"
-        Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
-        Me.DireccionDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ContactoDataGridViewTextBoxColumn
-        '
-        Me.ContactoDataGridViewTextBoxColumn.DataPropertyName = "contacto"
-        Me.ContactoDataGridViewTextBoxColumn.HeaderText = "contacto"
-        Me.ContactoDataGridViewTextBoxColumn.Name = "ContactoDataGridViewTextBoxColumn"
-        Me.ContactoDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ProveedorBindingSource
-        '
-        Me.ProveedorBindingSource.DataMember = "proveedor"
-        Me.ProveedorBindingSource.DataSource = Me.BodegaDataSet
-        '
         'Rut_provTextBox
         '
         Me.Rut_provTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "rut_prov", True))
@@ -496,10 +398,6 @@ Partial Class Form2
         Me.Rut_provTextBox.Name = "Rut_provTextBox"
         Me.Rut_provTextBox.Size = New System.Drawing.Size(100, 22)
         Me.Rut_provTextBox.TabIndex = 2
-        '
-        'ProveedorTableAdapter
-        '
-        Me.ProveedorTableAdapter.ClearBeforeFill = True
         '
         'Label3
         '
@@ -509,6 +407,123 @@ Partial Class Form2
         Me.Label3.Size = New System.Drawing.Size(51, 17)
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Label3"
+        '
+        'ProveedorBindingSource
+        '
+        Me.ProveedorBindingSource.DataMember = "proveedor"
+        Me.ProveedorBindingSource.DataSource = Me.BodegaDataSet
+        '
+        'BodegaDataSet
+        '
+        Me.BodegaDataSet.DataSetName = "bodegaDataSet"
+        Me.BodegaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProductosBindingSource
+        '
+        Me.ProductosBindingSource.DataMember = "productos"
+        Me.ProductosBindingSource.DataSource = Me.BodegaDataSet
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Id"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Id"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "nombre_prod"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "nombre_prod"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "precio"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "precio"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "descripcion"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "descripcion"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.bodegaTableAdapter = Nothing
+        Me.TableAdapterManager.Connection = Nothing
+        Me.TableAdapterManager.detalle_facTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_provTableAdapter = Nothing
+        Me.TableAdapterManager.facturaTableAdapter = Nothing
+        Me.TableAdapterManager.productosTableAdapter = Nothing
+        Me.TableAdapterManager.proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.bodegaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'ProductosTableAdapter
+        '
+        Me.ProductosTableAdapter.ClearBeforeFill = True
+        '
+        'ProveedorTableAdapter
+        '
+        Me.ProveedorTableAdapter.ClearBeforeFill = True
+        '
+        'ProveedorDataGridView
+        '
+        Me.ProveedorDataGridView.AutoGenerateColumns = False
+        Me.ProveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12})
+        Me.ProveedorDataGridView.DataSource = Me.ProveedorBindingSource
+        Me.ProveedorDataGridView.Location = New System.Drawing.Point(30, 84)
+        Me.ProveedorDataGridView.Name = "ProveedorDataGridView"
+        Me.ProveedorDataGridView.RowTemplate.Height = 24
+        Me.ProveedorDataGridView.Size = New System.Drawing.Size(552, 150)
+        Me.ProveedorDataGridView.TabIndex = 5
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "rut_prov"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "rut_prov"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "nombre_prov"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "nombre_prov"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "direccion"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "direccion"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "contacto"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "contacto"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "comuna"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "comuna"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "mail"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "mail"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "ciudad"
+        Me.DataGridViewTextBoxColumn12.HeaderText = "ciudad"
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
         'Form2
         '
@@ -538,13 +553,13 @@ Partial Class Form2
         CType(Me.ProductosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ProductosBindingNavigator.ResumeLayout(False)
         Me.ProductosBindingNavigator.PerformLayout()
-        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BodegaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BodegaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -589,11 +604,14 @@ Partial Class Form2
     Friend WithEvents Button5 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ProveedorDataGridView As DataGridView
-    Friend WithEvents RutprovDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NombreprovDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DireccionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ContactoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Rut_provTextBox As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents ProveedorDataGridView As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
 End Class

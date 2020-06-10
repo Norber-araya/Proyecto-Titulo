@@ -13,12 +13,11 @@
         'TODO: esta línea de código carga datos en la tabla 'BodegaDataSet.productos' Puede moverla o quitarla según sea necesario.
         Me.ProductosTableAdapter.Fill(Me.BodegaDataSet.productos)
         Panel1.Visible = False
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         bdconexion.insertar_prod(IdTextBox.Text, Nombre_prodTextBox.Text, PrecioTextBox.Text, DescripcionTextBox.Text)
-        bdconexion.insertar_bod("1", IdTextBox.Text, Nombre_prodTextBox.Text, "0", "08-06-2020")
+        bdconexion.insertar_bod("1", IdTextBox.Text, Nombre_prodTextBox.Text, "0", DateTimePicker1.Text)
         bdconexion.insertar_detalleprov(IdTextBox.Text, Label3.Text)
         Me.ProductosTableAdapter.Fill(Me.BodegaDataSet.productos)
     End Sub
@@ -49,11 +48,11 @@
         Panel1.Visible = True
     End Sub
 
-    Private Sub ProveedorDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ProveedorDataGridView.CellContentClick
+    Private Sub ProveedorDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub ProveedorDataGridView_SelectionChanged(sender As Object, e As EventArgs) Handles ProveedorDataGridView.SelectionChanged
+    Private Sub ProveedorDataGridView_SelectionChanged(sender As Object, e As EventArgs)
 
         If Rut_provTextBox.Text = "" Then
 

@@ -30,6 +30,7 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -113,11 +114,21 @@ Partial Class Form1
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Gestion de Inventario"
         '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(393, 326)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(113, 50)
+        Me.Button8.TabIndex = 8
+        Me.Button8.Text = "Detalle Proveedor"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(999, 718)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -142,4 +153,5 @@ Partial Class Form1
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button8 As Button
 End Class
