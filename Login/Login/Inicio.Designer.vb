@@ -250,7 +250,7 @@ Partial Class Inicio
         Me.Usuario.Size = New System.Drawing.Size(100, 20)
         Me.Usuario.TabIndex = 10
         '
-        'Form1
+        'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -263,7 +263,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.Iniciar)
         Me.Controls.Add(ID_UsuarioLabel)
         Me.Controls.Add(Me.UsuarioBindingNavigator)
-        Me.Name = "Form1"
+        Me.Name = "Inicio"
         Me.Text = "Form1"
         CType(Me.LoginnDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
