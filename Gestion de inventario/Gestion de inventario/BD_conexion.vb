@@ -27,7 +27,7 @@ Public Class BD_conexion
         comando.ExecuteNonQuery()
         If VLDR_Nombre > 0 Then
             Menu.Show()
-            'Form1.Close()
+            Form1.Close()
         Else
             'Si NO existe el Cliente
             MsgBox("usuario o contraseña incorrecto")
@@ -238,6 +238,39 @@ Public Class BD_conexion
 
         desconectar()
 
+    End Sub
+    Public Sub insertar_factura(n_factura As String, rut_prov As String, nombre_prov As String, direccion As String, comuna As String, ciudad As String, email As String, fono As String, rut_cliente As String, fecha As String, observacion As String, valor_neto As String, iva As String, total As String)
+
+        conectar()
+
+        comando = New OleDbCommand(" select count(*) from factura where n_factura ='" + n_factura + "'", conexion)
+
+        Dim validar As Integer
+
+        validar = CInt(comando.ExecuteScalar)
+
+        If validar > 0 Then
+
+            MsgBox("La factura: " & UCase(n_factura) & " ya existe en la base de datos")
+
+        Else
+            comando.ExecuteNonQuery()
+
+            comando = New OleDbCommand("INSERT INTO factura (`n_factura`, `rut_prov`, `nombre_prov`, `direccion`, `comuna`, `ciudad`, `email`, `fono`, `rut_cliente`, `fecha`, `observacion`, `valor_neto`, `iva`, `total`) VALUES ('" + n_factura + "','" + rut_prov + "','" + nombre_prov + "','" + direccion + "','" + comuna + "','" + ciudad + "','" + email + "','" + fono + "','" + rut_cliente + "','" + fecha + "','" + observacion + "','" + valor_neto + "','" + iva + "','" + total + "')", conexion)
+            comando.ExecuteNonQuery()
+            MsgBox("La Factura " & UCase(n_factura) & " ha sido ingresadoa con exito")
+        End If
+        desconectar()
+    End Sub
+    Public Sub insertar_registro(id_producto As String, cantidad As String, n_factura As String, fecha As String, usuario As String)
+
+        conectar()
+
+        comando = New OleDbCommand("INSERT INTO registro (`id_producto`, `cantidad`, `n_factura`, `fecha`, `usuario`) VALUES ('" + id_producto + "','" + cantidad + "','" + n_factura + "','" + fecha + "','" + usuario + "')", conexion)
+            comando.ExecuteNonQuery()
+        MsgBox("El Registro ha sido ingresado con exito")
+
+        desconectar()
     End Sub
     Sub desconectar()
         conexion.Close()

@@ -13,3 +13,4 @@ c:\users\joc\documents\visual studio 2015\Projects\Gestion de inventario\Gestion
 c:\users\joc\documents\visual studio 2015\Projects\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion de inventario.pdb
 c:\users\joc\documents\visual studio 2015\Projects\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Producto.resources
 c:\users\joc\documents\visual studio 2015\Projects\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.proveedor.resources
+C:\Users\Joc\Documents\Visual Studio 2015\Projects\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Factura.resources

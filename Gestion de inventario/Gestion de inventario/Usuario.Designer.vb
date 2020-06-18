@@ -49,13 +49,6 @@ Partial Class Usuario
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.UsuarioBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.UsuarioDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RutTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.ContactoTextBox = New System.Windows.Forms.TextBox()
@@ -68,6 +61,15 @@ Partial Class Usuario
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipousuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TipousuarioTableAdapter = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.tipousuarioTableAdapter()
+        Me.Id_tipousuarioLabel2 = New System.Windows.Forms.Label()
         RutLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ContactoLabel = New System.Windows.Forms.Label()
@@ -80,6 +82,7 @@ Partial Class Usuario
         CType(Me.UsuarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UsuarioBindingNavigator.SuspendLayout()
         CType(Me.UsuarioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TipousuarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RutLabel
@@ -289,7 +292,7 @@ Partial Class Usuario
         Me.UsuarioDataGridView.AllowUserToDeleteRows = False
         Me.UsuarioDataGridView.AutoGenerateColumns = False
         Me.UsuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.UsuarioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.UsuarioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.UsuarioDataGridView.DataSource = Me.UsuarioBindingSource
         Me.UsuarioDataGridView.Location = New System.Drawing.Point(371, 118)
         Me.UsuarioDataGridView.Name = "UsuarioDataGridView"
@@ -297,55 +300,6 @@ Partial Class Usuario
         Me.UsuarioDataGridView.RowTemplate.Height = 24
         Me.UsuarioDataGridView.Size = New System.Drawing.Size(485, 292)
         Me.UsuarioDataGridView.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "rut"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "rut"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nombre"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "nombre"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "contacto"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "contacto"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "genero"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "genero"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "contraseña"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "contraseña"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "id_tipousuario"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "id_tipousuario"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "email"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "email"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
         'RutTextBox
         '
@@ -442,11 +396,75 @@ Partial Class Usuario
         '
         'ComboBox1
         '
+        Me.ComboBox1.DataSource = Me.TipousuarioBindingSource
+        Me.ComboBox1.DisplayMember = "nombre"
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(79, 64)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox1.TabIndex = 22
+        Me.ComboBox1.Text = "Root"
+        Me.ComboBox1.ValueMember = "nombre"
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "rut"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "rut"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "nombre"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "nombre"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "contacto"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "contacto"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "genero"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "genero"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "id_tipousuario"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "id_tipousuario"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "email"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "email"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        '
+        'TipousuarioBindingSource
+        '
+        Me.TipousuarioBindingSource.DataMember = "tipousuario"
+        Me.TipousuarioBindingSource.DataSource = Me.GestiondeinventarioDataSet
+        '
+        'TipousuarioTableAdapter
+        '
+        Me.TipousuarioTableAdapter.ClearBeforeFill = True
+        '
+        'Id_tipousuarioLabel2
+        '
+        Me.Id_tipousuarioLabel2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TipousuarioBindingSource, "id_tipousuario", True))
+        Me.Id_tipousuarioLabel2.Location = New System.Drawing.Point(458, 227)
+        Me.Id_tipousuarioLabel2.Name = "Id_tipousuarioLabel2"
+        Me.Id_tipousuarioLabel2.Size = New System.Drawing.Size(100, 23)
+        Me.Id_tipousuarioLabel2.TabIndex = 23
+        Me.Id_tipousuarioLabel2.Text = "Label2"
         '
         'Usuario
         '
@@ -474,6 +492,7 @@ Partial Class Usuario
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(Me.UsuarioDataGridView)
         Me.Controls.Add(Me.UsuarioBindingNavigator)
+        Me.Controls.Add(Me.Id_tipousuarioLabel2)
         Me.Name = "Usuario"
         Me.Text = "Usuario"
         CType(Me.GestiondeinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -482,6 +501,7 @@ Partial Class Usuario
         Me.UsuarioBindingNavigator.ResumeLayout(False)
         Me.UsuarioBindingNavigator.PerformLayout()
         CType(Me.UsuarioDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TipousuarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -505,13 +525,6 @@ Partial Class Usuario
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents UsuarioBindingNavigatorSaveItem As ToolStripButton
     Friend WithEvents UsuarioDataGridView As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
     Friend WithEvents RutTextBox As TextBox
     Friend WithEvents NombreTextBox As TextBox
     Friend WithEvents ContactoTextBox As TextBox
@@ -524,4 +537,13 @@ Partial Class Usuario
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents TipousuarioBindingSource As BindingSource
+    Friend WithEvents TipousuarioTableAdapter As gestiondeinventarioDataSetTableAdapters.tipousuarioTableAdapter
+    Friend WithEvents Id_tipousuarioLabel2 As Label
 End Class

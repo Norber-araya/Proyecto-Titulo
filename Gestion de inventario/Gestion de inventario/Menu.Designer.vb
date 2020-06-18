@@ -174,6 +174,6 @@ Partial Class Menu
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Public WithEvents Label3 As Label
 End Class
