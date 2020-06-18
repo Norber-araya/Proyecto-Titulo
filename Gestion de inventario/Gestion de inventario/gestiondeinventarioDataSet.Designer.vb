@@ -2571,8 +2571,6 @@ Partial Public Class gestiondeinventarioDataSet
         
         Private columnid_registro As Global.System.Data.DataColumn
         
-        Private columnid_producto As Global.System.Data.DataColumn
-        
         Private columncantidad As Global.System.Data.DataColumn
         
         Private columnn_factura As Global.System.Data.DataColumn
@@ -2580,6 +2578,8 @@ Partial Public Class gestiondeinventarioDataSet
         Private columnfecha As Global.System.Data.DataColumn
         
         Private columnusuario As Global.System.Data.DataColumn
+        
+        Private columncod_producto As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -2626,14 +2626,6 @@ Partial Public Class gestiondeinventarioDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property id_productoColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnid_producto
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property cantidadColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columncantidad
@@ -2661,6 +2653,14 @@ Partial Public Class gestiondeinventarioDataSet
         Public ReadOnly Property usuarioColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnusuario
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property cod_productoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columncod_producto
             End Get
         End Property
         
@@ -2701,9 +2701,9 @@ Partial Public Class gestiondeinventarioDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddregistroRow(ByVal id_producto As String, ByVal cantidad As String, ByVal n_factura As String, ByVal fecha As String, ByVal usuario As String) As registroRow
+        Public Overloads Function AddregistroRow(ByVal cantidad As String, ByVal n_factura As String, ByVal fecha As String, ByVal usuario As String, ByVal cod_producto As String) As registroRow
             Dim rowregistroRow As registroRow = CType(Me.NewRow,registroRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, id_producto, cantidad, n_factura, fecha, usuario}
+            Dim columnValuesArray() As Object = New Object() {Nothing, cantidad, n_factura, fecha, usuario, cod_producto}
             rowregistroRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowregistroRow)
             Return rowregistroRow
@@ -2733,11 +2733,11 @@ Partial Public Class gestiondeinventarioDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
             Me.columnid_registro = MyBase.Columns("id_registro")
-            Me.columnid_producto = MyBase.Columns("id_producto")
             Me.columncantidad = MyBase.Columns("cantidad")
             Me.columnn_factura = MyBase.Columns("n_factura")
             Me.columnfecha = MyBase.Columns("fecha")
             Me.columnusuario = MyBase.Columns("usuario")
+            Me.columncod_producto = MyBase.Columns("cod_producto")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -2745,8 +2745,6 @@ Partial Public Class gestiondeinventarioDataSet
         Private Sub InitClass()
             Me.columnid_registro = New Global.System.Data.DataColumn("id_registro", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnid_registro)
-            Me.columnid_producto = New Global.System.Data.DataColumn("id_producto", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnid_producto)
             Me.columncantidad = New Global.System.Data.DataColumn("cantidad", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columncantidad)
             Me.columnn_factura = New Global.System.Data.DataColumn("n_factura", GetType(String), Nothing, Global.System.Data.MappingType.Element)
@@ -2755,17 +2753,19 @@ Partial Public Class gestiondeinventarioDataSet
             MyBase.Columns.Add(Me.columnfecha)
             Me.columnusuario = New Global.System.Data.DataColumn("usuario", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnusuario)
+            Me.columncod_producto = New Global.System.Data.DataColumn("cod_producto", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columncod_producto)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnid_registro}, true))
             Me.columnid_registro.AutoIncrement = true
             Me.columnid_registro.AutoIncrementSeed = -1
             Me.columnid_registro.AutoIncrementStep = -1
             Me.columnid_registro.AllowDBNull = false
             Me.columnid_registro.Unique = true
-            Me.columnid_producto.MaxLength = 255
             Me.columncantidad.MaxLength = 255
             Me.columnn_factura.MaxLength = 255
             Me.columnfecha.MaxLength = 255
             Me.columnusuario.MaxLength = 255
+            Me.columncod_producto.MaxLength = 255
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4057,21 +4057,6 @@ Partial Public Class gestiondeinventarioDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property id_producto() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tableregistro.id_productoColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'id_producto' de la tabla 'registro' es DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableregistro.id_productoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property cantidad() As String
             Get
                 Try 
@@ -4132,15 +4117,18 @@ Partial Public Class gestiondeinventarioDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Isid_productoNull() As Boolean
-            Return Me.IsNull(Me.tableregistro.id_productoColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setid_productoNull()
-            Me(Me.tableregistro.id_productoColumn) = Global.System.Convert.DBNull
-        End Sub
+        Public Property cod_producto() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableregistro.cod_productoColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'cod_producto' de la tabla 'registro' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableregistro.cod_productoColumn) = value
+            End Set
+        End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -4188,6 +4176,18 @@ Partial Public Class gestiondeinventarioDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetusuarioNull()
             Me(Me.tableregistro.usuarioColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Iscod_productoNull() As Boolean
+            Return Me.IsNull(Me.tableregistro.cod_productoColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Setcod_productoNull()
+            Me(Me.tableregistro.cod_productoColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -6420,12 +6420,18 @@ Namespace gestiondeinventarioDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0) {}
+            Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT rut_prov, nombre_prov, direccion, comuna, ciudad, email, fono FROM proveed"& _ 
                 "or"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.OleDb.OleDbCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT rut_prov, nombre_prov, direccion, comuna, ciudad, email, fono"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM     pr"& _ 
+                "oveedor"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE  (nombre_prov LIKE ?)"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("nombre_prov", Global.System.Data.OleDb.OleDbType.WChar, 255, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "nombre_prov", Global.System.Data.DataRowVersion.Current, false, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -6447,6 +6453,40 @@ Namespace gestiondeinventarioDataSetTableAdapters
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
         Public Overloads Overridable Function GetData() As gestiondeinventarioDataSet.proveedorDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As gestiondeinventarioDataSet.proveedorDataTable = New gestiondeinventarioDataSet.proveedorDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillBy(ByVal dataTable As gestiondeinventarioDataSet.proveedorDataTable, ByVal nombre_prov As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (nombre_prov Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre_prov,String)
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetDataBy(ByVal nombre_prov As String) As gestiondeinventarioDataSet.proveedorDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (nombre_prov Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(nombre_prov,String)
+            End If
             Dim dataTable As gestiondeinventarioDataSet.proveedorDataTable = New gestiondeinventarioDataSet.proveedorDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
@@ -7682,23 +7722,21 @@ Namespace gestiondeinventarioDataSetTableAdapters
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "registro"
             tableMapping.ColumnMappings.Add("id_registro", "id_registro")
-            tableMapping.ColumnMappings.Add("id_producto", "id_producto")
             tableMapping.ColumnMappings.Add("cantidad", "cantidad")
             tableMapping.ColumnMappings.Add("n_factura", "n_factura")
             tableMapping.ColumnMappings.Add("fecha", "fecha")
             tableMapping.ColumnMappings.Add("usuario", "usuario")
+            tableMapping.ColumnMappings.Add("cod_producto", "cod_producto")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `registro` WHERE ((`id_registro` = ?) AND ((? = 1 AND `id_producto` I"& _ 
-                "S NULL) OR (`id_producto` = ?)) AND ((? = 1 AND `cantidad` IS NULL) OR (`cantida"& _ 
-                "d` = ?)) AND ((? = 1 AND `n_factura` IS NULL) OR (`n_factura` = ?)) AND ((? = 1 "& _ 
-                "AND `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `usuario` IS NULL) OR (`u"& _ 
-                "suario` = ?)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `registro` WHERE ((`id_registro` = ?) AND ((? = 1 AND `cantidad` IS N"& _ 
+                "ULL) OR (`cantidad` = ?)) AND ((? = 1 AND `n_factura` IS NULL) OR (`n_factura` ="& _ 
+                " ?)) AND ((? = 1 AND `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `usuario"& _ 
+                "` IS NULL) OR (`usuario` = ?)) AND ((? = 1 AND `cod_producto` IS NULL) OR (`cod_"& _ 
+                "producto` = ?)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_id_registro", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_registro", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_id_producto", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_producto", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_id_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_producto", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_cantidad", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cantidad", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_cantidad", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cantidad", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_n_factura", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "n_factura", Global.System.Data.DataRowVersion.Original, true, Nothing))
@@ -7707,33 +7745,33 @@ Namespace gestiondeinventarioDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fecha", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fecha", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_usuario", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "usuario", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_usuario", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "usuario", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_cod_producto", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cod_producto", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_cod_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cod_producto", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `registro` (`id_producto`, `cantidad`, `n_factura`, `fecha`, `usuario"& _ 
-                "`) VALUES (?, ?, ?, ?, ?)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `registro` (`cantidad`, `n_factura`, `fecha`, `usuario`, `cod_product"& _ 
+                "o`) VALUES (?, ?, ?, ?, ?)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("id_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_producto", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("cantidad", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cantidad", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("n_factura", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "n_factura", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fecha", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fecha", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("usuario", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "usuario", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("cod_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cod_producto", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `registro` SET `id_producto` = ?, `cantidad` = ?, `n_factura` = ?, `fecha`"& _ 
-                " = ?, `usuario` = ? WHERE ((`id_registro` = ?) AND ((? = 1 AND `id_producto` IS "& _ 
-                "NULL) OR (`id_producto` = ?)) AND ((? = 1 AND `cantidad` IS NULL) OR (`cantidad`"& _ 
-                " = ?)) AND ((? = 1 AND `n_factura` IS NULL) OR (`n_factura` = ?)) AND ((? = 1 AN"& _ 
-                "D `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `usuario` IS NULL) OR (`usu"& _ 
-                "ario` = ?)))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `registro` SET `cantidad` = ?, `n_factura` = ?, `fecha` = ?, `usuario` = ?"& _ 
+                ", `cod_producto` = ? WHERE ((`id_registro` = ?) AND ((? = 1 AND `cantidad` IS NU"& _ 
+                "LL) OR (`cantidad` = ?)) AND ((? = 1 AND `n_factura` IS NULL) OR (`n_factura` = "& _ 
+                "?)) AND ((? = 1 AND `fecha` IS NULL) OR (`fecha` = ?)) AND ((? = 1 AND `usuario`"& _ 
+                " IS NULL) OR (`usuario` = ?)) AND ((? = 1 AND `cod_producto` IS NULL) OR (`cod_p"& _ 
+                "roducto` = ?)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("id_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_producto", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("cantidad", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cantidad", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("n_factura", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "n_factura", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("fecha", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fecha", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("usuario", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "usuario", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("cod_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cod_producto", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_id_registro", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_registro", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_id_producto", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_producto", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_id_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "id_producto", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_cantidad", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cantidad", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_cantidad", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cantidad", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_n_factura", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "n_factura", Global.System.Data.DataRowVersion.Original, true, Nothing))
@@ -7742,6 +7780,8 @@ Namespace gestiondeinventarioDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_fecha", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "fecha", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_usuario", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "usuario", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_usuario", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "usuario", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_cod_producto", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cod_producto", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_cod_producto", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "cod_producto", Global.System.Data.DataRowVersion.Original, false, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7757,8 +7797,8 @@ Namespace gestiondeinventarioDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT id_registro, id_producto, cantidad, n_factura, fecha, usuario FROM registr"& _ 
-                "o"
+            Me._commandCollection(0).CommandText = "SELECT id_registro, cantidad, n_factura, fecha, usuario, cod_producto FROM regist"& _ 
+                "ro"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -7818,42 +7858,42 @@ Namespace gestiondeinventarioDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_id_registro As Integer, ByVal Original_id_producto As String, ByVal Original_cantidad As String, ByVal Original_n_factura As String, ByVal Original_fecha As String, ByVal Original_usuario As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_id_registro As Integer, ByVal Original_cantidad As String, ByVal Original_n_factura As String, ByVal Original_fecha As String, ByVal Original_usuario As String, ByVal Original_cod_producto As String) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_id_registro,Integer)
-            If (Original_id_producto Is Nothing) Then
+            If (Original_cantidad Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_id_producto,String)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_cantidad,String)
             End If
-            If (Original_cantidad Is Nothing) Then
+            If (Original_n_factura Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_cantidad,String)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_n_factura,String)
             End If
-            If (Original_n_factura Is Nothing) Then
+            If (Original_fecha Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_n_factura,String)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_fecha,String)
             End If
-            If (Original_fecha Is Nothing) Then
+            If (Original_usuario Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(7).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_fecha,String)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_usuario,String)
             End If
-            If (Original_usuario Is Nothing) Then
+            If (Original_cod_producto Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(9).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.DeleteCommand.Parameters(9).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_usuario,String)
+                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_cod_producto,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -7874,31 +7914,31 @@ Namespace gestiondeinventarioDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal id_producto As String, ByVal cantidad As String, ByVal n_factura As String, ByVal fecha As String, ByVal usuario As String) As Integer
-            If (id_producto Is Nothing) Then
+        Public Overloads Overridable Function Insert(ByVal cantidad As String, ByVal n_factura As String, ByVal fecha As String, ByVal usuario As String, ByVal cod_producto As String) As Integer
+            If (cantidad Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(id_producto,String)
-            End If
-            If (cantidad Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(cantidad,String)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(cantidad,String)
             End If
             If (n_factura Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(n_factura,String)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(n_factura,String)
             End If
             If (fecha Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(fecha,String)
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(fecha,String)
             End If
             If (usuario Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(usuario,String)
+            End If
+            If (cod_producto Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(4).Value = CType(usuario,String)
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(cod_producto,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -7919,67 +7959,67 @@ Namespace gestiondeinventarioDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal id_producto As String, ByVal cantidad As String, ByVal n_factura As String, ByVal fecha As String, ByVal usuario As String, ByVal Original_id_registro As Integer, ByVal Original_id_producto As String, ByVal Original_cantidad As String, ByVal Original_n_factura As String, ByVal Original_fecha As String, ByVal Original_usuario As String) As Integer
-            If (id_producto Is Nothing) Then
+        Public Overloads Overridable Function Update(ByVal cantidad As String, ByVal n_factura As String, ByVal fecha As String, ByVal usuario As String, ByVal cod_producto As String, ByVal Original_id_registro As Integer, ByVal Original_cantidad As String, ByVal Original_n_factura As String, ByVal Original_fecha As String, ByVal Original_usuario As String, ByVal Original_cod_producto As String) As Integer
+            If (cantidad Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(id_producto,String)
-            End If
-            If (cantidad Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(cantidad,String)
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(cantidad,String)
             End If
             If (n_factura Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(n_factura,String)
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(n_factura,String)
             End If
             If (fecha Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(fecha,String)
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(fecha,String)
             End If
             If (usuario Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(usuario,String)
+            End If
+            If (cod_producto Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(usuario,String)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(cod_producto,String)
             End If
             Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_id_registro,Integer)
-            If (Original_id_producto Is Nothing) Then
+            If (Original_cantidad Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_id_producto,String)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_cantidad,String)
             End If
-            If (Original_cantidad Is Nothing) Then
+            If (Original_n_factura Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(8).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_cantidad,String)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_n_factura,String)
             End If
-            If (Original_n_factura Is Nothing) Then
+            If (Original_fecha Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(10).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(10).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_n_factura,String)
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_fecha,String)
             End If
-            If (Original_fecha Is Nothing) Then
+            If (Original_usuario Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_fecha,String)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_usuario,String)
             End If
-            If (Original_usuario Is Nothing) Then
+            If (Original_cod_producto Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_usuario,String)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_cod_producto,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _

@@ -26,7 +26,7 @@ Public Class BD_conexion
 
         comando.ExecuteNonQuery()
         If VLDR_Nombre > 0 Then
-            Menu.Show()
+            Form2.Show()
             Form1.Close()
         Else
             'Si NO existe el Cliente
@@ -262,14 +262,26 @@ Public Class BD_conexion
         End If
         desconectar()
     End Sub
-    Public Sub insertar_registro(id_producto As String, cantidad As String, n_factura As String, fecha As String, usuario As String)
+    Public Sub insertar_registro(cod_producto As String, cantidad As String, n_factura As String, fecha As String, usuario As String)
 
         conectar()
+        comando = New OleDbCommand(" select count(*) from producto where cod_producto ='" + cod_producto + "'", conexion)
 
-        comando = New OleDbCommand("INSERT INTO registro (`id_producto`, `cantidad`, `n_factura`, `fecha`, `usuario`) VALUES ('" + id_producto + "','" + cantidad + "','" + n_factura + "','" + fecha + "','" + usuario + "')", conexion)
+        Dim validar As Integer
+
+        validar = CInt(comando.ExecuteScalar)
+
+        If validar > 0 Then
+
+            comando = New OleDbCommand("INSERT INTO registro (`cod_producto`, `cantidad`, `n_factura`, `fecha`, `usuario`) VALUES ('" + cod_producto + "','" + cantidad + "','" + n_factura + "','" + fecha + "','" + usuario + "')", conexion)
             comando.ExecuteNonQuery()
-        MsgBox("El Registro ha sido ingresado con exito")
+            comando = New OleDbCommand("UPDATE producto SET cantidad ='" + cantidad + "' where cod_producto= '" + cod_producto + "'", conexion)
+            comando.ExecuteNonQuery()
+            MsgBox("El Registro ha sido ingresado con exito")
+        Else
 
+
+        End If
         desconectar()
     End Sub
     Sub desconectar()

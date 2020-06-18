@@ -61,6 +61,8 @@ Partial Class Producto
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Cod_productoLabel = New System.Windows.Forms.Label()
         ProductoLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
@@ -129,6 +131,7 @@ Partial Class Producto
         Me.TableAdapterManager.facturaTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.registroTableAdapter = Nothing
         Me.TableAdapterManager.tipousuarioTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.usuarioTableAdapter = Nothing
@@ -248,12 +251,16 @@ Partial Class Producto
         '
         'ProductoDataGridView
         '
+        Me.ProductoDataGridView.AllowUserToAddRows = False
+        Me.ProductoDataGridView.AllowUserToDeleteRows = False
         Me.ProductoDataGridView.AutoGenerateColumns = False
         Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
-        Me.ProductoDataGridView.Location = New System.Drawing.Point(293, 155)
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(293, 183)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
+        Me.ProductoDataGridView.ReadOnly = True
+        Me.ProductoDataGridView.RowHeadersVisible = False
         Me.ProductoDataGridView.RowTemplate.Height = 24
         Me.ProductoDataGridView.Size = New System.Drawing.Size(582, 162)
         Me.ProductoDataGridView.TabIndex = 1
@@ -263,30 +270,35 @@ Partial Class Producto
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "cod_producto"
         Me.DataGridViewTextBoxColumn1.HeaderText = "cod_producto"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "producto"
         Me.DataGridViewTextBoxColumn2.HeaderText = "producto"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "precio"
         Me.DataGridViewTextBoxColumn3.HeaderText = "precio"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "cantidad"
         Me.DataGridViewTextBoxColumn4.HeaderText = "cantidad"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "fecha_ui"
         Me.DataGridViewTextBoxColumn5.HeaderText = "fecha_ui"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
         'Cod_productoTextBox
         '
@@ -374,11 +386,29 @@ Partial Class Producto
         Me.DateTimePicker1.Size = New System.Drawing.Size(111, 22)
         Me.DateTimePicker1.TabIndex = 28
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(349, 147)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(277, 22)
+        Me.TextBox1.TabIndex = 29
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(293, 150)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 17)
+        Me.Label2.TabIndex = 30
+        Me.Label2.Text = "Buscar:"
+        '
         'Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(921, 509)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -441,4 +471,6 @@ Partial Class Producto
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label2 As Label
 End Class

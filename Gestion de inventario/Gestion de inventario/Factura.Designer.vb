@@ -30,13 +30,13 @@ Partial Class Factura
         Dim Valor_netoLabel As System.Windows.Forms.Label
         Dim IvaLabel As System.Windows.Forms.Label
         Dim TotalLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Factura))
         Dim Rut_provLabel As System.Windows.Forms.Label
         Dim DireccionLabel As System.Windows.Forms.Label
         Dim ComunaLabel As System.Windows.Forms.Label
         Dim CiudadLabel As System.Windows.Forms.Label
         Dim EmailLabel As System.Windows.Forms.Label
         Dim FonoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Factura))
         Me.GestiondeinventarioDataSet = New Gestion_de_inventario.gestiondeinventarioDataSet()
         Me.FacturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.FacturaTableAdapter = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.facturaTableAdapter()
@@ -78,8 +78,11 @@ Partial Class Factura
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ProductoLabel1 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Cod_productoLabel1 = New System.Windows.Forms.Label()
         Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductoLabel1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -100,7 +103,6 @@ Partial Class Factura
         Me.CiudadTextBox = New System.Windows.Forms.TextBox()
         Me.EmailTextBox = New System.Windows.Forms.TextBox()
         Me.FonoTextBox = New System.Windows.Forms.TextBox()
-        Me.Cod_productoLabel1 = New System.Windows.Forms.Label()
         N_facturaLabel = New System.Windows.Forms.Label()
         Nombre_provLabel = New System.Windows.Forms.Label()
         Rut_clienteLabel = New System.Windows.Forms.Label()
@@ -187,6 +189,60 @@ Partial Class Factura
         TotalLabel.Size = New System.Drawing.Size(39, 17)
         TotalLabel.TabIndex = 28
         TotalLabel.Text = "total:"
+        '
+        'Rut_provLabel
+        '
+        Rut_provLabel.AutoSize = True
+        Rut_provLabel.Location = New System.Drawing.Point(72, 213)
+        Rut_provLabel.Name = "Rut_provLabel"
+        Rut_provLabel.Size = New System.Drawing.Size(61, 17)
+        Rut_provLabel.TabIndex = 34
+        Rut_provLabel.Text = "rut prov:"
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Location = New System.Drawing.Point(71, 241)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(69, 17)
+        DireccionLabel.TabIndex = 38
+        DireccionLabel.Text = "direccion:"
+        '
+        'ComunaLabel
+        '
+        ComunaLabel.AutoSize = True
+        ComunaLabel.Location = New System.Drawing.Point(71, 269)
+        ComunaLabel.Name = "ComunaLabel"
+        ComunaLabel.Size = New System.Drawing.Size(62, 17)
+        ComunaLabel.TabIndex = 40
+        ComunaLabel.Text = "comuna:"
+        '
+        'CiudadLabel
+        '
+        CiudadLabel.AutoSize = True
+        CiudadLabel.Location = New System.Drawing.Point(71, 297)
+        CiudadLabel.Name = "CiudadLabel"
+        CiudadLabel.Size = New System.Drawing.Size(54, 17)
+        CiudadLabel.TabIndex = 42
+        CiudadLabel.Text = "ciudad:"
+        '
+        'EmailLabel
+        '
+        EmailLabel.AutoSize = True
+        EmailLabel.Location = New System.Drawing.Point(71, 325)
+        EmailLabel.Name = "EmailLabel"
+        EmailLabel.Size = New System.Drawing.Size(45, 17)
+        EmailLabel.TabIndex = 44
+        EmailLabel.Text = "email:"
+        '
+        'FonoLabel
+        '
+        FonoLabel.AutoSize = True
+        FonoLabel.Location = New System.Drawing.Point(71, 353)
+        FonoLabel.Name = "FonoLabel"
+        FonoLabel.Size = New System.Drawing.Size(40, 17)
+        FonoLabel.TabIndex = 46
+        FonoLabel.Text = "fono:"
         '
         'GestiondeinventarioDataSet
         '
@@ -335,12 +391,12 @@ Partial Class Factura
         Me.FacturaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.FacturaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14})
         Me.FacturaDataGridView.DataSource = Me.FacturaBindingSource
-        Me.FacturaDataGridView.Location = New System.Drawing.Point(352, 72)
+        Me.FacturaDataGridView.Location = New System.Drawing.Point(352, 140)
         Me.FacturaDataGridView.Name = "FacturaDataGridView"
         Me.FacturaDataGridView.ReadOnly = True
         Me.FacturaDataGridView.RowHeadersVisible = False
         Me.FacturaDataGridView.RowTemplate.Height = 24
-        Me.FacturaDataGridView.Size = New System.Drawing.Size(545, 203)
+        Me.FacturaDataGridView.Size = New System.Drawing.Size(545, 372)
         Me.FacturaDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -508,6 +564,10 @@ Partial Class Factura
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Cod_productoLabel1)
         Me.Panel1.Controls.Add(Me.ProductoLabel1)
         Me.Panel1.Controls.Add(Me.Label3)
@@ -517,24 +577,51 @@ Partial Class Factura
         Me.Panel1.Controls.Add(Me.ProductoDataGridView)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Location = New System.Drawing.Point(385, 297)
+        Me.Panel1.Location = New System.Drawing.Point(259, 109)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(442, 415)
         Me.Panel1.TabIndex = 32
         '
-        'ProductoLabel1
+        'Button4
         '
-        Me.ProductoLabel1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "producto", True))
-        Me.ProductoLabel1.Location = New System.Drawing.Point(17, 124)
-        Me.ProductoLabel1.Name = "ProductoLabel1"
-        Me.ProductoLabel1.Size = New System.Drawing.Size(85, 23)
-        Me.ProductoLabel1.TabIndex = 8
-        Me.ProductoLabel1.Text = "Label4"
+        Me.Button4.Location = New System.Drawing.Point(325, 238)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(86, 32)
+        Me.Button4.TabIndex = 11
+        Me.Button4.Text = "Actualizar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(325, 168)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(97, 47)
+        Me.Button3.TabIndex = 10
+        Me.Button3.Text = "Agregar Producto"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Cod_productoLabel1
+        '
+        Me.Cod_productoLabel1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "cod_producto", True))
+        Me.Cod_productoLabel1.Location = New System.Drawing.Point(3, 106)
+        Me.Cod_productoLabel1.Name = "Cod_productoLabel1"
+        Me.Cod_productoLabel1.Size = New System.Drawing.Size(100, 23)
+        Me.Cod_productoLabel1.TabIndex = 9
+        Me.Cod_productoLabel1.Text = "Label4"
         '
         'ProductoBindingSource
         '
         Me.ProductoBindingSource.DataMember = "producto"
         Me.ProductoBindingSource.DataSource = Me.GestiondeinventarioDataSet
+        '
+        'ProductoLabel1
+        '
+        Me.ProductoLabel1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "producto", True))
+        Me.ProductoLabel1.Location = New System.Drawing.Point(17, 140)
+        Me.ProductoLabel1.Name = "ProductoLabel1"
+        Me.ProductoLabel1.Size = New System.Drawing.Size(85, 23)
+        Me.ProductoLabel1.TabIndex = 8
+        Me.ProductoLabel1.Text = "Label4"
         '
         'Label3
         '
@@ -558,7 +645,7 @@ Partial Class Factura
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Insertar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'CantidadLabel1
@@ -619,7 +706,7 @@ Partial Class Factura
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(663, 33)
+        Me.Label2.Location = New System.Drawing.Point(650, 33)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(51, 17)
         Me.Label2.TabIndex = 33
@@ -649,15 +736,6 @@ Partial Class Factura
         '
         Me.ProveedorTableAdapter.ClearBeforeFill = True
         '
-        'Rut_provLabel
-        '
-        Rut_provLabel.AutoSize = True
-        Rut_provLabel.Location = New System.Drawing.Point(72, 213)
-        Rut_provLabel.Name = "Rut_provLabel"
-        Rut_provLabel.Size = New System.Drawing.Size(61, 17)
-        Rut_provLabel.TabIndex = 34
-        Rut_provLabel.Text = "rut prov:"
-        '
         'Rut_provTextBox
         '
         Me.Rut_provTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "rut_prov", True))
@@ -665,15 +743,6 @@ Partial Class Factura
         Me.Rut_provTextBox.Name = "Rut_provTextBox"
         Me.Rut_provTextBox.Size = New System.Drawing.Size(100, 22)
         Me.Rut_provTextBox.TabIndex = 35
-        '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(71, 241)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(69, 17)
-        DireccionLabel.TabIndex = 38
-        DireccionLabel.Text = "direccion:"
         '
         'DireccionTextBox
         '
@@ -683,15 +752,6 @@ Partial Class Factura
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 22)
         Me.DireccionTextBox.TabIndex = 39
         '
-        'ComunaLabel
-        '
-        ComunaLabel.AutoSize = True
-        ComunaLabel.Location = New System.Drawing.Point(71, 269)
-        ComunaLabel.Name = "ComunaLabel"
-        ComunaLabel.Size = New System.Drawing.Size(62, 17)
-        ComunaLabel.TabIndex = 40
-        ComunaLabel.Text = "comuna:"
-        '
         'ComunaTextBox
         '
         Me.ComunaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "comuna", True))
@@ -699,15 +759,6 @@ Partial Class Factura
         Me.ComunaTextBox.Name = "ComunaTextBox"
         Me.ComunaTextBox.Size = New System.Drawing.Size(100, 22)
         Me.ComunaTextBox.TabIndex = 41
-        '
-        'CiudadLabel
-        '
-        CiudadLabel.AutoSize = True
-        CiudadLabel.Location = New System.Drawing.Point(71, 297)
-        CiudadLabel.Name = "CiudadLabel"
-        CiudadLabel.Size = New System.Drawing.Size(54, 17)
-        CiudadLabel.TabIndex = 42
-        CiudadLabel.Text = "ciudad:"
         '
         'CiudadTextBox
         '
@@ -717,15 +768,6 @@ Partial Class Factura
         Me.CiudadTextBox.Size = New System.Drawing.Size(100, 22)
         Me.CiudadTextBox.TabIndex = 43
         '
-        'EmailLabel
-        '
-        EmailLabel.AutoSize = True
-        EmailLabel.Location = New System.Drawing.Point(71, 325)
-        EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(45, 17)
-        EmailLabel.TabIndex = 44
-        EmailLabel.Text = "email:"
-        '
         'EmailTextBox
         '
         Me.EmailTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "email", True))
@@ -733,15 +775,6 @@ Partial Class Factura
         Me.EmailTextBox.Name = "EmailTextBox"
         Me.EmailTextBox.Size = New System.Drawing.Size(100, 22)
         Me.EmailTextBox.TabIndex = 45
-        '
-        'FonoLabel
-        '
-        FonoLabel.AutoSize = True
-        FonoLabel.Location = New System.Drawing.Point(71, 353)
-        FonoLabel.Name = "FonoLabel"
-        FonoLabel.Size = New System.Drawing.Size(40, 17)
-        FonoLabel.TabIndex = 46
-        FonoLabel.Text = "fono:"
         '
         'FonoTextBox
         '
@@ -751,20 +784,12 @@ Partial Class Factura
         Me.FonoTextBox.Size = New System.Drawing.Size(100, 22)
         Me.FonoTextBox.TabIndex = 47
         '
-        'Cod_productoLabel1
-        '
-        Me.Cod_productoLabel1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductoBindingSource, "cod_producto", True))
-        Me.Cod_productoLabel1.Location = New System.Drawing.Point(3, 84)
-        Me.Cod_productoLabel1.Name = "Cod_productoLabel1"
-        Me.Cod_productoLabel1.Size = New System.Drawing.Size(100, 23)
-        Me.Cod_productoLabel1.TabIndex = 9
-        Me.Cod_productoLabel1.Text = "Label4"
-        '
         'Factura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(966, 743)
+        Me.ClientSize = New System.Drawing.Size(962, 646)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Rut_provLabel)
         Me.Controls.Add(Me.Rut_provTextBox)
         Me.Controls.Add(DireccionLabel)
@@ -779,7 +804,6 @@ Partial Class Factura
         Me.Controls.Add(Me.FonoTextBox)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(N_facturaLabel)
@@ -879,4 +903,6 @@ Partial Class Factura
     Friend WithEvents EmailTextBox As TextBox
     Friend WithEvents FonoTextBox As TextBox
     Friend WithEvents Cod_productoLabel1 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class

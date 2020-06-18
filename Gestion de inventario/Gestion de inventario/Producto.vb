@@ -27,4 +27,12 @@
         bdconexion.editar_prod(Cod_productoTextBox.Text, ProductoTextBox.Text, PrecioTextBox.Text, CantidadTextBox.Text, DateTimePicker1.Text)
         Me.ProductoTableAdapter.Fill(Me.GestiondeinventarioDataSet.producto)
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        If TextBox1.Text = "" Then
+            Me.ProductoTableAdapter.Fill(Me.GestiondeinventarioDataSet.producto)
+        Else
+            Me.ProductoTableAdapter.FillBy(Me.GestiondeinventarioDataSet.producto, "%" + TextBox1.Text + "%")
+        End If
+    End Sub
 End Class

@@ -23,7 +23,6 @@ Partial Class proveedor
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(proveedor))
         Dim Rut_provLabel As System.Windows.Forms.Label
         Dim Nombre_provLabel As System.Windows.Forms.Label
         Dim DireccionLabel As System.Windows.Forms.Label
@@ -31,22 +30,23 @@ Partial Class proveedor
         Dim CiudadLabel As System.Windows.Forms.Label
         Dim EmailLabel As System.Windows.Forms.Label
         Dim FonoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(proveedor))
         Me.GestiondeinventarioDataSet = New Gestion_de_inventario.gestiondeinventarioDataSet()
         Me.ProveedorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedorTableAdapter = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.proveedorTableAdapter()
         Me.TableAdapterManager = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager()
         Me.ProveedorBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.ProveedorBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ProveedorDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -67,6 +67,8 @@ Partial Class proveedor
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Rut_provLabel = New System.Windows.Forms.Label()
         Nombre_provLabel = New System.Windows.Forms.Label()
         DireccionLabel = New System.Windows.Forms.Label()
@@ -80,6 +82,69 @@ Partial Class proveedor
         Me.ProveedorBindingNavigator.SuspendLayout()
         CType(Me.ProveedorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Rut_provLabel
+        '
+        Rut_provLabel.AutoSize = True
+        Rut_provLabel.Location = New System.Drawing.Point(56, 163)
+        Rut_provLabel.Name = "Rut_provLabel"
+        Rut_provLabel.Size = New System.Drawing.Size(61, 17)
+        Rut_provLabel.TabIndex = 2
+        Rut_provLabel.Text = "rut prov:"
+        '
+        'Nombre_provLabel
+        '
+        Nombre_provLabel.AutoSize = True
+        Nombre_provLabel.Location = New System.Drawing.Point(56, 191)
+        Nombre_provLabel.Name = "Nombre_provLabel"
+        Nombre_provLabel.Size = New System.Drawing.Size(92, 17)
+        Nombre_provLabel.TabIndex = 4
+        Nombre_provLabel.Text = "nombre prov:"
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Location = New System.Drawing.Point(56, 219)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(69, 17)
+        DireccionLabel.TabIndex = 6
+        DireccionLabel.Text = "direccion:"
+        '
+        'ComunaLabel
+        '
+        ComunaLabel.AutoSize = True
+        ComunaLabel.Location = New System.Drawing.Point(56, 247)
+        ComunaLabel.Name = "ComunaLabel"
+        ComunaLabel.Size = New System.Drawing.Size(62, 17)
+        ComunaLabel.TabIndex = 8
+        ComunaLabel.Text = "comuna:"
+        '
+        'CiudadLabel
+        '
+        CiudadLabel.AutoSize = True
+        CiudadLabel.Location = New System.Drawing.Point(56, 275)
+        CiudadLabel.Name = "CiudadLabel"
+        CiudadLabel.Size = New System.Drawing.Size(54, 17)
+        CiudadLabel.TabIndex = 10
+        CiudadLabel.Text = "ciudad:"
+        '
+        'EmailLabel
+        '
+        EmailLabel.AutoSize = True
+        EmailLabel.Location = New System.Drawing.Point(56, 303)
+        EmailLabel.Name = "EmailLabel"
+        EmailLabel.Size = New System.Drawing.Size(45, 17)
+        EmailLabel.TabIndex = 12
+        EmailLabel.Text = "email:"
+        '
+        'FonoLabel
+        '
+        FonoLabel.AutoSize = True
+        FonoLabel.Location = New System.Drawing.Point(56, 331)
+        FonoLabel.Name = "FonoLabel"
+        FonoLabel.Size = New System.Drawing.Size(40, 17)
+        FonoLabel.TabIndex = 14
+        FonoLabel.Text = "fono:"
         '
         'GestiondeinventarioDataSet
         '
@@ -102,6 +167,7 @@ Partial Class proveedor
         Me.TableAdapterManager.facturaTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedorTableAdapter = Me.ProveedorTableAdapter
+        Me.TableAdapterManager.registroTableAdapter = Nothing
         Me.TableAdapterManager.tipousuarioTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.usuarioTableAdapter = Nothing
@@ -126,13 +192,38 @@ Partial Class proveedor
         Me.ProveedorBindingNavigator.Text = "BindingNavigator1"
         Me.ProveedorBindingNavigator.Visible = False
         '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
+        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
+        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
+        '
         'BindingNavigatorMoveFirstItem
         '
         Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 22)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -141,13 +232,13 @@ Partial Class proveedor
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 22)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorPositionItem
         '
@@ -158,17 +249,10 @@ Partial Class proveedor
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 20)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -190,33 +274,15 @@ Partial Class proveedor
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'ProveedorBindingNavigatorSaveItem
         '
         Me.ProveedorBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ProveedorBindingNavigatorSaveItem.Image = CType(resources.GetObject("ProveedorBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.ProveedorBindingNavigatorSaveItem.Name = "ProveedorBindingNavigatorSaveItem"
-        Me.ProveedorBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.ProveedorBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 24)
         Me.ProveedorBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'ProveedorDataGridView
@@ -227,9 +293,10 @@ Partial Class proveedor
         Me.ProveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ProveedorDataGridView.DataSource = Me.ProveedorBindingSource
-        Me.ProveedorDataGridView.Location = New System.Drawing.Point(334, 160)
+        Me.ProveedorDataGridView.Location = New System.Drawing.Point(334, 191)
         Me.ProveedorDataGridView.Name = "ProveedorDataGridView"
         Me.ProveedorDataGridView.ReadOnly = True
+        Me.ProveedorDataGridView.RowHeadersVisible = False
         Me.ProveedorDataGridView.RowTemplate.Height = 24
         Me.ProveedorDataGridView.Size = New System.Drawing.Size(645, 271)
         Me.ProveedorDataGridView.TabIndex = 1
@@ -239,51 +306,49 @@ Partial Class proveedor
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "rut_prov"
         Me.DataGridViewTextBoxColumn1.HeaderText = "rut_prov"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "nombre_prov"
         Me.DataGridViewTextBoxColumn2.HeaderText = "nombre_prov"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "direccion"
         Me.DataGridViewTextBoxColumn3.HeaderText = "direccion"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "comuna"
         Me.DataGridViewTextBoxColumn4.HeaderText = "comuna"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "ciudad"
         Me.DataGridViewTextBoxColumn5.HeaderText = "ciudad"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "email"
         Me.DataGridViewTextBoxColumn6.HeaderText = "email"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "fono"
         Me.DataGridViewTextBoxColumn7.HeaderText = "fono"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'Rut_provLabel
-        '
-        Rut_provLabel.AutoSize = True
-        Rut_provLabel.Location = New System.Drawing.Point(56, 163)
-        Rut_provLabel.Name = "Rut_provLabel"
-        Rut_provLabel.Size = New System.Drawing.Size(61, 17)
-        Rut_provLabel.TabIndex = 2
-        Rut_provLabel.Text = "rut prov:"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
         'Rut_provTextBox
         '
@@ -293,15 +358,6 @@ Partial Class proveedor
         Me.Rut_provTextBox.Size = New System.Drawing.Size(100, 22)
         Me.Rut_provTextBox.TabIndex = 3
         '
-        'Nombre_provLabel
-        '
-        Nombre_provLabel.AutoSize = True
-        Nombre_provLabel.Location = New System.Drawing.Point(56, 191)
-        Nombre_provLabel.Name = "Nombre_provLabel"
-        Nombre_provLabel.Size = New System.Drawing.Size(92, 17)
-        Nombre_provLabel.TabIndex = 4
-        Nombre_provLabel.Text = "nombre prov:"
-        '
         'Nombre_provTextBox
         '
         Me.Nombre_provTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "nombre_prov", True))
@@ -309,15 +365,6 @@ Partial Class proveedor
         Me.Nombre_provTextBox.Name = "Nombre_provTextBox"
         Me.Nombre_provTextBox.Size = New System.Drawing.Size(100, 22)
         Me.Nombre_provTextBox.TabIndex = 5
-        '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(56, 219)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(69, 17)
-        DireccionLabel.TabIndex = 6
-        DireccionLabel.Text = "direccion:"
         '
         'DireccionTextBox
         '
@@ -327,15 +374,6 @@ Partial Class proveedor
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 22)
         Me.DireccionTextBox.TabIndex = 7
         '
-        'ComunaLabel
-        '
-        ComunaLabel.AutoSize = True
-        ComunaLabel.Location = New System.Drawing.Point(56, 247)
-        ComunaLabel.Name = "ComunaLabel"
-        ComunaLabel.Size = New System.Drawing.Size(62, 17)
-        ComunaLabel.TabIndex = 8
-        ComunaLabel.Text = "comuna:"
-        '
         'ComunaTextBox
         '
         Me.ComunaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "comuna", True))
@@ -343,15 +381,6 @@ Partial Class proveedor
         Me.ComunaTextBox.Name = "ComunaTextBox"
         Me.ComunaTextBox.Size = New System.Drawing.Size(100, 22)
         Me.ComunaTextBox.TabIndex = 9
-        '
-        'CiudadLabel
-        '
-        CiudadLabel.AutoSize = True
-        CiudadLabel.Location = New System.Drawing.Point(56, 275)
-        CiudadLabel.Name = "CiudadLabel"
-        CiudadLabel.Size = New System.Drawing.Size(54, 17)
-        CiudadLabel.TabIndex = 10
-        CiudadLabel.Text = "ciudad:"
         '
         'CiudadTextBox
         '
@@ -361,15 +390,6 @@ Partial Class proveedor
         Me.CiudadTextBox.Size = New System.Drawing.Size(100, 22)
         Me.CiudadTextBox.TabIndex = 11
         '
-        'EmailLabel
-        '
-        EmailLabel.AutoSize = True
-        EmailLabel.Location = New System.Drawing.Point(56, 303)
-        EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(45, 17)
-        EmailLabel.TabIndex = 12
-        EmailLabel.Text = "email:"
-        '
         'EmailTextBox
         '
         Me.EmailTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedorBindingSource, "email", True))
@@ -377,15 +397,6 @@ Partial Class proveedor
         Me.EmailTextBox.Name = "EmailTextBox"
         Me.EmailTextBox.Size = New System.Drawing.Size(100, 22)
         Me.EmailTextBox.TabIndex = 13
-        '
-        'FonoLabel
-        '
-        FonoLabel.AutoSize = True
-        FonoLabel.Location = New System.Drawing.Point(56, 331)
-        FonoLabel.Name = "FonoLabel"
-        FonoLabel.Size = New System.Drawing.Size(40, 17)
-        FonoLabel.TabIndex = 14
-        FonoLabel.Text = "fono:"
         '
         'FonoTextBox
         '
@@ -432,11 +443,29 @@ Partial Class proveedor
         Me.Button1.Text = "Crear"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(396, 155)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(361, 22)
+        Me.TextBox1.TabIndex = 20
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(334, 158)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 17)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "Buscar:"
+        '
         'proveedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1011, 512)
+        Me.ClientSize = New System.Drawing.Size(1026, 537)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -506,4 +535,6 @@ Partial Class proveedor
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label2 As Label
 End Class

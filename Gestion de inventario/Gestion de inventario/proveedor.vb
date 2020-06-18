@@ -28,4 +28,12 @@
         bdconexion.eliminar_prov(Rut_provTextBox.Text)
         Me.ProveedorTableAdapter.Fill(Me.GestiondeinventarioDataSet.proveedor)
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        If TextBox1.Text = "" Then
+            Me.ProveedorTableAdapter.Fill(Me.GestiondeinventarioDataSet.proveedor)
+        Else
+            Me.ProveedorTableAdapter.FillBy(Me.GestiondeinventarioDataSet.proveedor, "%" + TextBox1.Text + "%")
+        End If
+    End Sub
 End Class
