@@ -26,13 +26,9 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.usuariotxt = New System.Windows.Forms.TextBox()
-        Me.UsuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GestiondeinventarioDataSet = New Gestion_de_inventario.gestiondeinventarioDataSet()
         Me.contraseñatxt = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.UsuarioTableAdapter = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.usuarioTableAdapter()
-        Me.TableAdapterManager = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager()
         Me.UsuarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -50,19 +46,26 @@ Partial Class Form1
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GestiondeinventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.UsuarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GestiondeinventarioDataSet = New Gestion_de_inventario.gestiondeinventarioDataSet()
+        Me.UsuarioTableAdapter = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.usuarioTableAdapter()
+        Me.TableAdapterManager = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager()
         CType(Me.UsuarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UsuarioBindingNavigator.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GestiondeinventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.MediumSlateBlue
-        Me.Button1.Location = New System.Drawing.Point(254, 353)
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(261, 355)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(146, 45)
@@ -83,16 +86,6 @@ Partial Class Form1
         Me.usuariotxt.Size = New System.Drawing.Size(226, 15)
         Me.usuariotxt.TabIndex = 1
         '
-        'UsuarioBindingSource
-        '
-        Me.UsuarioBindingSource.DataMember = "usuario"
-        Me.UsuarioBindingSource.DataSource = Me.GestiondeinventarioDataSet
-        '
-        'GestiondeinventarioDataSet
-        '
-        Me.GestiondeinventarioDataSet.DataSetName = "gestiondeinventarioDataSet"
-        Me.GestiondeinventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'contraseñatxt
         '
         Me.contraseñatxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -111,7 +104,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(279, 119)
+        Me.Label1.Location = New System.Drawing.Point(220, 131)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(82, 22)
@@ -121,30 +114,13 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Impact", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(275, 40)
+        Me.Label3.Location = New System.Drawing.Point(255, 57)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(221, 38)
+        Me.Label3.Size = New System.Drawing.Size(169, 34)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Iniciar Sesion"
-        '
-        'UsuarioTableAdapter
-        '
-        Me.UsuarioTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.clienteTableAdapter = Nothing
-        Me.TableAdapterManager.detalle_facTableAdapter = Nothing
-        Me.TableAdapterManager.facturaTableAdapter = Nothing
-        Me.TableAdapterManager.productoTableAdapter = Nothing
-        Me.TableAdapterManager.proveedorTableAdapter = Nothing
-        Me.TableAdapterManager.registroTableAdapter = Nothing
-        Me.TableAdapterManager.tipousuarioTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.usuarioTableAdapter = Me.UsuarioTableAdapter
         '
         'UsuarioBindingNavigator
         '
@@ -160,7 +136,7 @@ Partial Class Form1
         Me.UsuarioBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.UsuarioBindingNavigator.Name = "UsuarioBindingNavigator"
         Me.UsuarioBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.UsuarioBindingNavigator.Size = New System.Drawing.Size(650, 25)
+        Me.UsuarioBindingNavigator.Size = New System.Drawing.Size(594, 25)
         Me.UsuarioBindingNavigator.TabIndex = 6
         Me.UsuarioBindingNavigator.Text = "BindingNavigator1"
         '
@@ -290,19 +266,46 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(250, 249)
+        Me.Label2.Location = New System.Drawing.Point(220, 249)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(118, 22)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Contraseña"
         '
+        'UsuarioBindingSource
+        '
+        Me.UsuarioBindingSource.DataMember = "usuario"
+        Me.UsuarioBindingSource.DataSource = Me.GestiondeinventarioDataSet
+        '
+        'GestiondeinventarioDataSet
+        '
+        Me.GestiondeinventarioDataSet.DataSetName = "gestiondeinventarioDataSet"
+        Me.GestiondeinventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UsuarioTableAdapter
+        '
+        Me.UsuarioTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.clienteTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_facTableAdapter = Nothing
+        Me.TableAdapterManager.facturaTableAdapter = Nothing
+        Me.TableAdapterManager.productoTableAdapter = Nothing
+        Me.TableAdapterManager.proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.registroTableAdapter = Nothing
+        Me.TableAdapterManager.tipousuarioTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.usuarioTableAdapter = Me.UsuarioTableAdapter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(650, 438)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(594, 438)
         Me.Controls.Add(Me.contraseñatxt)
         Me.Controls.Add(Me.usuariotxt)
         Me.Controls.Add(Me.Label2)
@@ -317,14 +320,14 @@ Partial Class Form1
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GestiondeinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsuarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UsuarioBindingNavigator.ResumeLayout(False)
         Me.UsuarioBindingNavigator.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GestiondeinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
