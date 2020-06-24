@@ -35,3 +35,23 @@ C:\Users\Diegoandres\Documents\Proyecto avances\Gestion de inventario\Gestion de
 C:\Users\Diegoandres\Documents\Proyecto avances\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.FacturaVenta.resources
 C:\Users\Diegoandres\Documents\Proyecto avances\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Navegacion.resources
 C:\Users\Diegoandres\Documents\Proyecto avances\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Form2.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\bin\Debug\Gestion de inventario.exe.config
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion de inventario.exe
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion de inventario.xml
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion de inventario.pdb
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\bin\Debug\Gestion de inventario.exe
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\bin\Debug\Gestion de inventario.pdb
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\bin\Debug\Gestion de inventario.xml
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion de inventario.vbprojResolveAssemblyReference.cache
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.BuscarFacturas.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Factura.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.FacturaVenta.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Form1.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Form2.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Resources.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Navegacion.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Producto.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.proveedor.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Usuario.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion_de_inventario.Verfactura.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\Gestion de inventario\Gestion de inventario\obj\Debug\Gestion de inventario.vbproj.GenerateResource.Cache

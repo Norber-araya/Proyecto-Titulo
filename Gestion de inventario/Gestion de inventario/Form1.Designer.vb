@@ -30,7 +30,6 @@ Partial Class Form1
         Me.GestiondeinventarioDataSet = New Gestion_de_inventario.gestiondeinventarioDataSet()
         Me.contraseñatxt = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.UsuarioTableAdapter = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.usuarioTableAdapter()
         Me.TableAdapterManager = New Gestion_de_inventario.gestiondeinventarioDataSetTableAdapters.TableAdapterManager()
@@ -47,29 +46,41 @@ Partial Class Form1
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.UsuarioBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.UsuarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GestiondeinventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsuarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UsuarioBindingNavigator.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(165, 195)
+        Me.Button1.BackColor = System.Drawing.Color.MediumSlateBlue
+        Me.Button1.Location = New System.Drawing.Point(254, 353)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(78, 30)
+        Me.Button1.Size = New System.Drawing.Size(146, 45)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Iniciar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "Iniciar Sesion"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'usuariotxt
         '
+        Me.usuariotxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.usuariotxt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.usuariotxt.DataBindings.Add(New System.Windows.Forms.Binding("Tag", Me.UsuarioBindingSource, "rut", True))
-        Me.usuariotxt.Location = New System.Drawing.Point(142, 95)
+        Me.usuariotxt.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.usuariotxt.ForeColor = System.Drawing.Color.White
+        Me.usuariotxt.Location = New System.Drawing.Point(224, 172)
         Me.usuariotxt.Margin = New System.Windows.Forms.Padding(2)
         Me.usuariotxt.Name = "usuariotxt"
-        Me.usuariotxt.Size = New System.Drawing.Size(136, 20)
+        Me.usuariotxt.Size = New System.Drawing.Size(226, 15)
         Me.usuariotxt.TabIndex = 1
         '
         'UsuarioBindingSource
@@ -84,43 +95,39 @@ Partial Class Form1
         '
         'contraseñatxt
         '
-        Me.contraseñatxt.Location = New System.Drawing.Point(142, 145)
+        Me.contraseñatxt.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.contraseñatxt.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.contraseñatxt.ForeColor = System.Drawing.Color.White
+        Me.contraseñatxt.Location = New System.Drawing.Point(224, 290)
         Me.contraseñatxt.Margin = New System.Windows.Forms.Padding(2)
         Me.contraseñatxt.MaxLength = 16
         Me.contraseñatxt.Name = "contraseñatxt"
         Me.contraseñatxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.contraseñatxt.Size = New System.Drawing.Size(136, 20)
+        Me.contraseñatxt.Size = New System.Drawing.Size(226, 13)
         Me.contraseñatxt.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(92, 98)
+        Me.Label1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(279, 119)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(46, 13)
+        Me.Label1.Size = New System.Drawing.Size(82, 22)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Usuario:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(74, 148)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Contraseña:"
+        Me.Label1.Text = "Usuario"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(181, 51)
+        Me.Label3.Font = New System.Drawing.Font("Arial Black", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(275, 40)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 16)
+        Me.Label3.Size = New System.Drawing.Size(221, 38)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "login"
+        Me.Label3.Text = "Iniciar Sesion"
         '
         'UsuarioTableAdapter
         '
@@ -153,7 +160,7 @@ Partial Class Form1
         Me.UsuarioBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.UsuarioBindingNavigator.Name = "UsuarioBindingNavigator"
         Me.UsuarioBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.UsuarioBindingNavigator.Size = New System.Drawing.Size(405, 25)
+        Me.UsuarioBindingNavigator.Size = New System.Drawing.Size(650, 25)
         Me.UsuarioBindingNavigator.TabIndex = 6
         Me.UsuarioBindingNavigator.Text = "BindingNavigator1"
         '
@@ -250,18 +257,63 @@ Partial Class Form1
         Me.UsuarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.UsuarioBindingNavigatorSaveItem.Text = "Guardar datos"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 57)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(182, 332)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(214, 156)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(250, 48)
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(214, 274)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(250, 48)
+        Me.PictureBox3.TabIndex = 9
+        Me.PictureBox3.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(250, 249)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(118, 22)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Contraseña"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(405, 327)
-        Me.Controls.Add(Me.UsuarioBindingNavigator)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(650, 438)
         Me.Controls.Add(Me.contraseñatxt)
         Me.Controls.Add(Me.usuariotxt)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.UsuarioBindingNavigator)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
+        Me.Cursor = System.Windows.Forms.Cursors.No
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -270,6 +322,9 @@ Partial Class Form1
         CType(Me.UsuarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UsuarioBindingNavigator.ResumeLayout(False)
         Me.UsuarioBindingNavigator.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -279,7 +334,6 @@ Partial Class Form1
     Friend WithEvents usuariotxt As TextBox
     Friend WithEvents contraseñatxt As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents GestiondeinventarioDataSet As gestiondeinventarioDataSet
     Friend WithEvents UsuarioBindingSource As BindingSource
@@ -298,4 +352,8 @@ Partial Class Form1
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents UsuarioBindingNavigatorSaveItem As ToolStripButton
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label2 As Label
 End Class
