@@ -56,34 +56,38 @@ Partial Class BuscarFacturas
         '
         'Fecha
         '
-        Me.Fecha.Location = New System.Drawing.Point(502, 40)
+        Me.Fecha.Location = New System.Drawing.Point(669, 49)
+        Me.Fecha.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Fecha.Name = "Fecha"
-        Me.Fecha.Size = New System.Drawing.Size(100, 20)
+        Me.Fecha.Size = New System.Drawing.Size(132, 22)
         Me.Fecha.TabIndex = 9
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(443, 43)
+        Me.Label2.Location = New System.Drawing.Point(591, 53)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
+        Me.Label2.Size = New System.Drawing.Size(47, 17)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Fecha"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(126, 47)
+        Me.Label1.Location = New System.Drawing.Point(168, 58)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.Size = New System.Drawing.Size(76, 17)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "N° Factura"
         '
         'N_factura
         '
-        Me.N_factura.Location = New System.Drawing.Point(186, 41)
+        Me.N_factura.Location = New System.Drawing.Point(248, 50)
+        Me.N_factura.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.N_factura.Name = "N_factura"
-        Me.N_factura.Size = New System.Drawing.Size(112, 20)
+        Me.N_factura.Size = New System.Drawing.Size(148, 22)
         Me.N_factura.TabIndex = 6
         '
         'ControlinventarioDataSet
@@ -105,7 +109,9 @@ Partial Class BuscarFacturas
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.clienteTableAdapter = Nothing
         Me.TableAdapterManager.detalle_facTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
         Me.TableAdapterManager.facturaTableAdapter = Me.FacturaTableAdapter
+        Me.TableAdapterManager.mermasTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedorTableAdapter = Nothing
         Me.TableAdapterManager.registroTableAdapter = Nothing
@@ -119,9 +125,10 @@ Partial Class BuscarFacturas
         Me.FacturaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.FacturaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15})
         Me.FacturaDataGridView.DataSource = Me.FacturaBindingSource
-        Me.FacturaDataGridView.Location = New System.Drawing.Point(107, 89)
+        Me.FacturaDataGridView.Location = New System.Drawing.Point(143, 110)
+        Me.FacturaDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.FacturaDataGridView.Name = "FacturaDataGridView"
-        Me.FacturaDataGridView.Size = New System.Drawing.Size(580, 259)
+        Me.FacturaDataGridView.Size = New System.Drawing.Size(773, 319)
         Me.FacturaDataGridView.TabIndex = 10
         '
         'DataGridViewTextBoxColumn1
@@ -216,27 +223,29 @@ Partial Class BuscarFacturas
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(24, 408)
+        Me.Button2.Location = New System.Drawing.Point(32, 502)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(100, 28)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Menu"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(347, 385)
+        Me.Button1.Location = New System.Drawing.Point(463, 474)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "ver factura"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'BuscarFacturas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.FacturaDataGridView)
@@ -244,6 +253,7 @@ Partial Class BuscarFacturas
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.N_factura)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "BuscarFacturas"
         Me.Text = "BuscarFacturas"
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()

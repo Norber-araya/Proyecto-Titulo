@@ -41,7 +41,7 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If tipo.Text = "100" Or tipo.Text = "101" Then
+        If tipo.Text = "100" Or tipo.Text = "101" Or tipo.Text = "103" Then
             Factura.rut = rut.Text
             Factura.tipo = tipo.Text
             Factura.nombre = nombre.Text
@@ -63,7 +63,7 @@
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        If tipo.Text = "100" Or tipo.Text = "101" Then
+        If tipo.Text = "100" Or tipo.Text = "101" Or tipo.Text = "103" Then
             FacturaVenta.rut = rut.Text
             FacturaVenta.tipo = tipo.Text
             FacturaVenta.Show()
@@ -81,6 +81,7 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Bodega.tipo = tipo.Text
         Bodega.Show()
         Me.Hide()
     End Sub
@@ -96,7 +97,7 @@
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        If tipo.Text = "100" Or tipo.Text = "101" Or tipo.Text = "103" Then
+        If tipo.Text = "100" Or tipo.Text = "101" Then
             cliente.Show()
             Me.Hide()
         Else
@@ -111,5 +112,10 @@
         Else
             MsgBox("No tiene permiso")
         End If
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Form1.Show()
+        Close()
     End Sub
 End Class

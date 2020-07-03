@@ -22,7 +22,7 @@ Public Class Consulta
                 command.Connection = connection
                 command.CommandText = "select top 10
                                        p.cod_producto,
-                                       p.producto,
+                                       p.nombre,
                                        p.precio as unitBasePrice,
                                        sum(det.cantidad) as quantitySold,
                                        sum(det.precio_unitario*det.cantidad)as totalAmount
@@ -30,9 +30,9 @@ Public Class Consulta
                                        factura f
                                        inner join detalle_fac det on det.n_factura=f.n_factura
                                        inner join producto p on p.cod_producto=det.cod_producto
-                                       where f.fecha between @startDate and @endDate and f.tipo='venta'
+                                       where f.fecha between '2020-05-01' and '2020-07-02 23:59' and f.tipo='venta'
                                        group by 
-                                       p.cod_producto, p.producto, p.precio
+                                       p.cod_producto, p.nombre, p.precio
                                        order by quantitySold desc"
 
                 command.Parameters.Add("@startDate", SqlDbType.Date).Value = fromDate
@@ -117,5 +117,8 @@ Public Class Consulta
 
     End Sub
 
-
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Navegacion.Show()
+        Close()
+    End Sub
 End Class

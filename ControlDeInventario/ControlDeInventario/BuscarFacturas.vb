@@ -61,4 +61,9 @@ Public Class BuscarFacturas
     Private Sub Fecha_TextChanged(sender As Object, e As EventArgs) Handles Fecha.TextChanged
         dato2()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Navegacion.Show()
+        Close()
+    End Sub
 End Class

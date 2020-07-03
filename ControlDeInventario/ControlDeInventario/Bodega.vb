@@ -1,5 +1,7 @@
 ﻿Imports System.Data.SqlClient
+
 Public Class Bodega
+    Public tipo As String
     Dim bdconexion As New BD_conexion
     Protected Function GetConnection() As SqlConnection
         Return New SqlConnection("Data Source=.;Initial Catalog=Controlinventario;Integrated Security=True")
@@ -88,17 +90,24 @@ Public Class Bodega
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        For Each Fila As DataGridViewRow In DataGridView1.Rows
+        If tipo = "100" Or tipo = "101" Then
+            For Each Fila As DataGridViewRow In DataGridView1.Rows
 
-            If Fila.Cells("eliminar").Value <> Nothing Then
-                Dim dato As String = Fila.Cells(1).Value.ToString
-                bdconexion.eliminar_prod(dato)
-                'bdconexion.insertar_registro()
 
-            End If
+                If Fila.Cells("eliminar").Value <> Nothing Then
+                    Dim dato As String = Fila.Cells(1).Value.ToString
+                    bdconexion.eliminar_prod(dato)
+                    'bdconexion.insertar_registro()
 
-        Next
-        Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)
+                End If
+
+            Next
+            Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)
+        Else
+            MsgBox("No tiene permiso")
+        End If
+
+
 
     End Sub
 End Class
