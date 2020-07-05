@@ -255,4 +255,8 @@ Public Class boleta
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Panel1.Visible = False
     End Sub
+
+    Private Sub Cod_productoTextBox_TextChanged(sender As Object, e As EventArgs) Handles Cod_productoTextBox.TextChanged
+
+    End Sub
 End Class

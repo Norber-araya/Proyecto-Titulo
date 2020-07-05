@@ -35,10 +35,6 @@ Partial Class boleta
         Dim Rut_clienteLabel As System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.CantidadTextBox = New System.Windows.Forms.TextBox()
         Me.PrecioTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
@@ -66,7 +62,6 @@ Partial Class boleta
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -77,6 +72,11 @@ Partial Class boleta
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClienteTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.clienteTableAdapter()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CantidadLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
@@ -99,92 +99,102 @@ Partial Class boleta
         'CantidadLabel
         '
         CantidadLabel.AutoSize = True
-        CantidadLabel.Location = New System.Drawing.Point(33, 267)
+        CantidadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CantidadLabel.Location = New System.Drawing.Point(1, 267)
         CantidadLabel.Name = "CantidadLabel"
-        CantidadLabel.Size = New System.Drawing.Size(51, 13)
+        CantidadLabel.Size = New System.Drawing.Size(58, 17)
         CantidadLabel.TabIndex = 48
-        CantidadLabel.Text = "cantidad:"
+        CantidadLabel.Text = "Cantidad"
         '
         'PrecioLabel
         '
         PrecioLabel.AutoSize = True
-        PrecioLabel.Location = New System.Drawing.Point(45, 241)
+        PrecioLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        PrecioLabel.Location = New System.Drawing.Point(1, 241)
         PrecioLabel.Name = "PrecioLabel"
-        PrecioLabel.Size = New System.Drawing.Size(39, 13)
+        PrecioLabel.Size = New System.Drawing.Size(44, 17)
         PrecioLabel.TabIndex = 45
-        PrecioLabel.Text = "precio:"
+        PrecioLabel.Text = "Precio"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(39, 215)
+        NombreLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(1, 215)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
+        NombreLabel.Size = New System.Drawing.Size(103, 17)
         NombreLabel.TabIndex = 43
-        NombreLabel.Text = "nombre:"
+        NombreLabel.Text = "Nombre producto"
         '
         'Cod_productoLabel
         '
         Cod_productoLabel.AutoSize = True
-        Cod_productoLabel.Location = New System.Drawing.Point(11, 189)
+        Cod_productoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Cod_productoLabel.Location = New System.Drawing.Point(1, 188)
         Cod_productoLabel.Name = "Cod_productoLabel"
-        Cod_productoLabel.Size = New System.Drawing.Size(73, 13)
+        Cod_productoLabel.Size = New System.Drawing.Size(99, 17)
         Cod_productoLabel.TabIndex = 42
-        Cod_productoLabel.Text = "cod producto:"
+        Cod_productoLabel.Text = "Codigo producto"
         '
         'N_boletaLabel
         '
         N_boletaLabel.AutoSize = True
+        N_boletaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         N_boletaLabel.Location = New System.Drawing.Point(102, 16)
         N_boletaLabel.Name = "N_boletaLabel"
-        N_boletaLabel.Size = New System.Drawing.Size(54, 13)
+        N_boletaLabel.Size = New System.Drawing.Size(61, 17)
         N_boletaLabel.TabIndex = 34
         N_boletaLabel.Text = "N° boleta:"
         '
         'Rut_empresaLabel
         '
         Rut_empresaLabel.AutoSize = True
+        Rut_empresaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Rut_empresaLabel.Location = New System.Drawing.Point(103, 42)
         Rut_empresaLabel.Name = "Rut_empresaLabel"
-        Rut_empresaLabel.Size = New System.Drawing.Size(65, 13)
+        Rut_empresaLabel.Size = New System.Drawing.Size(77, 17)
         Rut_empresaLabel.TabIndex = 36
-        Rut_empresaLabel.Text = "rut empresa:"
+        Rut_empresaLabel.Text = "Rut empresa"
         '
         'Nombre_empresaLabel
         '
         Nombre_empresaLabel.AutoSize = True
-        Nombre_empresaLabel.Location = New System.Drawing.Point(103, 68)
+        Nombre_empresaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Nombre_empresaLabel.Location = New System.Drawing.Point(101, 65)
         Nombre_empresaLabel.Name = "Nombre_empresaLabel"
-        Nombre_empresaLabel.Size = New System.Drawing.Size(88, 13)
+        Nombre_empresaLabel.Size = New System.Drawing.Size(55, 17)
         Nombre_empresaLabel.TabIndex = 38
-        Nombre_empresaLabel.Text = "nombre empresa:"
+        Nombre_empresaLabel.Text = "Empresa"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
+        DireccionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DireccionLabel.Location = New System.Drawing.Point(103, 94)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(53, 13)
+        DireccionLabel.Size = New System.Drawing.Size(61, 17)
         DireccionLabel.TabIndex = 40
-        DireccionLabel.Text = "direccion:"
+        DireccionLabel.Text = "Direccion"
         '
         'TotalLabel
         '
         TotalLabel.AutoSize = True
-        TotalLabel.Location = New System.Drawing.Point(430, 350)
+        TotalLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TotalLabel.Location = New System.Drawing.Point(421, 350)
         TotalLabel.Name = "TotalLabel"
-        TotalLabel.Size = New System.Drawing.Size(34, 13)
+        TotalLabel.Size = New System.Drawing.Size(39, 17)
         TotalLabel.TabIndex = 31
         TotalLabel.Text = "Total:"
         '
         'Rut_clienteLabel
         '
         Rut_clienteLabel.AutoSize = True
-        Rut_clienteLabel.Location = New System.Drawing.Point(331, 38)
+        Rut_clienteLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Rut_clienteLabel.Location = New System.Drawing.Point(326, 36)
         Rut_clienteLabel.Name = "Rut_clienteLabel"
-        Rut_clienteLabel.Size = New System.Drawing.Size(68, 13)
+        Rut_clienteLabel.Size = New System.Drawing.Size(70, 17)
         Rut_clienteLabel.TabIndex = 56
-        Rut_clienteLabel.Text = "RUT Cliente:"
+        Rut_clienteLabel.Text = "RUT Cliente"
         AddHandler Rut_clienteLabel.Click, AddressOf Me.Rut_clienteLabel_Click
         '
         'Label2
@@ -197,103 +207,67 @@ Partial Class boleta
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(162, 186)
+        Me.Button5.Location = New System.Drawing.Point(218, 187)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(35, 20)
         Me.Button5.TabIndex = 54
         Me.Button5.Text = "..."
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(14, 410)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 53
-        Me.Button4.Text = "Menu"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(69, 353)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 52
-        Me.Button3.Text = "crera boleta"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(68, 324)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 51
-        Me.Button2.Text = "eliminar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(68, 295)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 50
-        Me.Button1.Text = "agregar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'CantidadTextBox
         '
-        Me.CantidadTextBox.Location = New System.Drawing.Point(90, 264)
+        Me.CantidadTextBox.Location = New System.Drawing.Point(105, 264)
         Me.CantidadTextBox.Name = "CantidadTextBox"
-        Me.CantidadTextBox.Size = New System.Drawing.Size(66, 20)
+        Me.CantidadTextBox.Size = New System.Drawing.Size(99, 20)
         Me.CantidadTextBox.TabIndex = 49
         '
         'PrecioTextBox
         '
-        Me.PrecioTextBox.Location = New System.Drawing.Point(90, 238)
+        Me.PrecioTextBox.Location = New System.Drawing.Point(106, 238)
         Me.PrecioTextBox.Name = "PrecioTextBox"
-        Me.PrecioTextBox.Size = New System.Drawing.Size(66, 20)
+        Me.PrecioTextBox.Size = New System.Drawing.Size(98, 20)
         Me.PrecioTextBox.TabIndex = 47
         '
         'NombreTextBox
         '
-        Me.NombreTextBox.Location = New System.Drawing.Point(90, 212)
+        Me.NombreTextBox.Location = New System.Drawing.Point(106, 215)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(66, 20)
+        Me.NombreTextBox.Size = New System.Drawing.Size(98, 20)
         Me.NombreTextBox.TabIndex = 46
         '
         'Cod_productoTextBox
         '
-        Me.Cod_productoTextBox.Location = New System.Drawing.Point(90, 186)
+        Me.Cod_productoTextBox.Location = New System.Drawing.Point(106, 188)
         Me.Cod_productoTextBox.Name = "Cod_productoTextBox"
-        Me.Cod_productoTextBox.Size = New System.Drawing.Size(66, 20)
+        Me.Cod_productoTextBox.Size = New System.Drawing.Size(98, 20)
         Me.Cod_productoTextBox.TabIndex = 44
         '
         'N_boletaTextBox
         '
-        Me.N_boletaTextBox.Location = New System.Drawing.Point(197, 13)
+        Me.N_boletaTextBox.Location = New System.Drawing.Point(182, 13)
         Me.N_boletaTextBox.Name = "N_boletaTextBox"
-        Me.N_boletaTextBox.Size = New System.Drawing.Size(90, 20)
+        Me.N_boletaTextBox.Size = New System.Drawing.Size(112, 20)
         Me.N_boletaTextBox.TabIndex = 35
         '
         'Rut_empresaTextBox
         '
-        Me.Rut_empresaTextBox.Location = New System.Drawing.Point(197, 39)
+        Me.Rut_empresaTextBox.Location = New System.Drawing.Point(182, 39)
         Me.Rut_empresaTextBox.Name = "Rut_empresaTextBox"
-        Me.Rut_empresaTextBox.Size = New System.Drawing.Size(90, 20)
+        Me.Rut_empresaTextBox.Size = New System.Drawing.Size(112, 20)
         Me.Rut_empresaTextBox.TabIndex = 37
         '
         'Nombre_empresaTextBox
         '
-        Me.Nombre_empresaTextBox.Location = New System.Drawing.Point(197, 65)
+        Me.Nombre_empresaTextBox.Location = New System.Drawing.Point(182, 65)
         Me.Nombre_empresaTextBox.Name = "Nombre_empresaTextBox"
-        Me.Nombre_empresaTextBox.Size = New System.Drawing.Size(90, 20)
+        Me.Nombre_empresaTextBox.Size = New System.Drawing.Size(112, 20)
         Me.Nombre_empresaTextBox.TabIndex = 39
         '
         'DireccionTextBox
         '
-        Me.DireccionTextBox.Location = New System.Drawing.Point(197, 91)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(182, 91)
         Me.DireccionTextBox.Name = "DireccionTextBox"
-        Me.DireccionTextBox.Size = New System.Drawing.Size(90, 20)
+        Me.DireccionTextBox.Size = New System.Drawing.Size(112, 20)
         Me.DireccionTextBox.TabIndex = 41
         '
         'FechaDateTimePicker
@@ -308,19 +282,20 @@ Partial Class boleta
         '
         Me.TotalTextBox.Location = New System.Drawing.Point(466, 347)
         Me.TotalTextBox.Name = "TotalTextBox"
-        Me.TotalTextBox.Size = New System.Drawing.Size(94, 20)
+        Me.TotalTextBox.Size = New System.Drawing.Size(112, 20)
         Me.TotalTextBox.TabIndex = 32
         '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.elimina})
-        Me.DataGridView1.Location = New System.Drawing.Point(206, 189)
+        Me.DataGridView1.Location = New System.Drawing.Point(279, 179)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(377, 139)
+        Me.DataGridView1.Size = New System.Drawing.Size(402, 139)
         Me.DataGridView1.TabIndex = 33
         '
         'Column1
@@ -404,12 +379,13 @@ Partial Class boleta
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.DarkKhaki
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button8)
         Me.Panel1.Controls.Add(Me.Button7)
         Me.Panel1.Controls.Add(Me.ClienteDataGridView)
-        Me.Panel1.Location = New System.Drawing.Point(219, 68)
+        Me.Panel1.Location = New System.Drawing.Point(300, 94)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(386, 336)
         Me.Panel1.TabIndex = 59
@@ -418,15 +394,16 @@ Partial Class boleta
         '
         Me.TextBox1.Location = New System.Drawing.Point(161, 25)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(137, 20)
         Me.TextBox1.TabIndex = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(112, 28)
+        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(106, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
+        Me.Label1.Size = New System.Drawing.Size(49, 17)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Buscar:"
         '
@@ -439,28 +416,20 @@ Partial Class boleta
         Me.Button8.Text = "Volver"
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(148, 240)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 1
-        Me.Button7.Text = "Seleccionar"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
         'ClienteDataGridView
         '
         Me.ClienteDataGridView.AllowUserToAddRows = False
         Me.ClienteDataGridView.AllowUserToDeleteRows = False
         Me.ClienteDataGridView.AutoGenerateColumns = False
+        Me.ClienteDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
-        Me.ClienteDataGridView.Location = New System.Drawing.Point(49, 56)
+        Me.ClienteDataGridView.Location = New System.Drawing.Point(13, 52)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
         Me.ClienteDataGridView.ReadOnly = True
         Me.ClienteDataGridView.RowHeadersVisible = False
-        Me.ClienteDataGridView.Size = New System.Drawing.Size(289, 175)
+        Me.ClienteDataGridView.Size = New System.Drawing.Size(370, 175)
         Me.ClienteDataGridView.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
@@ -521,11 +490,67 @@ Partial Class boleta
         '
         Me.ClienteTableAdapter.ClearBeforeFill = True
         '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(115, 233)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(202, 93)
+        Me.Button7.TabIndex = 1
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(565, 459)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(200, 96)
+        Me.Button4.TabIndex = 53
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Image = Global.ControlDeInventario.My.Resources.Resources.boton_crearboleta
+        Me.Button3.Location = New System.Drawing.Point(239, 390)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(216, 89)
+        Me.Button3.TabIndex = 52
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Image = Global.ControlDeInventario.My.Resources.Resources.boton_eliminar
+        Me.Button2.Location = New System.Drawing.Point(4, 386)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(215, 97)
+        Me.Button2.TabIndex = 51
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.ControlDeInventario.My.Resources.Resources.boton_agregarprod
+        Me.Button1.Location = New System.Drawing.Point(4, 300)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(209, 91)
+        Me.Button1.TabIndex = 50
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'boleta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(654, 453)
+        Me.BackColor = System.Drawing.Color.LemonChiffon
+        Me.ClientSize = New System.Drawing.Size(777, 557)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Rut_clienteLabel)

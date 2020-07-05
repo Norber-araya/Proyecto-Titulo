@@ -118,4 +118,12 @@
         Form1.Show()
         Close()
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        boleta.Show()
+    End Sub
 End Class

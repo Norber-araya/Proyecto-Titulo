@@ -303,5 +303,59 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-proveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productos-boton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin-título-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-cerrar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-buscardoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-facturaingre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-facsalida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-boletas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-seleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-agregarprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-crearboleta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-menu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

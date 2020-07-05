@@ -76,12 +76,13 @@ Partial Class elegir_producto
         'ProductoDataGridView
         '
         Me.ProductoDataGridView.AutoGenerateColumns = False
+        Me.ProductoDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
-        Me.ProductoDataGridView.Location = New System.Drawing.Point(72, 70)
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(31, 71)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
-        Me.ProductoDataGridView.Size = New System.Drawing.Size(338, 220)
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(440, 220)
         Me.ProductoDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -116,11 +117,13 @@ Partial Class elegir_producto
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(201, 306)
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(157, 297)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(201, 97)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "selecionar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -135,9 +138,10 @@ Partial Class elegir_producto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(155, 33)
+        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(129, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
+        Me.Label1.Size = New System.Drawing.Size(49, 17)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Buscar:"
         '
@@ -145,14 +149,15 @@ Partial Class elegir_producto
         '
         Me.TextBox1.Location = New System.Drawing.Point(200, 30)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(131, 20)
         Me.TextBox1.TabIndex = 5
         '
         'elegir_producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(483, 382)
+        Me.BackColor = System.Drawing.Color.DarkKhaki
+        Me.ClientSize = New System.Drawing.Size(483, 412)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
