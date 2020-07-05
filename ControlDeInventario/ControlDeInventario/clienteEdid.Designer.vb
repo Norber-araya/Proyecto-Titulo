@@ -69,65 +69,72 @@ Partial Class clienteEdid
         'Rut_clienteLabel
         '
         Rut_clienteLabel.AutoSize = True
-        Rut_clienteLabel.Location = New System.Drawing.Point(563, 84)
+        Rut_clienteLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Rut_clienteLabel.Location = New System.Drawing.Point(552, 84)
         Rut_clienteLabel.Name = "Rut_clienteLabel"
-        Rut_clienteLabel.Size = New System.Drawing.Size(56, 13)
+        Rut_clienteLabel.Size = New System.Drawing.Size(67, 17)
         Rut_clienteLabel.TabIndex = 2
-        Rut_clienteLabel.Text = "rut cliente:"
+        Rut_clienteLabel.Text = "Rut cliente"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(563, 110)
+        NombreLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(554, 110)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
+        NombreLabel.Size = New System.Drawing.Size(51, 17)
         NombreLabel.TabIndex = 4
-        NombreLabel.Text = "nombre:"
+        NombreLabel.Text = "Nombre"
         '
         'EmailLabel
         '
         EmailLabel.AutoSize = True
-        EmailLabel.Location = New System.Drawing.Point(563, 136)
+        EmailLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        EmailLabel.Location = New System.Drawing.Point(554, 136)
         EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(34, 13)
+        EmailLabel.Size = New System.Drawing.Size(38, 17)
         EmailLabel.TabIndex = 6
-        EmailLabel.Text = "email:"
+        EmailLabel.Text = "Email"
         '
         'FonoLabel
         '
         FonoLabel.AutoSize = True
-        FonoLabel.Location = New System.Drawing.Point(563, 162)
+        FonoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        FonoLabel.Location = New System.Drawing.Point(554, 162)
         FonoLabel.Name = "FonoLabel"
-        FonoLabel.Size = New System.Drawing.Size(31, 13)
+        FonoLabel.Size = New System.Drawing.Size(56, 17)
         FonoLabel.TabIndex = 8
-        FonoLabel.Text = "fono:"
+        FonoLabel.Text = "Telefono"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(563, 188)
+        DireccionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.Location = New System.Drawing.Point(554, 188)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(53, 13)
+        DireccionLabel.Size = New System.Drawing.Size(61, 17)
         DireccionLabel.TabIndex = 10
-        DireccionLabel.Text = "direccion:"
+        DireccionLabel.Text = "Direccion"
         '
         'ComunaLabel
         '
         ComunaLabel.AutoSize = True
-        ComunaLabel.Location = New System.Drawing.Point(563, 214)
+        ComunaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ComunaLabel.Location = New System.Drawing.Point(557, 214)
         ComunaLabel.Name = "ComunaLabel"
-        ComunaLabel.Size = New System.Drawing.Size(48, 13)
+        ComunaLabel.Size = New System.Drawing.Size(53, 17)
         ComunaLabel.TabIndex = 12
-        ComunaLabel.Text = "comuna:"
+        ComunaLabel.Text = "Comuna"
         '
         'CiudadLabel
         '
         CiudadLabel.AutoSize = True
-        CiudadLabel.Location = New System.Drawing.Point(563, 240)
+        CiudadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CiudadLabel.Location = New System.Drawing.Point(554, 243)
         CiudadLabel.Name = "CiudadLabel"
-        CiudadLabel.Size = New System.Drawing.Size(42, 13)
+        CiudadLabel.Size = New System.Drawing.Size(47, 17)
         CiudadLabel.TabIndex = 14
-        CiudadLabel.Text = "ciudad:"
+        CiudadLabel.Text = "Ciudad"
         '
         'ControlinventarioDataSet
         '
@@ -146,7 +153,9 @@ Partial Class clienteEdid
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.boletaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Me.ClienteTableAdapter
+        Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
         Me.TableAdapterManager.detalle_facTableAdapter = Nothing
         Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
         Me.TableAdapterManager.facturaTableAdapter = Nothing
@@ -163,6 +172,7 @@ Partial Class clienteEdid
         Me.ClienteDataGridView.AllowUserToAddRows = False
         Me.ClienteDataGridView.AllowUserToDeleteRows = False
         Me.ClienteDataGridView.AutoGenerateColumns = False
+        Me.ClienteDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
@@ -273,11 +283,12 @@ Partial Class clienteEdid
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(173, 40)
+        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(170, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
+        Me.Label1.Size = New System.Drawing.Size(46, 17)
         Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Buscar:"
+        Me.Label1.Text = "Buscar"
         '
         'TextBox1
         '
@@ -288,11 +299,13 @@ Partial Class clienteEdid
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(247, 324)
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(203, 307)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(200, 94)
         Me.Button1.TabIndex = 18
-        Me.Button1.Text = "Seleccionar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -306,17 +319,20 @@ Partial Class clienteEdid
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(625, 278)
+        Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_actualizar
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(566, 263)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 23)
+        Me.Button3.Size = New System.Drawing.Size(201, 94)
         Me.Button3.TabIndex = 20
-        Me.Button3.Text = "Guardar Cambios"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'clienteEdid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LemonChiffon
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

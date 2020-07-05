@@ -27,7 +27,6 @@ Partial Class Navegacion
         Me.nombre = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -35,6 +34,7 @@ Partial Class Navegacion
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -94,15 +94,6 @@ Partial Class Navegacion
         Me.Button8.TabIndex = 66
         Me.Button8.Text = "Detalle Proveedor"
         Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(391, 225)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(92, 41)
-        Me.Button7.TabIndex = 65
-        Me.Button7.Text = "Mermas"
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -180,6 +171,17 @@ Partial Class Navegacion
         Me.Button9.Size = New System.Drawing.Size(200, 91)
         Me.Button9.TabIndex = 67
         Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_mermas
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(359, 210)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(198, 96)
+        Me.Button7.TabIndex = 65
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'Button6
         '

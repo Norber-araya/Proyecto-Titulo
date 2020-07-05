@@ -85,65 +85,72 @@ Partial Class cliente
         'Rut_clienteLabel
         '
         Rut_clienteLabel.AutoSize = True
-        Rut_clienteLabel.Location = New System.Drawing.Point(42, 48)
+        Rut_clienteLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Rut_clienteLabel.Location = New System.Drawing.Point(28, 45)
         Rut_clienteLabel.Name = "Rut_clienteLabel"
-        Rut_clienteLabel.Size = New System.Drawing.Size(56, 13)
+        Rut_clienteLabel.Size = New System.Drawing.Size(67, 17)
         Rut_clienteLabel.TabIndex = 2
-        Rut_clienteLabel.Text = "rut cliente:"
+        Rut_clienteLabel.Text = "Rut cliente"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(42, 74)
+        NombreLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(28, 71)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
+        NombreLabel.Size = New System.Drawing.Size(51, 17)
         NombreLabel.TabIndex = 4
-        NombreLabel.Text = "nombre:"
+        NombreLabel.Text = "Nombre"
         '
         'EmailLabel
         '
         EmailLabel.AutoSize = True
-        EmailLabel.Location = New System.Drawing.Point(42, 100)
+        EmailLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        EmailLabel.Location = New System.Drawing.Point(28, 100)
         EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(34, 13)
+        EmailLabel.Size = New System.Drawing.Size(38, 17)
         EmailLabel.TabIndex = 6
-        EmailLabel.Text = "email:"
+        EmailLabel.Text = "Email"
         '
         'FonoLabel
         '
         FonoLabel.AutoSize = True
-        FonoLabel.Location = New System.Drawing.Point(42, 126)
+        FonoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        FonoLabel.Location = New System.Drawing.Point(28, 126)
         FonoLabel.Name = "FonoLabel"
-        FonoLabel.Size = New System.Drawing.Size(31, 13)
+        FonoLabel.Size = New System.Drawing.Size(56, 17)
         FonoLabel.TabIndex = 8
-        FonoLabel.Text = "fono:"
+        FonoLabel.Text = "Telefono"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(42, 152)
+        DireccionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.Location = New System.Drawing.Point(28, 152)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(53, 13)
+        DireccionLabel.Size = New System.Drawing.Size(61, 17)
         DireccionLabel.TabIndex = 10
-        DireccionLabel.Text = "direccion:"
+        DireccionLabel.Text = "Direccion"
         '
         'ComunaLabel
         '
         ComunaLabel.AutoSize = True
-        ComunaLabel.Location = New System.Drawing.Point(42, 178)
+        ComunaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ComunaLabel.Location = New System.Drawing.Point(28, 178)
         ComunaLabel.Name = "ComunaLabel"
-        ComunaLabel.Size = New System.Drawing.Size(48, 13)
+        ComunaLabel.Size = New System.Drawing.Size(53, 17)
         ComunaLabel.TabIndex = 12
-        ComunaLabel.Text = "comuna:"
+        ComunaLabel.Text = "Comuna"
         '
         'CiudadLabel
         '
         CiudadLabel.AutoSize = True
-        CiudadLabel.Location = New System.Drawing.Point(42, 204)
+        CiudadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CiudadLabel.Location = New System.Drawing.Point(28, 204)
         CiudadLabel.Name = "CiudadLabel"
-        CiudadLabel.Size = New System.Drawing.Size(42, 13)
+        CiudadLabel.Size = New System.Drawing.Size(47, 17)
         CiudadLabel.TabIndex = 14
-        CiudadLabel.Text = "ciudad:"
+        CiudadLabel.Text = "Ciudad"
         '
         'ControlinventarioDataSet
         '
@@ -162,7 +169,9 @@ Partial Class cliente
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.boletaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Me.ClienteTableAdapter
+        Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
         Me.TableAdapterManager.detalle_facTableAdapter = Nothing
         Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
         Me.TableAdapterManager.facturaTableAdapter = Nothing
@@ -188,7 +197,7 @@ Partial Class cliente
         Me.ClienteBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.ClienteBindingNavigator.Name = "ClienteBindingNavigator"
         Me.ClienteBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.ClienteBindingNavigator.Size = New System.Drawing.Size(724, 25)
+        Me.ClienteBindingNavigator.Size = New System.Drawing.Size(824, 25)
         Me.ClienteBindingNavigator.TabIndex = 0
         Me.ClienteBindingNavigator.Text = "BindingNavigator1"
         '
@@ -291,12 +300,13 @@ Partial Class cliente
         Me.ClienteDataGridView.AllowUserToDeleteRows = False
         Me.ClienteDataGridView.AllowUserToOrderColumns = True
         Me.ClienteDataGridView.AutoGenerateColumns = False
+        Me.ClienteDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClienteDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ClienteDataGridView.DataSource = Me.ClienteBindingSource
         Me.ClienteDataGridView.Location = New System.Drawing.Point(269, 48)
         Me.ClienteDataGridView.Name = "ClienteDataGridView"
-        Me.ClienteDataGridView.Size = New System.Drawing.Size(404, 158)
+        Me.ClienteDataGridView.Size = New System.Drawing.Size(542, 158)
         Me.ClienteDataGridView.TabIndex = 1
         '
         'eliminar
@@ -397,45 +407,54 @@ Partial Class cliente
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(51, 242)
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_registro
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(12, 247)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(202, 107)
         Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Crear"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(154, 242)
+        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_editar
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(12, 343)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(202, 97)
         Me.Button2.TabIndex = 17
-        Me.Button2.Text = "Editar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(288, 242)
+        Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_eliminar
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(237, 247)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(199, 88)
         Me.Button3.TabIndex = 18
-        Me.Button3.Text = "Eliminar"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(20, 299)
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Image = Global.ControlDeInventario.My.Resources.Resources.boton_menu
+        Me.Button4.Location = New System.Drawing.Point(617, 343)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(207, 97)
         Me.Button4.TabIndex = 19
-        Me.Button4.Text = "Menu"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(724, 334)
+        Me.BackColor = System.Drawing.Color.LemonChiffon
+        Me.ClientSize = New System.Drawing.Size(824, 434)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

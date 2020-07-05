@@ -201,4 +201,8 @@ Public Class FacturaVenta
         elegir_producto.tipo = 3
         elegir_producto.Show()
     End Sub
+
+    Private Sub cod_producto_TextChanged(sender As Object, e As EventArgs) Handles cod_producto.TextChanged
+
+    End Sub
 End Class

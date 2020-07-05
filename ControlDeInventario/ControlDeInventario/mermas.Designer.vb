@@ -76,6 +76,7 @@ Partial Class mermas
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label4 = New System.Windows.Forms.Label()
         Cod_productoLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         CantidadLabel = New System.Windows.Forms.Label()
@@ -92,29 +93,32 @@ Partial Class mermas
         'Cod_productoLabel
         '
         Cod_productoLabel.AutoSize = True
-        Cod_productoLabel.Location = New System.Drawing.Point(19, 85)
+        Cod_productoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Cod_productoLabel.Location = New System.Drawing.Point(-3, 83)
         Cod_productoLabel.Name = "Cod_productoLabel"
-        Cod_productoLabel.Size = New System.Drawing.Size(73, 13)
+        Cod_productoLabel.Size = New System.Drawing.Size(99, 17)
         Cod_productoLabel.TabIndex = 4
-        Cod_productoLabel.Text = "cod producto:"
+        Cod_productoLabel.Text = "Codigo producto"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(19, 111)
+        NombreLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(-3, 111)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
+        NombreLabel.Size = New System.Drawing.Size(51, 17)
         NombreLabel.TabIndex = 6
-        NombreLabel.Text = "nombre:"
+        NombreLabel.Text = "Nombre"
         '
         'CantidadLabel
         '
         CantidadLabel.AutoSize = True
-        CantidadLabel.Location = New System.Drawing.Point(19, 137)
+        CantidadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CantidadLabel.Location = New System.Drawing.Point(-3, 134)
         CantidadLabel.Name = "CantidadLabel"
-        CantidadLabel.Size = New System.Drawing.Size(51, 13)
+        CantidadLabel.Size = New System.Drawing.Size(58, 17)
         CantidadLabel.TabIndex = 8
-        CantidadLabel.Text = "cantidad:"
+        CantidadLabel.Text = "Cantidad"
         '
         'ControlinventarioDataSet
         '
@@ -158,7 +162,7 @@ Partial Class mermas
         Me.MermasBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.MermasBindingNavigator.Name = "MermasBindingNavigator"
         Me.MermasBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.MermasBindingNavigator.Size = New System.Drawing.Size(800, 25)
+        Me.MermasBindingNavigator.Size = New System.Drawing.Size(963, 25)
         Me.MermasBindingNavigator.TabIndex = 0
         Me.MermasBindingNavigator.Text = "BindingNavigator1"
         '
@@ -286,16 +290,18 @@ Partial Class mermas
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(37, 323)
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.ControlDeInventario.My.Resources.Resources.boton_ingresar
+        Me.Button1.Location = New System.Drawing.Point(0, 268)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(210, 86)
         Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Ingresar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(196, 82)
+        Me.Button2.Location = New System.Drawing.Point(196, 77)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(36, 23)
         Me.Button2.TabIndex = 13
@@ -304,13 +310,14 @@ Partial Class mermas
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.DarkKhaki
         Me.Panel1.Controls.Add(Me.ProductoDataGridView)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Location = New System.Drawing.Point(287, 28)
+        Me.Panel1.Location = New System.Drawing.Point(308, 28)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(404, 331)
+        Me.Panel1.Size = New System.Drawing.Size(451, 373)
         Me.Panel1.TabIndex = 14
         '
         'ProductoDataGridView
@@ -319,9 +326,9 @@ Partial Class mermas
         Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11})
         Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
-        Me.ProductoDataGridView.Location = New System.Drawing.Point(53, 54)
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(33, 55)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
-        Me.ProductoDataGridView.Size = New System.Drawing.Size(300, 201)
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(370, 201)
         Me.ProductoDataGridView.TabIndex = 3
         '
         'DataGridViewTextBoxColumn6
@@ -361,21 +368,24 @@ Partial Class mermas
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(162, 277)
+        Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(116, 262)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(203, 100)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Seleccionar"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(77, 33)
+        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(96, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
+        Me.Label1.Size = New System.Drawing.Size(46, 17)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Buscar:"
+        Me.Label1.Text = "Buscar"
         '
         'TextBox1
         '
@@ -395,7 +405,7 @@ Partial Class mermas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(112, 261)
+        Me.Label2.Location = New System.Drawing.Point(129, 237)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 15
@@ -403,20 +413,24 @@ Partial Class mermas
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(135, 323)
+        Me.Button4.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_eliminar
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(0, 360)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(200, 94)
         Me.Button4.TabIndex = 16
-        Me.Button4.Text = "eliminar"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(17, 362)
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Image = Global.ControlDeInventario.My.Resources.Resources.boton_menu
+        Me.Button5.Location = New System.Drawing.Point(765, 381)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(205, 86)
         Me.Button5.TabIndex = 17
-        Me.Button5.Text = "Menu"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Detalle_proveedorTableAdapter1
@@ -434,9 +448,10 @@ Partial Class mermas
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(19, 184)
+        Me.Label3.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(12, 190)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 13)
+        Me.Label3.Size = New System.Drawing.Size(76, 17)
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "Observacion"
         '
@@ -445,12 +460,13 @@ Partial Class mermas
         Me.MermasDataGridView.AllowUserToAddRows = False
         Me.MermasDataGridView.AllowUserToDeleteRows = False
         Me.MermasDataGridView.AutoGenerateColumns = False
+        Me.MermasDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.MermasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.MermasDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn12})
         Me.MermasDataGridView.DataSource = Me.MermasBindingSource
-        Me.MermasDataGridView.Location = New System.Drawing.Point(247, 54)
+        Me.MermasDataGridView.Location = New System.Drawing.Point(238, 54)
         Me.MermasDataGridView.Name = "MermasDataGridView"
-        Me.MermasDataGridView.Size = New System.Drawing.Size(530, 220)
+        Me.MermasDataGridView.Size = New System.Drawing.Size(725, 220)
         Me.MermasDataGridView.TabIndex = 19
         '
         'eliminar
@@ -495,11 +511,23 @@ Partial Class mermas
         Me.DataGridViewTextBoxColumn12.HeaderText = "observacion"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 234)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(100, 17)
+        Me.Label4.TabIndex = 20
+        Me.Label4.Text = "Stock disponible"
+        '
         'mermas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 419)
+        Me.BackColor = System.Drawing.Color.LemonChiffon
+        Me.ClientSize = New System.Drawing.Size(963, 469)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.rtbMensaje)
         Me.Controls.Add(Me.Button5)
@@ -584,4 +612,5 @@ Partial Class mermas
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents Label4 As Label
 End Class

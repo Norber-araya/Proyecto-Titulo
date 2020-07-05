@@ -369,5 +369,23 @@
   <ItemGroup>
     <None Include="Resources\boton-ver-factura.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-seleccionarprov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-crearprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-selectprov2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-mermas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-crearfac.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
