@@ -357,5 +357,17 @@
   <ItemGroup>
     <None Include="Resources\boton-menu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-ver-factura.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
