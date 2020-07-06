@@ -124,11 +124,17 @@
   <data name="boton-clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton-verdocumentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-verdocumentos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton-selectprov2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-selectprov2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="este-mes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\este-mes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-buscardoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-buscardoc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,17 +151,29 @@
   <data name="boton-seleccionar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-seleccionar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="7-dias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7-dias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton-ver-factura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-ver-factura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-agregarprod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-agregarprod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton-seleccionarprov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-seleccionarprov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton-facturaingre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-facturaingre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton-ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="este-año" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\este-año.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-crearfac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-crearfac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hoy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-facsalida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-facsalida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,8 +196,8 @@
   <data name="Sin-título-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sin-título-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton-seleccionarprov" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-seleccionarprov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton-ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-proveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-proveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +217,7 @@
   <data name="boton-cerrar-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-cerrar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton-crearfac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-crearfac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

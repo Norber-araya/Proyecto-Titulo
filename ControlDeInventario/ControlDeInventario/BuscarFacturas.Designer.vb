@@ -206,7 +206,7 @@ Partial Class BuscarFacturas
         Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(618, 429)
+        Me.Button2.Location = New System.Drawing.Point(675, 451)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(202, 94)
         Me.Button2.TabIndex = 12
@@ -214,7 +214,7 @@ Partial Class BuscarFacturas
         '
         'Button1
         '
-        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_ver_factura
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_verdocumentos
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(285, 380)
@@ -235,6 +235,7 @@ Partial Class BuscarFacturas
         'BoletaDataGridView
         '
         Me.BoletaDataGridView.AutoGenerateColumns = False
+        Me.BoletaDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.BoletaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BoletaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22})
         Me.BoletaDataGridView.DataSource = Me.BoletaBindingSource
@@ -287,16 +288,19 @@ Partial Class BuscarFacturas
         '
         'N_factura
         '
-        Me.N_factura.Location = New System.Drawing.Point(391, 50)
+        Me.N_factura.Location = New System.Drawing.Point(397, 50)
         Me.N_factura.Name = "N_factura"
-        Me.N_factura.Size = New System.Drawing.Size(95, 20)
+        Me.N_factura.Size = New System.Drawing.Size(142, 20)
         Me.N_factura.TabIndex = 6
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Location = New System.Drawing.Point(61, 23)
+        Me.GroupBox1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox1.Location = New System.Drawing.Point(107, 27)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(87, 71)
         Me.GroupBox1.TabIndex = 18
@@ -307,9 +311,10 @@ Partial Class BuscarFacturas
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
+        Me.RadioButton1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton1.Location = New System.Drawing.Point(10, 19)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(66, 17)
+        Me.RadioButton1.Size = New System.Drawing.Size(73, 21)
         Me.RadioButton1.TabIndex = 13
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Facturas"
@@ -318,9 +323,10 @@ Partial Class BuscarFacturas
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton2.Location = New System.Drawing.Point(10, 39)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(60, 17)
+        Me.RadioButton2.Size = New System.Drawing.Size(68, 21)
         Me.RadioButton2.TabIndex = 14
         Me.RadioButton2.Text = "Boletas"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -328,9 +334,10 @@ Partial Class BuscarFacturas
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(342, 53)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
+        Me.Label1.Size = New System.Drawing.Size(49, 17)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Buscar:"
         '

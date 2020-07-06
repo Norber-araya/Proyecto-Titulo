@@ -22,6 +22,11 @@ ControlDeInventario
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:ControlDeInventario.My.Resources.Resources._7_dias">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ControlDeInventario.My.Resources.Resources.admin">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -148,6 +153,31 @@ ControlDeInventario
 </summary>
 </member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_ver_factura">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_verdocumentos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.buscar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.este_año">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.este_mes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.hoy">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

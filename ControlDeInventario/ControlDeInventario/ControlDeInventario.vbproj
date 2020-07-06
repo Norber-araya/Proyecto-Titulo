@@ -396,5 +396,23 @@
   <ItemGroup>
     <None Include="Resources\boton-crearfac.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-verdocumentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-dias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\este-mes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\este-año.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

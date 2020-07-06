@@ -165,3 +165,4 @@ C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\Contro
 C:\Users\Diegoandres\Documents\Proyecto avances\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.boleta.resources
 C:\Users\Diegoandres\Documents\Proyecto avances\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.elegir_producto.resources
 C:\Users\Diegoandres\Documents\Proyecto avances\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerBoleta.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerBoleta.resources
