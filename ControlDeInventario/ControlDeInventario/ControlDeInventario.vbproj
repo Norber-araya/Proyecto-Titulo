@@ -339,5 +339,32 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-actualizarcontra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiar-contra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-iniciarsesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-enviarcorreo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-recuperarcontra.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

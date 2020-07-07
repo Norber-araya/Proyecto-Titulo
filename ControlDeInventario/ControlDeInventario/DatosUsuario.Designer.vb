@@ -37,16 +37,16 @@ Partial Class DatosUsuario
         Me.ContactoTextBox = New System.Windows.Forms.TextBox()
         Me.GeneroTextBox = New System.Windows.Forms.TextBox()
         Me.EmailTextBox = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         RutLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ContactoLabel = New System.Windows.Forms.Label()
@@ -60,47 +60,52 @@ Partial Class DatosUsuario
         'RutLabel
         '
         RutLabel.AutoSize = True
+        RutLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         RutLabel.Location = New System.Drawing.Point(47, 35)
         RutLabel.Name = "RutLabel"
-        RutLabel.Size = New System.Drawing.Size(22, 13)
+        RutLabel.Size = New System.Drawing.Size(26, 17)
         RutLabel.TabIndex = 1
-        RutLabel.Text = "rut:"
+        RutLabel.Text = "Rut"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
+        NombreLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.Location = New System.Drawing.Point(47, 61)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(45, 13)
+        NombreLabel.Size = New System.Drawing.Size(51, 17)
         NombreLabel.TabIndex = 3
-        NombreLabel.Text = "nombre:"
+        NombreLabel.Text = "Nombre"
         '
         'ContactoLabel
         '
         ContactoLabel.AutoSize = True
+        ContactoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ContactoLabel.Location = New System.Drawing.Point(47, 87)
         ContactoLabel.Name = "ContactoLabel"
-        ContactoLabel.Size = New System.Drawing.Size(52, 13)
+        ContactoLabel.Size = New System.Drawing.Size(57, 17)
         ContactoLabel.TabIndex = 5
-        ContactoLabel.Text = "contacto:"
+        ContactoLabel.Text = "Contacto"
         '
         'GeneroLabel
         '
         GeneroLabel.AutoSize = True
+        GeneroLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         GeneroLabel.Location = New System.Drawing.Point(47, 113)
         GeneroLabel.Name = "GeneroLabel"
-        GeneroLabel.Size = New System.Drawing.Size(43, 13)
+        GeneroLabel.Size = New System.Drawing.Size(48, 17)
         GeneroLabel.TabIndex = 7
-        GeneroLabel.Text = "genero:"
+        GeneroLabel.Text = "Genero"
         '
         'EmailLabel
         '
         EmailLabel.AutoSize = True
+        EmailLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         EmailLabel.Location = New System.Drawing.Point(47, 139)
         EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(34, 13)
+        EmailLabel.Size = New System.Drawing.Size(38, 17)
         EmailLabel.TabIndex = 13
-        EmailLabel.Text = "email:"
+        EmailLabel.Text = "Email"
         '
         'ControlinventarioDataSet
         '
@@ -168,103 +173,117 @@ Partial Class DatosUsuario
         Me.EmailTextBox.Size = New System.Drawing.Size(94, 20)
         Me.EmailTextBox.TabIndex = 14
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(110, 171)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(109, 23)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Guardar cambios "
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(12, 248)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Menu"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(251, 12)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(72, 36)
-        Me.Button3.TabIndex = 17
-        Me.Button3.Text = "Cambiar Contraseña"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.DarkKhaki
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Location = New System.Drawing.Point(50, 21)
+        Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 187)
+        Me.Panel1.Size = New System.Drawing.Size(321, 320)
         Me.Panel1.TabIndex = 18
         '
-        'TextBox1
+        'Label2
         '
-        Me.TextBox1.Location = New System.Drawing.Point(67, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(23, 94)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(72, 17)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Contraseña"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(23, 43)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(51, 17)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Usuario"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(67, 91)
+        Me.TextBox2.Location = New System.Drawing.Point(121, 91)
         Me.TextBox2.MaxLength = 16
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 1
         '
-        'Label1
+        'TextBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 44)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "usuario:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 94)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Contraseña"
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(75, 118)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(62, 26)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.TextBox1.Location = New System.Drawing.Point(121, 40)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 0
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(12, 161)
+        Me.Button5.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(3, 239)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(62, 23)
+        Me.Button5.Size = New System.Drawing.Size(156, 68)
         Me.Button5.TabIndex = 5
-        Me.Button5.Text = "Cancelar"
         Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_ingresar
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(65, 117)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(196, 89)
+        Me.Button4.TabIndex = 4
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.cambiar_contra
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(330, 16)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(199, 90)
+        Me.Button3.TabIndex = 17
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(-3, 405)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(196, 93)
+        Me.Button2.TabIndex = 16
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_actualizar
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(61, 162)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(203, 95)
+        Me.Button1.TabIndex = 15
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'DatosUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(327, 289)
+        Me.BackColor = System.Drawing.Color.LemonChiffon
+        Me.ClientSize = New System.Drawing.Size(531, 497)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
