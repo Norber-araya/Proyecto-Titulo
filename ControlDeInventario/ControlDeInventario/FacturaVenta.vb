@@ -77,7 +77,7 @@ Public Class FacturaVenta
                     'actualizar tabla producto'
                     realizado = realizado + 1
                     cod_producto.Text = ""
-                    NombreTextBox.Text = ""
+                    ProductoTextBox.Text = ""
                     precio.Text = ""
                     cantidad.Text = ""
                     Label3.Text = ""

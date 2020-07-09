@@ -62,6 +62,7 @@ Partial Class boleta
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -72,7 +73,6 @@ Partial Class boleta
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClienteTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.clienteTableAdapter()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -180,7 +180,7 @@ Partial Class boleta
         '
         TotalLabel.AutoSize = True
         TotalLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TotalLabel.Location = New System.Drawing.Point(421, 350)
+        TotalLabel.Location = New System.Drawing.Point(519, 336)
         TotalLabel.Name = "TotalLabel"
         TotalLabel.Size = New System.Drawing.Size(39, 17)
         TotalLabel.TabIndex = 31
@@ -280,7 +280,7 @@ Partial Class boleta
         '
         'TotalTextBox
         '
-        Me.TotalTextBox.Location = New System.Drawing.Point(466, 347)
+        Me.TotalTextBox.Location = New System.Drawing.Point(564, 333)
         Me.TotalTextBox.Name = "TotalTextBox"
         Me.TotalTextBox.Size = New System.Drawing.Size(112, 20)
         Me.TotalTextBox.TabIndex = 32
@@ -385,7 +385,7 @@ Partial Class boleta
         Me.Panel1.Controls.Add(Me.Button8)
         Me.Panel1.Controls.Add(Me.Button7)
         Me.Panel1.Controls.Add(Me.ClienteDataGridView)
-        Me.Panel1.Location = New System.Drawing.Point(300, 94)
+        Me.Panel1.Location = New System.Drawing.Point(259, 65)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(386, 336)
         Me.Panel1.TabIndex = 59
@@ -415,6 +415,17 @@ Partial Class boleta
         Me.Button8.TabIndex = 2
         Me.Button8.Text = "Volver"
         Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(115, 233)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(202, 93)
+        Me.Button7.TabIndex = 1
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'ClienteDataGridView
         '
@@ -489,17 +500,6 @@ Partial Class boleta
         'ClienteTableAdapter
         '
         Me.ClienteTableAdapter.ClearBeforeFill = True
-        '
-        'Button7
-        '
-        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(115, 233)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(202, 93)
-        Me.Button7.TabIndex = 1
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Button4
         '

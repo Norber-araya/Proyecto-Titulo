@@ -29,13 +29,14 @@ Public Class boleta
     Public Sub dato2()
         For Each Fila As DataGridViewRow In DataGridView1.Rows
 
-            If Fila.Cells("Column1").Value <> Nothing Then
+            If Not Fila Is Nothing Then
                 DataGridView1.Rows.Remove(Fila)
             End If
 
         Next
         Rut_clienteTextBox.Text = ""
         N_boletaTextBox.Text = ""
+        TotalTextBox.Text = ""
     End Sub
     Public Sub dato1()
 

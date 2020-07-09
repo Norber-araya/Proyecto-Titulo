@@ -18,7 +18,7 @@ Public Class Factura
     Public Sub dato2()
         For Each Fila As DataGridViewRow In DataGridView1.Rows
 
-            If Fila.Cells("Column1").Value <> Nothing Then
+            If Not Fila Is Nothing Then
                 DataGridView1.Rows.Remove(Fila)
             End If
 
@@ -242,5 +242,9 @@ Public Class Factura
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         elegir_producto.tipo = 2
         elegir_producto.Show()
+    End Sub
+
+    Private Sub NombrePro_TextChanged(sender As Object, e As EventArgs) Handles NombrePro.TextChanged
+
     End Sub
 End Class

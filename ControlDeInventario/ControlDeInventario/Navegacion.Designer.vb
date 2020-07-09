@@ -22,7 +22,7 @@ Partial Class Navegacion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.tipo = New System.Windows.Forms.Label()
+        Me.permiso = New System.Windows.Forms.Label()
         Me.rut = New System.Windows.Forms.Label()
         Me.nombre = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -44,15 +44,15 @@ Partial Class Navegacion
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'tipo
+        'permiso
         '
-        Me.tipo.AutoSize = True
-        Me.tipo.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tipo.Location = New System.Drawing.Point(795, 76)
-        Me.tipo.Name = "tipo"
-        Me.tipo.Size = New System.Drawing.Size(30, 17)
-        Me.tipo.TabIndex = 57
-        Me.tipo.Text = "tipo"
+        Me.permiso.AutoSize = True
+        Me.permiso.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.permiso.Location = New System.Drawing.Point(795, 76)
+        Me.permiso.Name = "permiso"
+        Me.permiso.Size = New System.Drawing.Size(30, 17)
+        Me.permiso.TabIndex = 57
+        Me.permiso.Text = "tipo"
         '
         'rut
         '
@@ -270,7 +270,7 @@ Partial Class Navegacion
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.tipo)
+        Me.Controls.Add(Me.permiso)
         Me.Controls.Add(Me.rut)
         Me.Controls.Add(Me.nombre)
         Me.Controls.Add(Me.Label3)
@@ -282,7 +282,7 @@ Partial Class Navegacion
 
     End Sub
 
-    Friend WithEvents tipo As Label
+    Friend WithEvents permiso As Label
     Friend WithEvents rut As Label
     Friend WithEvents nombre As Label
     Friend WithEvents Label3 As Label

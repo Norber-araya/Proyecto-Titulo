@@ -29,7 +29,7 @@ Public Class BD_conexion
             nombre = Convert.ToString(dr("nombre"))
         End If
         'enviar datos al menu'
-        Navegacion.tipo.Text = tipo
+        Navegacion.tipo = tipo
         Navegacion.rut.Text = rut
         Navegacion.nombre.text = nombre
 
