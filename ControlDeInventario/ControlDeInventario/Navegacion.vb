@@ -147,6 +147,7 @@
             boleta.rut = rut.Text
             boleta.tipo = tipo
             boleta.Show()
+
         Else
             MsgBox("No tiene permiso")
         End If
