@@ -36,18 +36,11 @@ Partial Class cliente
         Me.ClienteTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.clienteTableAdapter()
         Me.TableAdapterManager = New ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager()
         Me.ClienteBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ClienteBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.Rut_clienteTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.EmailTextBox = New System.Windows.Forms.TextBox()
@@ -55,9 +48,16 @@ Partial Class cliente
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
         Me.ComunaTextBox = New System.Windows.Forms.TextBox()
         Me.CiudadTextBox = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.ClienteBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Rut_clienteLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         EmailLabel = New System.Windows.Forms.Label()
@@ -75,7 +75,7 @@ Partial Class cliente
         '
         Rut_clienteLabel.AutoSize = True
         Rut_clienteLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Rut_clienteLabel.Location = New System.Drawing.Point(121, 46)
+        Rut_clienteLabel.Location = New System.Drawing.Point(126, 58)
         Rut_clienteLabel.Name = "Rut_clienteLabel"
         Rut_clienteLabel.Size = New System.Drawing.Size(67, 17)
         Rut_clienteLabel.TabIndex = 2
@@ -85,7 +85,7 @@ Partial Class cliente
         '
         NombreLabel.AutoSize = True
         NombreLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        NombreLabel.Location = New System.Drawing.Point(121, 72)
+        NombreLabel.Location = New System.Drawing.Point(126, 84)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(51, 17)
         NombreLabel.TabIndex = 4
@@ -95,7 +95,7 @@ Partial Class cliente
         '
         EmailLabel.AutoSize = True
         EmailLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        EmailLabel.Location = New System.Drawing.Point(121, 101)
+        EmailLabel.Location = New System.Drawing.Point(126, 113)
         EmailLabel.Name = "EmailLabel"
         EmailLabel.Size = New System.Drawing.Size(38, 17)
         EmailLabel.TabIndex = 6
@@ -105,7 +105,7 @@ Partial Class cliente
         '
         FonoLabel.AutoSize = True
         FonoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        FonoLabel.Location = New System.Drawing.Point(121, 127)
+        FonoLabel.Location = New System.Drawing.Point(126, 139)
         FonoLabel.Name = "FonoLabel"
         FonoLabel.Size = New System.Drawing.Size(56, 17)
         FonoLabel.TabIndex = 8
@@ -115,7 +115,7 @@ Partial Class cliente
         '
         DireccionLabel.AutoSize = True
         DireccionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DireccionLabel.Location = New System.Drawing.Point(121, 153)
+        DireccionLabel.Location = New System.Drawing.Point(126, 165)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(61, 17)
         DireccionLabel.TabIndex = 10
@@ -125,7 +125,7 @@ Partial Class cliente
         '
         ComunaLabel.AutoSize = True
         ComunaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ComunaLabel.Location = New System.Drawing.Point(121, 179)
+        ComunaLabel.Location = New System.Drawing.Point(126, 191)
         ComunaLabel.Name = "ComunaLabel"
         ComunaLabel.Size = New System.Drawing.Size(53, 17)
         ComunaLabel.TabIndex = 12
@@ -135,7 +135,7 @@ Partial Class cliente
         '
         CiudadLabel.AutoSize = True
         CiudadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        CiudadLabel.Location = New System.Drawing.Point(121, 205)
+        CiudadLabel.Location = New System.Drawing.Point(126, 217)
         CiudadLabel.Name = "CiudadLabel"
         CiudadLabel.Size = New System.Drawing.Size(47, 17)
         CiudadLabel.TabIndex = 14
@@ -161,7 +161,13 @@ Partial Class cliente
         Me.TableAdapterManager.boletaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Me.ClienteTableAdapter
         Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_guiaTableAdapter = Nothing
         Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.factura_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.factura_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.guia_despachoTableAdapter = Nothing
         Me.TableAdapterManager.mermasTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedorTableAdapter = Nothing
@@ -188,6 +194,119 @@ Partial Class cliente
         Me.ClienteBindingNavigator.TabIndex = 0
         Me.ClienteBindingNavigator.Text = "BindingNavigator1"
         '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        '
+        'BindingNavigatorSeparator
+        '
+        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        '
+        'BindingNavigatorPositionItem
+        '
+        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
+        Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+        Me.BindingNavigatorPositionItem.Text = "0"
+        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
+        '
+        'BindingNavigatorSeparator1
+        '
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
+        '
+        'BindingNavigatorSeparator2
+        '
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
+        '
+        'Rut_clienteTextBox
+        '
+        Me.Rut_clienteTextBox.Location = New System.Drawing.Point(202, 58)
+        Me.Rut_clienteTextBox.Name = "Rut_clienteTextBox"
+        Me.Rut_clienteTextBox.Size = New System.Drawing.Size(119, 20)
+        Me.Rut_clienteTextBox.TabIndex = 3
+        '
+        'NombreTextBox
+        '
+        Me.NombreTextBox.Location = New System.Drawing.Point(202, 84)
+        Me.NombreTextBox.Name = "NombreTextBox"
+        Me.NombreTextBox.Size = New System.Drawing.Size(119, 20)
+        Me.NombreTextBox.TabIndex = 5
+        '
+        'EmailTextBox
+        '
+        Me.EmailTextBox.Location = New System.Drawing.Point(202, 110)
+        Me.EmailTextBox.Name = "EmailTextBox"
+        Me.EmailTextBox.Size = New System.Drawing.Size(119, 20)
+        Me.EmailTextBox.TabIndex = 7
+        '
+        'FonoTextBox
+        '
+        Me.FonoTextBox.Location = New System.Drawing.Point(202, 136)
+        Me.FonoTextBox.Name = "FonoTextBox"
+        Me.FonoTextBox.Size = New System.Drawing.Size(119, 20)
+        Me.FonoTextBox.TabIndex = 9
+        '
+        'DireccionTextBox
+        '
+        Me.DireccionTextBox.Location = New System.Drawing.Point(202, 162)
+        Me.DireccionTextBox.Name = "DireccionTextBox"
+        Me.DireccionTextBox.Size = New System.Drawing.Size(119, 20)
+        Me.DireccionTextBox.TabIndex = 11
+        '
+        'ComunaTextBox
+        '
+        Me.ComunaTextBox.Location = New System.Drawing.Point(202, 188)
+        Me.ComunaTextBox.Name = "ComunaTextBox"
+        Me.ComunaTextBox.Size = New System.Drawing.Size(119, 20)
+        Me.ComunaTextBox.TabIndex = 13
+        '
+        'CiudadTextBox
+        '
+        Me.CiudadTextBox.Location = New System.Drawing.Point(202, 214)
+        Me.CiudadTextBox.Name = "CiudadTextBox"
+        Me.CiudadTextBox.Size = New System.Drawing.Size(119, 20)
+        Me.CiudadTextBox.TabIndex = 15
+        '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Image = Global.ControlDeInventario.My.Resources.Resources.boton_menu
+        Me.Button4.Location = New System.Drawing.Point(104, 336)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(207, 97)
+        Me.Button4.TabIndex = 19
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_listarcliente
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(220, 247)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(202, 97)
+        Me.Button2.TabIndex = 17
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_registro
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(12, 247)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(202, 107)
+        Me.Button1.TabIndex = 16
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'BindingNavigatorAddNewItem
         '
         Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -196,13 +315,6 @@ Partial Class cliente
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
         'BindingNavigatorDeleteItem
         '
@@ -231,25 +343,6 @@ Partial Class cliente
         Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
-        '
         'BindingNavigatorMoveNextItem
         '
         Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -268,11 +361,6 @@ Partial Class cliente
         Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
         'ClienteBindingNavigatorSaveItem
         '
         Me.ClienteBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -280,88 +368,6 @@ Partial Class cliente
         Me.ClienteBindingNavigatorSaveItem.Name = "ClienteBindingNavigatorSaveItem"
         Me.ClienteBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.ClienteBindingNavigatorSaveItem.Text = "Guardar datos"
-        '
-        'Rut_clienteTextBox
-        '
-        Me.Rut_clienteTextBox.Location = New System.Drawing.Point(197, 46)
-        Me.Rut_clienteTextBox.Name = "Rut_clienteTextBox"
-        Me.Rut_clienteTextBox.Size = New System.Drawing.Size(119, 20)
-        Me.Rut_clienteTextBox.TabIndex = 3
-        '
-        'NombreTextBox
-        '
-        Me.NombreTextBox.Location = New System.Drawing.Point(197, 72)
-        Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(119, 20)
-        Me.NombreTextBox.TabIndex = 5
-        '
-        'EmailTextBox
-        '
-        Me.EmailTextBox.Location = New System.Drawing.Point(197, 98)
-        Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(119, 20)
-        Me.EmailTextBox.TabIndex = 7
-        '
-        'FonoTextBox
-        '
-        Me.FonoTextBox.Location = New System.Drawing.Point(197, 124)
-        Me.FonoTextBox.Name = "FonoTextBox"
-        Me.FonoTextBox.Size = New System.Drawing.Size(119, 20)
-        Me.FonoTextBox.TabIndex = 9
-        '
-        'DireccionTextBox
-        '
-        Me.DireccionTextBox.Location = New System.Drawing.Point(197, 150)
-        Me.DireccionTextBox.Name = "DireccionTextBox"
-        Me.DireccionTextBox.Size = New System.Drawing.Size(119, 20)
-        Me.DireccionTextBox.TabIndex = 11
-        '
-        'ComunaTextBox
-        '
-        Me.ComunaTextBox.Location = New System.Drawing.Point(197, 176)
-        Me.ComunaTextBox.Name = "ComunaTextBox"
-        Me.ComunaTextBox.Size = New System.Drawing.Size(119, 20)
-        Me.ComunaTextBox.TabIndex = 13
-        '
-        'CiudadTextBox
-        '
-        Me.CiudadTextBox.Location = New System.Drawing.Point(197, 202)
-        Me.CiudadTextBox.Name = "CiudadTextBox"
-        Me.CiudadTextBox.Size = New System.Drawing.Size(119, 20)
-        Me.CiudadTextBox.TabIndex = 15
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_registro
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(12, 247)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(202, 107)
-        Me.Button1.TabIndex = 16
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_editar
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(220, 247)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(202, 97)
-        Me.Button2.TabIndex = 17
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Image = Global.ControlDeInventario.My.Resources.Resources.boton_menu
-        Me.Button4.Location = New System.Drawing.Point(104, 336)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(207, 97)
-        Me.Button4.TabIndex = 19
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'cliente
         '

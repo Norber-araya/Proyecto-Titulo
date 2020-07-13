@@ -82,12 +82,22 @@ ControlDeInventario
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_datospersonales">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_editar">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_eliminar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_enviarcorreo">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -107,6 +117,31 @@ ControlDeInventario
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_iniciarsesion">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_listarprod">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_listarprod2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_listarproveedor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_listarusuario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_menu">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -118,6 +153,11 @@ ControlDeInventario
 </summary>
 </member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_proveedor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_recuperarcontra">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -162,7 +202,17 @@ ControlDeInventario
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_verificar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ControlDeInventario.My.Resources.Resources.buscar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.cambiar_contra">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -177,7 +227,17 @@ ControlDeInventario
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ControlDeInventario.My.Resources.Resources.group">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ControlDeInventario.My.Resources.Resources.hoy">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.password">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

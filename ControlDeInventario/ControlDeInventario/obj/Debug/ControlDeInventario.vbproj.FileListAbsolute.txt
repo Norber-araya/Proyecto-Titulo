@@ -170,3 +170,6 @@ C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\Contro
 C:\Users\Diegoandres\Documents\Proyecto avances\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.DatosUsuario.resources
 C:\Users\Diegoandres\Documents\Proyecto avances\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.CambiarContraseña.resources
 C:\Users\Diegoandres\Documents\Proyecto avances\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerGuia.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.CambiarContraseña.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.DatosUsuario.resources
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerGuia.resources

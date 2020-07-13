@@ -272,7 +272,13 @@ Partial Class Usuario
         Me.TableAdapterManager.boletaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Nothing
         Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_guiaTableAdapter = Nothing
         Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.factura_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.factura_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.guia_despachoTableAdapter = Nothing
         Me.TableAdapterManager.mermasTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedorTableAdapter = Nothing
@@ -294,7 +300,7 @@ Partial Class Usuario
         '
         'Button2
         '
-        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_editar
+        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_listarusuario
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(231, 279)

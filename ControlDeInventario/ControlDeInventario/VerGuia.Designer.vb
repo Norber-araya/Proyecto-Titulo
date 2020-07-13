@@ -82,6 +82,146 @@ Partial Class VerGuia
         CType(Me.Detalle_guiaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'Valor_netoLabel
+        '
+        Valor_netoLabel.AutoSize = True
+        Valor_netoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Valor_netoLabel.Location = New System.Drawing.Point(578, 418)
+        Valor_netoLabel.Name = "Valor_netoLabel"
+        Valor_netoLabel.Size = New System.Drawing.Size(65, 17)
+        Valor_netoLabel.TabIndex = 53
+        Valor_netoLabel.Text = "Valor neto"
+        '
+        'IvaLabel
+        '
+        IvaLabel.AutoSize = True
+        IvaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        IvaLabel.Location = New System.Drawing.Point(578, 444)
+        IvaLabel.Name = "IvaLabel"
+        IvaLabel.Size = New System.Drawing.Size(26, 17)
+        IvaLabel.TabIndex = 55
+        IvaLabel.Text = "IVA"
+        '
+        'TotalLabel
+        '
+        TotalLabel.AutoSize = True
+        TotalLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TotalLabel.Location = New System.Drawing.Point(578, 470)
+        TotalLabel.Name = "TotalLabel"
+        TotalLabel.Size = New System.Drawing.Size(36, 17)
+        TotalLabel.TabIndex = 57
+        TotalLabel.Text = "Total"
+        '
+        'N_facturaLabel
+        '
+        N_facturaLabel.AutoSize = True
+        N_facturaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        N_facturaLabel.Location = New System.Drawing.Point(597, 45)
+        N_facturaLabel.Name = "N_facturaLabel"
+        N_facturaLabel.Size = New System.Drawing.Size(106, 17)
+        N_facturaLabel.TabIndex = 59
+        N_facturaLabel.Text = "N° Guia Despacho:"
+        '
+        'Rut_provLabel
+        '
+        Rut_provLabel.AutoSize = True
+        Rut_provLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Rut_provLabel.Location = New System.Drawing.Point(597, 19)
+        Rut_provLabel.Name = "Rut_provLabel"
+        Rut_provLabel.Size = New System.Drawing.Size(32, 17)
+        Rut_provLabel.TabIndex = 61
+        Rut_provLabel.Text = "R.U.T"
+        '
+        'FechaLabel
+        '
+        FechaLabel.AutoSize = True
+        FechaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        FechaLabel.Location = New System.Drawing.Point(599, 81)
+        FechaLabel.Name = "FechaLabel"
+        FechaLabel.Size = New System.Drawing.Size(88, 17)
+        FechaLabel.TabIndex = 63
+        FechaLabel.Text = "Fecha Emision:"
+        '
+        'Nombre_provLabel
+        '
+        Nombre_provLabel.AutoSize = True
+        Nombre_provLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Nombre_provLabel.Location = New System.Drawing.Point(34, 45)
+        Nombre_provLabel.Name = "Nombre_provLabel"
+        Nombre_provLabel.Size = New System.Drawing.Size(54, 17)
+        Nombre_provLabel.TabIndex = 65
+        Nombre_provLabel.Text = "Nombre:"
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.Location = New System.Drawing.Point(34, 97)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(64, 17)
+        DireccionLabel.TabIndex = 67
+        DireccionLabel.Text = "Direccion:"
+        '
+        'ComunaLabel
+        '
+        ComunaLabel.AutoSize = True
+        ComunaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ComunaLabel.Location = New System.Drawing.Point(253, 100)
+        ComunaLabel.Name = "ComunaLabel"
+        ComunaLabel.Size = New System.Drawing.Size(55, 17)
+        ComunaLabel.TabIndex = 69
+        ComunaLabel.Text = "comuna:"
+        '
+        'CiudadLabel
+        '
+        CiudadLabel.AutoSize = True
+        CiudadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CiudadLabel.Location = New System.Drawing.Point(440, 100)
+        CiudadLabel.Name = "CiudadLabel"
+        CiudadLabel.Size = New System.Drawing.Size(47, 17)
+        CiudadLabel.TabIndex = 71
+        CiudadLabel.Text = "Ciudad"
+        '
+        'EmailLabel
+        '
+        EmailLabel.AutoSize = True
+        EmailLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        EmailLabel.Location = New System.Drawing.Point(34, 149)
+        EmailLabel.Name = "EmailLabel"
+        EmailLabel.Size = New System.Drawing.Size(38, 17)
+        EmailLabel.TabIndex = 73
+        EmailLabel.Text = "Email"
+        '
+        'FonoLabel
+        '
+        FonoLabel.AutoSize = True
+        FonoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        FonoLabel.Location = New System.Drawing.Point(34, 123)
+        FonoLabel.Name = "FonoLabel"
+        FonoLabel.Size = New System.Drawing.Size(56, 17)
+        FonoLabel.TabIndex = 75
+        FonoLabel.Text = "Telefono"
+        '
+        'Rut_clienteLabel
+        '
+        Rut_clienteLabel.AutoSize = True
+        Rut_clienteLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Rut_clienteLabel.Location = New System.Drawing.Point(34, 68)
+        Rut_clienteLabel.Name = "Rut_clienteLabel"
+        Rut_clienteLabel.Size = New System.Drawing.Size(32, 17)
+        Rut_clienteLabel.TabIndex = 77
+        Rut_clienteLabel.Text = "R.U.T"
+        '
+        'ObservacionLabel
+        '
+        ObservacionLabel.AutoSize = True
+        ObservacionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ObservacionLabel.Location = New System.Drawing.Point(229, 149)
+        ObservacionLabel.Name = "ObservacionLabel"
+        ObservacionLabel.Size = New System.Drawing.Size(79, 17)
+        ObservacionLabel.TabIndex = 79
+        ObservacionLabel.Text = "observacion:"
+        '
         'ControlinventarioDataSet
         '
         Me.ControlinventarioDataSet.DataSetName = "ControlinventarioDataSet"
@@ -122,6 +262,7 @@ Partial Class VerGuia
         Me.Detalle_guiaDataGridView.AllowUserToAddRows = False
         Me.Detalle_guiaDataGridView.AllowUserToDeleteRows = False
         Me.Detalle_guiaDataGridView.AutoGenerateColumns = False
+        Me.Detalle_guiaDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Detalle_guiaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Detalle_guiaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.Detalle_guiaDataGridView.DataSource = Me.Detalle_guiaBindingSource
@@ -174,32 +315,12 @@ Partial Class VerGuia
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
         '
-        'Valor_netoLabel
-        '
-        Valor_netoLabel.AutoSize = True
-        Valor_netoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Valor_netoLabel.Location = New System.Drawing.Point(578, 418)
-        Valor_netoLabel.Name = "Valor_netoLabel"
-        Valor_netoLabel.Size = New System.Drawing.Size(65, 17)
-        Valor_netoLabel.TabIndex = 53
-        Valor_netoLabel.Text = "Valor neto"
-        '
         'Valor_netoTextBox
         '
         Me.Valor_netoTextBox.Location = New System.Drawing.Point(650, 418)
         Me.Valor_netoTextBox.Name = "Valor_netoTextBox"
         Me.Valor_netoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Valor_netoTextBox.TabIndex = 54
-        '
-        'IvaLabel
-        '
-        IvaLabel.AutoSize = True
-        IvaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        IvaLabel.Location = New System.Drawing.Point(578, 444)
-        IvaLabel.Name = "IvaLabel"
-        IvaLabel.Size = New System.Drawing.Size(26, 17)
-        IvaLabel.TabIndex = 55
-        IvaLabel.Text = "IVA"
         '
         'IvaTextBox
         '
@@ -208,31 +329,12 @@ Partial Class VerGuia
         Me.IvaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.IvaTextBox.TabIndex = 56
         '
-        'TotalLabel
-        '
-        TotalLabel.AutoSize = True
-        TotalLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TotalLabel.Location = New System.Drawing.Point(578, 470)
-        TotalLabel.Name = "TotalLabel"
-        TotalLabel.Size = New System.Drawing.Size(36, 17)
-        TotalLabel.TabIndex = 57
-        TotalLabel.Text = "Total"
-        '
         'TotalTextBox
         '
         Me.TotalTextBox.Location = New System.Drawing.Point(650, 470)
         Me.TotalTextBox.Name = "TotalTextBox"
         Me.TotalTextBox.Size = New System.Drawing.Size(100, 20)
         Me.TotalTextBox.TabIndex = 58
-        '
-        'N_facturaLabel
-        '
-        N_facturaLabel.AutoSize = True
-        N_facturaLabel.Location = New System.Drawing.Point(604, 45)
-        N_facturaLabel.Name = "N_facturaLabel"
-        N_facturaLabel.Size = New System.Drawing.Size(99, 13)
-        N_facturaLabel.TabIndex = 59
-        N_facturaLabel.Text = "N° Guia Despacho:"
         '
         'N_facturaTextBox
         '
@@ -242,30 +344,12 @@ Partial Class VerGuia
         Me.N_facturaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.N_facturaTextBox.TabIndex = 60
         '
-        'Rut_provLabel
-        '
-        Rut_provLabel.AutoSize = True
-        Rut_provLabel.Location = New System.Drawing.Point(634, 19)
-        Rut_provLabel.Name = "Rut_provLabel"
-        Rut_provLabel.Size = New System.Drawing.Size(36, 13)
-        Rut_provLabel.TabIndex = 61
-        Rut_provLabel.Text = "R.U.T"
-        '
         'Rut_provTextBox
         '
         Me.Rut_provTextBox.Location = New System.Drawing.Point(709, 16)
         Me.Rut_provTextBox.Name = "Rut_provTextBox"
         Me.Rut_provTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Rut_provTextBox.TabIndex = 62
-        '
-        'FechaLabel
-        '
-        FechaLabel.AutoSize = True
-        FechaLabel.Location = New System.Drawing.Point(624, 81)
-        FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(79, 13)
-        FechaLabel.TabIndex = 63
-        FechaLabel.Text = "Fecha Emision:"
         '
         'FechaTextBox
         '
@@ -274,32 +358,12 @@ Partial Class VerGuia
         Me.FechaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.FechaTextBox.TabIndex = 64
         '
-        'Nombre_provLabel
-        '
-        Nombre_provLabel.AutoSize = True
-        Nombre_provLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Nombre_provLabel.Location = New System.Drawing.Point(34, 45)
-        Nombre_provLabel.Name = "Nombre_provLabel"
-        Nombre_provLabel.Size = New System.Drawing.Size(54, 17)
-        Nombre_provLabel.TabIndex = 65
-        Nombre_provLabel.Text = "Nombre:"
-        '
         'Nombre_provTextBox
         '
         Me.Nombre_provTextBox.Location = New System.Drawing.Point(119, 45)
         Me.Nombre_provTextBox.Name = "Nombre_provTextBox"
         Me.Nombre_provTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Nombre_provTextBox.TabIndex = 66
-        '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DireccionLabel.Location = New System.Drawing.Point(34, 97)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(64, 17)
-        DireccionLabel.TabIndex = 67
-        DireccionLabel.Text = "Direccion:"
         '
         'DireccionTextBox
         '
@@ -308,32 +372,12 @@ Partial Class VerGuia
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 68
         '
-        'ComunaLabel
-        '
-        ComunaLabel.AutoSize = True
-        ComunaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ComunaLabel.Location = New System.Drawing.Point(253, 100)
-        ComunaLabel.Name = "ComunaLabel"
-        ComunaLabel.Size = New System.Drawing.Size(55, 17)
-        ComunaLabel.TabIndex = 69
-        ComunaLabel.Text = "comuna:"
-        '
         'ComunaTextBox
         '
         Me.ComunaTextBox.Location = New System.Drawing.Point(314, 97)
         Me.ComunaTextBox.Name = "ComunaTextBox"
         Me.ComunaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ComunaTextBox.TabIndex = 70
-        '
-        'CiudadLabel
-        '
-        CiudadLabel.AutoSize = True
-        CiudadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        CiudadLabel.Location = New System.Drawing.Point(440, 100)
-        CiudadLabel.Name = "CiudadLabel"
-        CiudadLabel.Size = New System.Drawing.Size(47, 17)
-        CiudadLabel.TabIndex = 71
-        CiudadLabel.Text = "Ciudad"
         '
         'CiudadTextBox
         '
@@ -342,32 +386,12 @@ Partial Class VerGuia
         Me.CiudadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CiudadTextBox.TabIndex = 72
         '
-        'EmailLabel
-        '
-        EmailLabel.AutoSize = True
-        EmailLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        EmailLabel.Location = New System.Drawing.Point(34, 149)
-        EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(38, 17)
-        EmailLabel.TabIndex = 73
-        EmailLabel.Text = "Email"
-        '
         'EmailTextBox
         '
         Me.EmailTextBox.Location = New System.Drawing.Point(119, 149)
         Me.EmailTextBox.Name = "EmailTextBox"
         Me.EmailTextBox.Size = New System.Drawing.Size(100, 20)
         Me.EmailTextBox.TabIndex = 74
-        '
-        'FonoLabel
-        '
-        FonoLabel.AutoSize = True
-        FonoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        FonoLabel.Location = New System.Drawing.Point(34, 123)
-        FonoLabel.Name = "FonoLabel"
-        FonoLabel.Size = New System.Drawing.Size(56, 17)
-        FonoLabel.TabIndex = 75
-        FonoLabel.Text = "Telefono"
         '
         'FonoTextBox
         '
@@ -376,32 +400,12 @@ Partial Class VerGuia
         Me.FonoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.FonoTextBox.TabIndex = 76
         '
-        'Rut_clienteLabel
-        '
-        Rut_clienteLabel.AutoSize = True
-        Rut_clienteLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Rut_clienteLabel.Location = New System.Drawing.Point(34, 68)
-        Rut_clienteLabel.Name = "Rut_clienteLabel"
-        Rut_clienteLabel.Size = New System.Drawing.Size(32, 17)
-        Rut_clienteLabel.TabIndex = 77
-        Rut_clienteLabel.Text = "R.U.T"
-        '
         'Rut_clienteTextBox
         '
         Me.Rut_clienteTextBox.Location = New System.Drawing.Point(119, 71)
         Me.Rut_clienteTextBox.Name = "Rut_clienteTextBox"
         Me.Rut_clienteTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Rut_clienteTextBox.TabIndex = 78
-        '
-        'ObservacionLabel
-        '
-        ObservacionLabel.AutoSize = True
-        ObservacionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ObservacionLabel.Location = New System.Drawing.Point(229, 149)
-        ObservacionLabel.Name = "ObservacionLabel"
-        ObservacionLabel.Size = New System.Drawing.Size(79, 17)
-        ObservacionLabel.TabIndex = 79
-        ObservacionLabel.Text = "observacion:"
         '
         'ObservacionTextBox
         '
@@ -412,17 +416,20 @@ Partial Class VerGuia
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(23, 470)
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(-5, 427)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(158, 73)
         Me.Button1.TabIndex = 81
-        Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'VerGuia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LemonChiffon
         Me.ClientSize = New System.Drawing.Size(852, 512)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Nombre_provLabel)

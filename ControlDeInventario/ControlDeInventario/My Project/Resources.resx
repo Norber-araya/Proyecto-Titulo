@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="boton-mermas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-mermas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,8 +127,14 @@
   <data name="boton-verdocumentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-verdocumentos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton-selectprov2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-selectprov2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton-listarusuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-listarusuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="este-año" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\este-año.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-verificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-verificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,26 +157,41 @@
   <data name="boton-seleccionar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-seleccionar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton-recuperarcontra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-recuperarcontra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="7-dias" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7-dias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-ver-factura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-ver-factura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton-enviarcorreo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-enviarcorreo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cambiar-contra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cambiar-contra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton-agregarprod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-agregarprod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton-seleccionarprov" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-seleccionarprov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-facturaingre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-facturaingre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="este-año" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\este-año.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton-crearboleta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-crearboleta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-datospersonales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-datospersonales.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-crearfac" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-crearfac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hoy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hoy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,11 +202,14 @@
   <data name="boton-actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-actualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton-mermas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-mermas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-listarproveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-listarproveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton-boletas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-boletas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boton-crearboleta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-crearboleta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,11 +217,20 @@
   <data name="productos-boton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\productos-boton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-listarprod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-listarprod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sin-título-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sin-título-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton-ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton-seleccionarprov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-seleccionarprov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-listarprod2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-listarprod2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-proveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-proveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +241,12 @@
   <data name="boton-eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-eliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton-selectprov2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-selectprov2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-iniciarsesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-iniciarsesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton-registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,7 +256,7 @@
   <data name="boton-cerrar-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-cerrar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton-listarcliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-listarcliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

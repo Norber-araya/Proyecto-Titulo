@@ -441,5 +441,44 @@
   <ItemGroup>
     <None Include="Resources\buscar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-datospersonales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarprod2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarusuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarproveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiar-contra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-verificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-recuperarcontra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-enviarcorreo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-iniciarsesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarcliente.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
