@@ -1,5 +1,5 @@
 ﻿Public Class ProductoProveedor
-    Private Sub Detalle_proveedorBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles Detalle_proveedorBindingNavigatorSaveItem.Click
+    Private Sub Detalle_proveedorBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) 
         Me.Validate()
         Me.Detalle_proveedorBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.ControlinventarioDataSet)

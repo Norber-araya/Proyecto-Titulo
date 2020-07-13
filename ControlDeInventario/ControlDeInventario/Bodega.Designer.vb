@@ -29,12 +29,18 @@ Partial Class Bodega
         Me.TableAdapterManager = New ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'ControlinventarioDataSet
@@ -80,68 +86,145 @@ Partial Class Bodega
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(60, 74)
+        Me.DataGridView1.Location = New System.Drawing.Point(81, 177)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(530, 170)
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(707, 209)
         Me.DataGridView1.TabIndex = 4
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(241, 45)
+        Me.TextBox1.Location = New System.Drawing.Point(57, 55)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(163, 25)
         Me.TextBox1.TabIndex = 6
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(189, 45)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(46, 17)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Buscar"
         '
         'Button2
         '
         Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(422, 264)
+        Me.Button2.Location = New System.Drawing.Point(588, 421)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(200, 94)
+        Me.Button2.Size = New System.Drawing.Size(267, 116)
         Me.Button2.TabIndex = 8
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(542, 11)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button8.Location = New System.Drawing.Point(81, 438)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(64, 35)
+        Me.Button8.Size = New System.Drawing.Size(85, 43)
         Me.Button8.TabIndex = 68
         Me.Button8.Text = "Detalle Proveedor"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.RadioButton6)
+        Me.GroupBox3.Controls.Add(Me.RadioButton7)
+        Me.GroupBox3.Controls.Add(Me.RadioButton5)
+        Me.GroupBox3.Controls.Add(Me.TextBox3)
+        Me.GroupBox3.Controls.Add(Me.TextBox1)
+        Me.GroupBox3.Controls.Add(Me.ComboBox3)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox3.Location = New System.Drawing.Point(81, 45)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Size = New System.Drawing.Size(707, 100)
+        Me.GroupBox3.TabIndex = 69
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Codigo o nombre"
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton6.ForeColor = System.Drawing.Color.Black
+        Me.RadioButton6.Location = New System.Drawing.Point(507, 22)
+        Me.RadioButton6.Margin = New System.Windows.Forms.Padding(4)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(141, 24)
+        Me.RadioButton6.TabIndex = 53
+        Me.RadioButton6.Text = "Tipo Producto"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'RadioButton7
+        '
+        Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton7.ForeColor = System.Drawing.Color.Black
+        Me.RadioButton7.Location = New System.Drawing.Point(281, 23)
+        Me.RadioButton7.Margin = New System.Windows.Forms.Padding(4)
+        Me.RadioButton7.Name = "RadioButton7"
+        Me.RadioButton7.Size = New System.Drawing.Size(155, 24)
+        Me.RadioButton7.TabIndex = 52
+        Me.RadioButton7.Text = "Escribir nombre"
+        Me.RadioButton7.UseVisualStyleBackColor = True
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Checked = True
+        Me.RadioButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton5.ForeColor = System.Drawing.Color.Black
+        Me.RadioButton5.Location = New System.Drawing.Point(57, 23)
+        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(4)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(86, 24)
+        Me.RadioButton5.TabIndex = 51
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "Codigo"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(281, 52)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox3.MaxLength = 15
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(132, 25)
+        Me.TextBox3.TabIndex = 50
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.DisplayMember = "nombre_prod"
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"oficina", "escritorio", "muebles"})
+        Me.ComboBox3.Location = New System.Drawing.Point(507, 51)
+        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(160, 26)
+        Me.ComboBox3.TabIndex = 49
+        Me.ComboBox3.ValueMember = "nombre_prod"
+        '
         'Bodega
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(634, 370)
+        Me.ClientSize = New System.Drawing.Size(896, 538)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Bodega"
         Me.Text = "Bodega"
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -152,7 +235,12 @@ Partial Class Bodega
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents RadioButton6 As RadioButton
+    Friend WithEvents RadioButton7 As RadioButton
+    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

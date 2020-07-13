@@ -62,9 +62,10 @@ Partial Class VerBoleta
         '
         N_boletaLabel.AutoSize = True
         N_boletaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        N_boletaLabel.Location = New System.Drawing.Point(8, 26)
+        N_boletaLabel.Location = New System.Drawing.Point(11, 32)
+        N_boletaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         N_boletaLabel.Name = "N_boletaLabel"
-        N_boletaLabel.Size = New System.Drawing.Size(58, 17)
+        N_boletaLabel.Size = New System.Drawing.Size(74, 21)
         N_boletaLabel.TabIndex = 18
         N_boletaLabel.Text = "N° boleta"
         '
@@ -72,9 +73,10 @@ Partial Class VerBoleta
         '
         Rut_empresaLabel.AutoSize = True
         Rut_empresaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Rut_empresaLabel.Location = New System.Drawing.Point(8, 52)
+        Rut_empresaLabel.Location = New System.Drawing.Point(11, 64)
+        Rut_empresaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Rut_empresaLabel.Name = "Rut_empresaLabel"
-        Rut_empresaLabel.Size = New System.Drawing.Size(78, 17)
+        Rut_empresaLabel.Size = New System.Drawing.Size(99, 21)
         Rut_empresaLabel.TabIndex = 20
         Rut_empresaLabel.Text = "rut empresa:"
         '
@@ -82,9 +84,10 @@ Partial Class VerBoleta
         '
         Rut_clienteLabel.AutoSize = True
         Rut_clienteLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Rut_clienteLabel.Location = New System.Drawing.Point(244, 48)
+        Rut_clienteLabel.Location = New System.Drawing.Point(325, 59)
+        Rut_clienteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Rut_clienteLabel.Name = "Rut_clienteLabel"
-        Rut_clienteLabel.Size = New System.Drawing.Size(67, 17)
+        Rut_clienteLabel.Size = New System.Drawing.Size(86, 21)
         Rut_clienteLabel.TabIndex = 22
         Rut_clienteLabel.Text = "Rut cliente"
         '
@@ -92,9 +95,10 @@ Partial Class VerBoleta
         '
         Nombre_empresaLabel.AutoSize = True
         Nombre_empresaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Nombre_empresaLabel.Location = New System.Drawing.Point(8, 78)
+        Nombre_empresaLabel.Location = New System.Drawing.Point(11, 96)
+        Nombre_empresaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Nombre_empresaLabel.Name = "Nombre_empresaLabel"
-        Nombre_empresaLabel.Size = New System.Drawing.Size(102, 17)
+        Nombre_empresaLabel.Size = New System.Drawing.Size(131, 21)
         Nombre_empresaLabel.TabIndex = 24
         Nombre_empresaLabel.Text = "Nombre empresa"
         '
@@ -102,9 +106,10 @@ Partial Class VerBoleta
         '
         DirecionLabel.AutoSize = True
         DirecionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DirecionLabel.Location = New System.Drawing.Point(8, 104)
+        DirecionLabel.Location = New System.Drawing.Point(11, 128)
+        DirecionLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         DirecionLabel.Name = "DirecionLabel"
-        DirecionLabel.Size = New System.Drawing.Size(58, 17)
+        DirecionLabel.Size = New System.Drawing.Size(73, 21)
         DirecionLabel.TabIndex = 26
         DirecionLabel.Text = "Direcion:"
         '
@@ -112,9 +117,10 @@ Partial Class VerBoleta
         '
         FechaLabel.AutoSize = True
         FechaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        FechaLabel.Location = New System.Drawing.Point(244, 23)
+        FechaLabel.Location = New System.Drawing.Point(325, 28)
+        FechaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(40, 17)
+        FechaLabel.Size = New System.Drawing.Size(52, 21)
         FechaLabel.TabIndex = 28
         FechaLabel.Text = "Fecha"
         '
@@ -122,9 +128,10 @@ Partial Class VerBoleta
         '
         TotalLabel.AutoSize = True
         TotalLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TotalLabel.Location = New System.Drawing.Point(275, 342)
+        TotalLabel.Location = New System.Drawing.Point(367, 421)
+        TotalLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         TotalLabel.Name = "TotalLabel"
-        TotalLabel.Size = New System.Drawing.Size(36, 17)
+        TotalLabel.Size = New System.Drawing.Size(46, 21)
         TotalLabel.TabIndex = 30
         TotalLabel.Text = "Total"
         '
@@ -133,60 +140,68 @@ Partial Class VerBoleta
         Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(0, 342)
+        Me.Button1.Location = New System.Drawing.Point(0, 421)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(154, 68)
+        Me.Button1.Size = New System.Drawing.Size(205, 84)
         Me.Button1.TabIndex = 32
         Me.Button1.UseVisualStyleBackColor = True
         '
         'N_boletaTextBox
         '
         Me.N_boletaTextBox.Enabled = False
-        Me.N_boletaTextBox.Location = New System.Drawing.Point(115, 23)
+        Me.N_boletaTextBox.Location = New System.Drawing.Point(153, 28)
+        Me.N_boletaTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.N_boletaTextBox.Name = "N_boletaTextBox"
-        Me.N_boletaTextBox.Size = New System.Drawing.Size(83, 20)
+        Me.N_boletaTextBox.Size = New System.Drawing.Size(109, 22)
         Me.N_boletaTextBox.TabIndex = 19
         '
         'Rut_empresaTextBox
         '
-        Me.Rut_empresaTextBox.Location = New System.Drawing.Point(115, 49)
+        Me.Rut_empresaTextBox.Location = New System.Drawing.Point(153, 60)
+        Me.Rut_empresaTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Rut_empresaTextBox.Name = "Rut_empresaTextBox"
-        Me.Rut_empresaTextBox.Size = New System.Drawing.Size(83, 20)
+        Me.Rut_empresaTextBox.Size = New System.Drawing.Size(109, 22)
         Me.Rut_empresaTextBox.TabIndex = 21
         '
         'Rut_clienteTextBox
         '
-        Me.Rut_clienteTextBox.Location = New System.Drawing.Point(317, 45)
+        Me.Rut_clienteTextBox.Location = New System.Drawing.Point(423, 55)
+        Me.Rut_clienteTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Rut_clienteTextBox.Name = "Rut_clienteTextBox"
-        Me.Rut_clienteTextBox.Size = New System.Drawing.Size(83, 20)
+        Me.Rut_clienteTextBox.Size = New System.Drawing.Size(109, 22)
         Me.Rut_clienteTextBox.TabIndex = 23
         '
         'Nombre_empresaTextBox
         '
-        Me.Nombre_empresaTextBox.Location = New System.Drawing.Point(115, 75)
+        Me.Nombre_empresaTextBox.Location = New System.Drawing.Point(153, 92)
+        Me.Nombre_empresaTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Nombre_empresaTextBox.Name = "Nombre_empresaTextBox"
-        Me.Nombre_empresaTextBox.Size = New System.Drawing.Size(83, 20)
+        Me.Nombre_empresaTextBox.Size = New System.Drawing.Size(109, 22)
         Me.Nombre_empresaTextBox.TabIndex = 25
         '
         'DirecionTextBox
         '
-        Me.DirecionTextBox.Location = New System.Drawing.Point(115, 101)
+        Me.DirecionTextBox.Location = New System.Drawing.Point(153, 124)
+        Me.DirecionTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DirecionTextBox.Name = "DirecionTextBox"
-        Me.DirecionTextBox.Size = New System.Drawing.Size(83, 20)
+        Me.DirecionTextBox.Size = New System.Drawing.Size(109, 22)
         Me.DirecionTextBox.TabIndex = 27
         '
         'FechaDateTimePicker
         '
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(319, 17)
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(425, 21)
+        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
-        Me.FechaDateTimePicker.Size = New System.Drawing.Size(83, 20)
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(109, 22)
         Me.FechaDateTimePicker.TabIndex = 29
         '
         'TotalTextBox
         '
-        Me.TotalTextBox.Location = New System.Drawing.Point(321, 339)
+        Me.TotalTextBox.Location = New System.Drawing.Point(428, 417)
+        Me.TotalTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TotalTextBox.Name = "TotalTextBox"
-        Me.TotalTextBox.Size = New System.Drawing.Size(83, 20)
+        Me.TotalTextBox.Size = New System.Drawing.Size(109, 22)
         Me.TotalTextBox.TabIndex = 31
         '
         'ControlinventarioDataSet
@@ -209,7 +224,13 @@ Partial Class VerBoleta
         Me.TableAdapterManager.boletaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Nothing
         Me.TableAdapterManager.detalle_boletaTableAdapter = Me.Detalle_boletaTableAdapter
+        Me.TableAdapterManager.detalle_fac_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_guiaTableAdapter = Nothing
         Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.factura_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.factura_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.guia_despachoTableAdapter = Nothing
         Me.TableAdapterManager.mermasTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedorTableAdapter = Nothing
@@ -227,10 +248,12 @@ Partial Class VerBoleta
         Me.Detalle_boletaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Detalle_boletaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.Detalle_boletaDataGridView.DataSource = Me.Detalle_boletaBindingSource
-        Me.Detalle_boletaDataGridView.Location = New System.Drawing.Point(44, 140)
+        Me.Detalle_boletaDataGridView.Location = New System.Drawing.Point(59, 172)
+        Me.Detalle_boletaDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Detalle_boletaDataGridView.Name = "Detalle_boletaDataGridView"
         Me.Detalle_boletaDataGridView.ReadOnly = True
-        Me.Detalle_boletaDataGridView.Size = New System.Drawing.Size(344, 183)
+        Me.Detalle_boletaDataGridView.RowHeadersVisible = False
+        Me.Detalle_boletaDataGridView.Size = New System.Drawing.Size(459, 225)
         Me.Detalle_boletaDataGridView.TabIndex = 33
         '
         'DataGridViewTextBoxColumn1
@@ -256,10 +279,10 @@ Partial Class VerBoleta
         '
         'VerBoleta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(468, 422)
+        Me.ClientSize = New System.Drawing.Size(624, 519)
         Me.Controls.Add(Me.Detalle_boletaDataGridView)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(N_boletaLabel)
@@ -276,6 +299,7 @@ Partial Class VerBoleta
         Me.Controls.Add(Me.FechaDateTimePicker)
         Me.Controls.Add(TotalLabel)
         Me.Controls.Add(Me.TotalTextBox)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "VerBoleta"
         Me.Text = "VerBoleta"
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()

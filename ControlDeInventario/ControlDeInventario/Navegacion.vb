@@ -126,7 +126,7 @@
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        If tipo = "100" Or tipo = "101" Then
+        If tipo = "100" Or tipo = "101" Or tipo = "103" Then
             boleta.rut = rut.Text
             boleta.tipo = tipo
             boleta.Show()

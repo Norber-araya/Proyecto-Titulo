@@ -3,7 +3,7 @@ Public Class proveedorEdid
     Dim bdconexion As New BD_conexion
     Dim conexion As New SqlConnection("Data Source=.;Initial Catalog=Controlinventario;Integrated Security=True")
     Public rut2 As String
-    Private Sub ProveedorBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles ProveedorBindingNavigatorSaveItem.Click
+    Private Sub ProveedorBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) 
         Me.Validate()
         Me.ProveedorBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.ControlinventarioDataSet)

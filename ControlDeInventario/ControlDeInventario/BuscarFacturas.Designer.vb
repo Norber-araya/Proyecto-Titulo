@@ -39,46 +39,42 @@ Partial Class BuscarFacturas
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BoletaDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BoletaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ControlinventarioDataSet = New ControlDeInventario.ControlinventarioDataSet()
-        Me.N_factura = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TableAdapterManager = New ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager()
-        Me.BoletaTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.boletaTableAdapter()
-        Me.Factura_ingresoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Factura_ingresoTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.factura_ingresoTableAdapter()
         Me.Factura_ingresoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.DataGridViewTextBoxColumn36 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn35 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn34 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MermasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MermasTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.mermasTableAdapter()
-        Me.Guia_despachoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Guia_despachoTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.guia_despachoTableAdapter()
         Me.Guia_despachoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.FacturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Factura_egresoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton10 = New System.Windows.Forms.RadioButton()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.DataGridViewTextBoxColumn52 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn53 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn54 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn55 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn56 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn57 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn58 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn59 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn60 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn61 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn62 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn63 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn64 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn65 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Factura_egresoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ControlinventarioDataSet = New ControlDeInventario.ControlinventarioDataSet()
         Me.DataGridViewTextBoxColumn37 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn38 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn39 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -94,38 +90,51 @@ Partial Class BuscarFacturas
         Me.DataGridViewTextBoxColumn49 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn50 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn51 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Factura_egresoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Guia_despachoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn34 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn35 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn36 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Factura_ingresoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BoletaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TableAdapterManager = New ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager()
+        Me.BoletaTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.boletaTableAdapter()
+        Me.Factura_ingresoTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.factura_ingresoTableAdapter()
+        Me.MermasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MermasTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.mermasTableAdapter()
+        Me.Guia_despachoTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.guia_despachoTableAdapter()
         Me.Factura_egresoTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.factura_egresoTableAdapter()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.FacturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Factura_egresoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn52 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn53 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn54 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn55 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn56 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn57 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn58 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn59 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn60 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn61 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn62 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn63 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn64 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn65 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.N_factura = New System.Windows.Forms.TextBox()
         CType(Me.BoletaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BoletaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.Factura_ingresoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Factura_ingresoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MermasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guia_despachoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guia_despachoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Factura_egresoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FacturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Factura_egresoDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.Factura_egresoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guia_despachoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Factura_ingresoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BoletaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MermasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridViewTextBoxColumn1
@@ -197,78 +206,13 @@ Partial Class BuscarFacturas
         Me.BoletaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BoletaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22})
         Me.BoletaDataGridView.DataSource = Me.BoletaBindingSource
-        Me.BoletaDataGridView.Location = New System.Drawing.Point(156, 124)
+        Me.BoletaDataGridView.Location = New System.Drawing.Point(208, 203)
+        Me.BoletaDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BoletaDataGridView.Name = "BoletaDataGridView"
         Me.BoletaDataGridView.ReadOnly = True
         Me.BoletaDataGridView.RowHeadersVisible = False
-        Me.BoletaDataGridView.Size = New System.Drawing.Size(630, 235)
+        Me.BoletaDataGridView.Size = New System.Drawing.Size(840, 289)
         Me.BoletaDataGridView.TabIndex = 12
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "n_boleta"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "n_boleta"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        Me.DataGridViewTextBoxColumn16.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "rut_empresa"
-        Me.DataGridViewTextBoxColumn17.HeaderText = "rut_empresa"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        Me.DataGridViewTextBoxColumn17.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.DataPropertyName = "rut_cliente"
-        Me.DataGridViewTextBoxColumn18.HeaderText = "rut_cliente"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        Me.DataGridViewTextBoxColumn18.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "nombre_empresa"
-        Me.DataGridViewTextBoxColumn19.HeaderText = "nombre_empresa"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        Me.DataGridViewTextBoxColumn19.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "direcion"
-        Me.DataGridViewTextBoxColumn20.HeaderText = "direcion"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        Me.DataGridViewTextBoxColumn20.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn21
-        '
-        Me.DataGridViewTextBoxColumn21.DataPropertyName = "fecha"
-        Me.DataGridViewTextBoxColumn21.HeaderText = "fecha"
-        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
-        Me.DataGridViewTextBoxColumn21.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn22
-        '
-        Me.DataGridViewTextBoxColumn22.DataPropertyName = "total"
-        Me.DataGridViewTextBoxColumn22.HeaderText = "total"
-        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
-        Me.DataGridViewTextBoxColumn22.ReadOnly = True
-        '
-        'BoletaBindingSource
-        '
-        Me.BoletaBindingSource.DataMember = "boleta"
-        Me.BoletaBindingSource.DataSource = Me.ControlinventarioDataSet
-        '
-        'ControlinventarioDataSet
-        '
-        Me.ControlinventarioDataSet.DataSetName = "ControlinventarioDataSet"
-        Me.ControlinventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'N_factura
-        '
-        Me.N_factura.Location = New System.Drawing.Point(388, 50)
-        Me.N_factura.Name = "N_factura"
-        Me.N_factura.Size = New System.Drawing.Size(142, 20)
-        Me.N_factura.TabIndex = 6
         '
         'GroupBox1
         '
@@ -279,21 +223,48 @@ Partial Class BuscarFacturas
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(136, 106)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(181, 130)
         Me.GroupBox1.TabIndex = 18
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Documento"
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(13, 86)
+        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(157, 25)
+        Me.RadioButton4.TabIndex = 16
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "Guia de Despacho" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(13, 44)
+        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(126, 25)
+        Me.RadioButton3.TabIndex = 15
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Factura venta"
+        Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
         Me.RadioButton1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(10, 19)
+        Me.RadioButton1.Location = New System.Drawing.Point(13, 23)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(118, 21)
+        Me.RadioButton1.Size = New System.Drawing.Size(150, 25)
         Me.RadioButton1.TabIndex = 13
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Facturas Ingreso"
@@ -303,57 +274,13 @@ Partial Class BuscarFacturas
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(10, 53)
+        Me.RadioButton2.Location = New System.Drawing.Point(13, 65)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(68, 21)
+        Me.RadioButton2.Size = New System.Drawing.Size(85, 25)
         Me.RadioButton2.TabIndex = 14
         Me.RadioButton2.Text = "Boletas"
         Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(333, 53)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 17)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "Buscar:"
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.boletaTableAdapter = Nothing
-        Me.TableAdapterManager.clienteTableAdapter = Nothing
-        Me.TableAdapterManager.Connection = Nothing
-        Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
-        Me.TableAdapterManager.detalle_fac_egresoTableAdapter = Nothing
-        Me.TableAdapterManager.detalle_fac_ingresoTableAdapter = Nothing
-        Me.TableAdapterManager.detalle_guiaTableAdapter = Nothing
-        Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
-        Me.TableAdapterManager.factura_egresoTableAdapter = Nothing
-        Me.TableAdapterManager.factura_ingresoTableAdapter = Nothing
-        Me.TableAdapterManager.guia_despachoTableAdapter = Nothing
-        Me.TableAdapterManager.mermasTableAdapter = Nothing
-        Me.TableAdapterManager.productoTableAdapter = Nothing
-        Me.TableAdapterManager.proveedorTableAdapter = Nothing
-        Me.TableAdapterManager.registroTableAdapter = Nothing
-        Me.TableAdapterManager.tipousuarioTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.usuarioTableAdapter = Nothing
-        '
-        'BoletaTableAdapter
-        '
-        Me.BoletaTableAdapter.ClearBeforeFill = True
-        '
-        'Factura_ingresoBindingSource
-        '
-        Me.Factura_ingresoBindingSource.DataMember = "factura_ingreso"
-        Me.Factura_ingresoBindingSource.DataSource = Me.ControlinventarioDataSet
-        '
-        'Factura_ingresoTableAdapter
-        '
-        Me.Factura_ingresoTableAdapter.ClearBeforeFill = True
         '
         'Factura_ingresoDataGridView
         '
@@ -363,150 +290,13 @@ Partial Class BuscarFacturas
         Me.Factura_ingresoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Factura_ingresoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33, Me.DataGridViewTextBoxColumn34, Me.DataGridViewTextBoxColumn35, Me.DataGridViewTextBoxColumn36})
         Me.Factura_ingresoDataGridView.DataSource = Me.Factura_ingresoBindingSource
-        Me.Factura_ingresoDataGridView.Location = New System.Drawing.Point(156, 124)
+        Me.Factura_ingresoDataGridView.Location = New System.Drawing.Point(208, 203)
+        Me.Factura_ingresoDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Factura_ingresoDataGridView.Name = "Factura_ingresoDataGridView"
         Me.Factura_ingresoDataGridView.ReadOnly = True
         Me.Factura_ingresoDataGridView.RowHeadersVisible = False
-        Me.Factura_ingresoDataGridView.Size = New System.Drawing.Size(630, 235)
+        Me.Factura_ingresoDataGridView.Size = New System.Drawing.Size(840, 289)
         Me.Factura_ingresoDataGridView.TabIndex = 19
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(10, 36)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(99, 21)
-        Me.RadioButton3.TabIndex = 15
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Factura venta"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(10, 70)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(123, 21)
-        Me.RadioButton4.TabIndex = 16
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Guia de Despacho" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'DataGridViewTextBoxColumn36
-        '
-        Me.DataGridViewTextBoxColumn36.DataPropertyName = "total"
-        Me.DataGridViewTextBoxColumn36.HeaderText = "total"
-        Me.DataGridViewTextBoxColumn36.Name = "DataGridViewTextBoxColumn36"
-        Me.DataGridViewTextBoxColumn36.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn35
-        '
-        Me.DataGridViewTextBoxColumn35.DataPropertyName = "iva"
-        Me.DataGridViewTextBoxColumn35.HeaderText = "iva"
-        Me.DataGridViewTextBoxColumn35.Name = "DataGridViewTextBoxColumn35"
-        Me.DataGridViewTextBoxColumn35.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn34
-        '
-        Me.DataGridViewTextBoxColumn34.DataPropertyName = "valor_neto"
-        Me.DataGridViewTextBoxColumn34.HeaderText = "valor_neto"
-        Me.DataGridViewTextBoxColumn34.Name = "DataGridViewTextBoxColumn34"
-        Me.DataGridViewTextBoxColumn34.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn33
-        '
-        Me.DataGridViewTextBoxColumn33.DataPropertyName = "observacion"
-        Me.DataGridViewTextBoxColumn33.HeaderText = "observacion"
-        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
-        Me.DataGridViewTextBoxColumn33.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn32
-        '
-        Me.DataGridViewTextBoxColumn32.DataPropertyName = "fecha"
-        Me.DataGridViewTextBoxColumn32.HeaderText = "fecha"
-        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
-        Me.DataGridViewTextBoxColumn32.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn31
-        '
-        Me.DataGridViewTextBoxColumn31.DataPropertyName = "rut_cliente"
-        Me.DataGridViewTextBoxColumn31.HeaderText = "rut_cliente"
-        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
-        Me.DataGridViewTextBoxColumn31.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn30
-        '
-        Me.DataGridViewTextBoxColumn30.DataPropertyName = "fono"
-        Me.DataGridViewTextBoxColumn30.HeaderText = "fono"
-        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
-        Me.DataGridViewTextBoxColumn30.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn29
-        '
-        Me.DataGridViewTextBoxColumn29.DataPropertyName = "email"
-        Me.DataGridViewTextBoxColumn29.HeaderText = "email"
-        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        Me.DataGridViewTextBoxColumn29.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn28
-        '
-        Me.DataGridViewTextBoxColumn28.DataPropertyName = "ciudad"
-        Me.DataGridViewTextBoxColumn28.HeaderText = "ciudad"
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        Me.DataGridViewTextBoxColumn28.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn27
-        '
-        Me.DataGridViewTextBoxColumn27.DataPropertyName = "comuna"
-        Me.DataGridViewTextBoxColumn27.HeaderText = "comuna"
-        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
-        Me.DataGridViewTextBoxColumn27.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn26
-        '
-        Me.DataGridViewTextBoxColumn26.DataPropertyName = "direccion"
-        Me.DataGridViewTextBoxColumn26.HeaderText = "direccion"
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        Me.DataGridViewTextBoxColumn26.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn25
-        '
-        Me.DataGridViewTextBoxColumn25.DataPropertyName = "nombre_prov"
-        Me.DataGridViewTextBoxColumn25.HeaderText = "nombre_prov"
-        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
-        Me.DataGridViewTextBoxColumn25.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn24
-        '
-        Me.DataGridViewTextBoxColumn24.DataPropertyName = "rut_prov"
-        Me.DataGridViewTextBoxColumn24.HeaderText = "rut_prov"
-        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
-        Me.DataGridViewTextBoxColumn24.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn23
-        '
-        Me.DataGridViewTextBoxColumn23.DataPropertyName = "n_factura"
-        Me.DataGridViewTextBoxColumn23.HeaderText = "n_factura"
-        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
-        Me.DataGridViewTextBoxColumn23.ReadOnly = True
-        '
-        'MermasBindingSource
-        '
-        Me.MermasBindingSource.DataMember = "mermas"
-        Me.MermasBindingSource.DataSource = Me.ControlinventarioDataSet
-        '
-        'MermasTableAdapter
-        '
-        Me.MermasTableAdapter.ClearBeforeFill = True
-        '
-        'Guia_despachoBindingSource
-        '
-        Me.Guia_despachoBindingSource.DataMember = "guia_despacho"
-        Me.Guia_despachoBindingSource.DataSource = Me.ControlinventarioDataSet
-        '
-        'Guia_despachoTableAdapter
-        '
-        Me.Guia_despachoTableAdapter.ClearBeforeFill = True
         '
         'Guia_despachoDataGridView
         '
@@ -516,12 +306,264 @@ Partial Class BuscarFacturas
         Me.Guia_despachoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Guia_despachoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn37, Me.DataGridViewTextBoxColumn38, Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41, Me.DataGridViewTextBoxColumn42, Me.DataGridViewTextBoxColumn43, Me.DataGridViewTextBoxColumn44, Me.DataGridViewTextBoxColumn45, Me.DataGridViewTextBoxColumn46, Me.DataGridViewTextBoxColumn47, Me.DataGridViewTextBoxColumn48, Me.DataGridViewTextBoxColumn49, Me.DataGridViewTextBoxColumn50, Me.DataGridViewTextBoxColumn51})
         Me.Guia_despachoDataGridView.DataSource = Me.Guia_despachoBindingSource
-        Me.Guia_despachoDataGridView.Location = New System.Drawing.Point(156, 124)
+        Me.Guia_despachoDataGridView.Location = New System.Drawing.Point(208, 203)
+        Me.Guia_despachoDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guia_despachoDataGridView.Name = "Guia_despachoDataGridView"
         Me.Guia_despachoDataGridView.ReadOnly = True
         Me.Guia_despachoDataGridView.RowHeadersVisible = False
-        Me.Guia_despachoDataGridView.Size = New System.Drawing.Size(630, 235)
+        Me.Guia_despachoDataGridView.Size = New System.Drawing.Size(840, 289)
         Me.Guia_despachoDataGridView.TabIndex = 19
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(900, 617)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(269, 116)
+        Me.Button2.TabIndex = 12
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_verdocumentos
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(476, 500)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(268, 116)
+        Me.Button1.TabIndex = 11
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Factura_egresoDataGridView
+        '
+        Me.Factura_egresoDataGridView.AllowUserToAddRows = False
+        Me.Factura_egresoDataGridView.AllowUserToDeleteRows = False
+        Me.Factura_egresoDataGridView.AutoGenerateColumns = False
+        Me.Factura_egresoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Factura_egresoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn52, Me.DataGridViewTextBoxColumn53, Me.DataGridViewTextBoxColumn54, Me.DataGridViewTextBoxColumn55, Me.DataGridViewTextBoxColumn56, Me.DataGridViewTextBoxColumn57, Me.DataGridViewTextBoxColumn58, Me.DataGridViewTextBoxColumn59, Me.DataGridViewTextBoxColumn60, Me.DataGridViewTextBoxColumn61, Me.DataGridViewTextBoxColumn62, Me.DataGridViewTextBoxColumn63, Me.DataGridViewTextBoxColumn64, Me.DataGridViewTextBoxColumn65})
+        Me.Factura_egresoDataGridView.DataSource = Me.Factura_egresoBindingSource
+        Me.Factura_egresoDataGridView.Location = New System.Drawing.Point(208, 203)
+        Me.Factura_egresoDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Factura_egresoDataGridView.Name = "Factura_egresoDataGridView"
+        Me.Factura_egresoDataGridView.ReadOnly = True
+        Me.Factura_egresoDataGridView.RowHeadersVisible = False
+        Me.Factura_egresoDataGridView.Size = New System.Drawing.Size(840, 289)
+        Me.Factura_egresoDataGridView.TabIndex = 19
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.DateTimePicker3)
+        Me.GroupBox2.Controls.Add(Me.ComboBox1)
+        Me.GroupBox2.Controls.Add(Me.ComboBox4)
+        Me.GroupBox2.Controls.Add(Me.RadioButton8)
+        Me.GroupBox2.Controls.Add(Me.RadioButton9)
+        Me.GroupBox2.Controls.Add(Me.RadioButton10)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Black
+        Me.GroupBox2.Location = New System.Drawing.Point(208, 101)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Size = New System.Drawing.Size(793, 86)
+        Me.GroupBox2.TabIndex = 50
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Fecha"
+        '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.Location = New System.Drawing.Point(28, 41)
+        Me.DateTimePicker3.Margin = New System.Windows.Forms.Padding(4)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(265, 25)
+        Me.DateTimePicker3.TabIndex = 18
+        Me.DateTimePicker3.Value = New Date(2020, 7, 5, 0, 0, 0, 0)
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"})
+        Me.ComboBox1.Location = New System.Drawing.Point(585, 39)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(160, 26)
+        Me.ComboBox1.TabIndex = 17
+        Me.ComboBox1.Text = "2020"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"})
+        Me.ComboBox4.Location = New System.Drawing.Point(355, 39)
+        Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(160, 26)
+        Me.ComboBox4.TabIndex = 16
+        Me.ComboBox4.Text = "julio"
+        '
+        'RadioButton8
+        '
+        Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.ForeColor = System.Drawing.Color.Black
+        Me.RadioButton8.Location = New System.Drawing.Point(629, 11)
+        Me.RadioButton8.Margin = New System.Windows.Forms.Padding(4)
+        Me.RadioButton8.Name = "RadioButton8"
+        Me.RadioButton8.Size = New System.Drawing.Size(62, 24)
+        Me.RadioButton8.TabIndex = 15
+        Me.RadioButton8.Text = "Año"
+        Me.RadioButton8.UseVisualStyleBackColor = True
+        '
+        'RadioButton9
+        '
+        Me.RadioButton9.AutoSize = True
+        Me.RadioButton9.ForeColor = System.Drawing.Color.Black
+        Me.RadioButton9.Location = New System.Drawing.Point(405, 11)
+        Me.RadioButton9.Margin = New System.Windows.Forms.Padding(4)
+        Me.RadioButton9.Name = "RadioButton9"
+        Me.RadioButton9.Size = New System.Drawing.Size(63, 24)
+        Me.RadioButton9.TabIndex = 14
+        Me.RadioButton9.Text = "Mes"
+        Me.RadioButton9.UseVisualStyleBackColor = True
+        '
+        'RadioButton10
+        '
+        Me.RadioButton10.AutoSize = True
+        Me.RadioButton10.Checked = True
+        Me.RadioButton10.ForeColor = System.Drawing.Color.Black
+        Me.RadioButton10.Location = New System.Drawing.Point(109, 11)
+        Me.RadioButton10.Margin = New System.Windows.Forms.Padding(4)
+        Me.RadioButton10.Name = "RadioButton10"
+        Me.RadioButton10.Size = New System.Drawing.Size(57, 24)
+        Me.RadioButton10.TabIndex = 13
+        Me.RadioButton10.TabStop = True
+        Me.RadioButton10.Text = "Dia"
+        Me.RadioButton10.UseVisualStyleBackColor = True
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(397, 322)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 22)
+        Me.DateTimePicker1.TabIndex = 51
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Location = New System.Drawing.Point(397, 350)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 22)
+        Me.DateTimePicker2.TabIndex = 52
+        '
+        'DataGridViewTextBoxColumn52
+        '
+        Me.DataGridViewTextBoxColumn52.DataPropertyName = "n_factura"
+        Me.DataGridViewTextBoxColumn52.HeaderText = "n_factura"
+        Me.DataGridViewTextBoxColumn52.Name = "DataGridViewTextBoxColumn52"
+        Me.DataGridViewTextBoxColumn52.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn53
+        '
+        Me.DataGridViewTextBoxColumn53.DataPropertyName = "rut_prov"
+        Me.DataGridViewTextBoxColumn53.HeaderText = "rut_prov"
+        Me.DataGridViewTextBoxColumn53.Name = "DataGridViewTextBoxColumn53"
+        Me.DataGridViewTextBoxColumn53.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn54
+        '
+        Me.DataGridViewTextBoxColumn54.DataPropertyName = "nombre_prov"
+        Me.DataGridViewTextBoxColumn54.HeaderText = "nombre_prov"
+        Me.DataGridViewTextBoxColumn54.Name = "DataGridViewTextBoxColumn54"
+        Me.DataGridViewTextBoxColumn54.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn55
+        '
+        Me.DataGridViewTextBoxColumn55.DataPropertyName = "direccion"
+        Me.DataGridViewTextBoxColumn55.HeaderText = "direccion"
+        Me.DataGridViewTextBoxColumn55.Name = "DataGridViewTextBoxColumn55"
+        Me.DataGridViewTextBoxColumn55.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn56
+        '
+        Me.DataGridViewTextBoxColumn56.DataPropertyName = "comuna"
+        Me.DataGridViewTextBoxColumn56.HeaderText = "comuna"
+        Me.DataGridViewTextBoxColumn56.Name = "DataGridViewTextBoxColumn56"
+        Me.DataGridViewTextBoxColumn56.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn57
+        '
+        Me.DataGridViewTextBoxColumn57.DataPropertyName = "ciudad"
+        Me.DataGridViewTextBoxColumn57.HeaderText = "ciudad"
+        Me.DataGridViewTextBoxColumn57.Name = "DataGridViewTextBoxColumn57"
+        Me.DataGridViewTextBoxColumn57.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn58
+        '
+        Me.DataGridViewTextBoxColumn58.DataPropertyName = "email"
+        Me.DataGridViewTextBoxColumn58.HeaderText = "email"
+        Me.DataGridViewTextBoxColumn58.Name = "DataGridViewTextBoxColumn58"
+        Me.DataGridViewTextBoxColumn58.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn59
+        '
+        Me.DataGridViewTextBoxColumn59.DataPropertyName = "fono"
+        Me.DataGridViewTextBoxColumn59.HeaderText = "fono"
+        Me.DataGridViewTextBoxColumn59.Name = "DataGridViewTextBoxColumn59"
+        Me.DataGridViewTextBoxColumn59.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn60
+        '
+        Me.DataGridViewTextBoxColumn60.DataPropertyName = "rut_cliente"
+        Me.DataGridViewTextBoxColumn60.HeaderText = "rut_cliente"
+        Me.DataGridViewTextBoxColumn60.Name = "DataGridViewTextBoxColumn60"
+        Me.DataGridViewTextBoxColumn60.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn61
+        '
+        Me.DataGridViewTextBoxColumn61.DataPropertyName = "fecha"
+        Me.DataGridViewTextBoxColumn61.HeaderText = "fecha"
+        Me.DataGridViewTextBoxColumn61.Name = "DataGridViewTextBoxColumn61"
+        Me.DataGridViewTextBoxColumn61.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn62
+        '
+        Me.DataGridViewTextBoxColumn62.DataPropertyName = "observacion"
+        Me.DataGridViewTextBoxColumn62.HeaderText = "observacion"
+        Me.DataGridViewTextBoxColumn62.Name = "DataGridViewTextBoxColumn62"
+        Me.DataGridViewTextBoxColumn62.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn63
+        '
+        Me.DataGridViewTextBoxColumn63.DataPropertyName = "valor_neto"
+        Me.DataGridViewTextBoxColumn63.HeaderText = "valor_neto"
+        Me.DataGridViewTextBoxColumn63.Name = "DataGridViewTextBoxColumn63"
+        Me.DataGridViewTextBoxColumn63.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn64
+        '
+        Me.DataGridViewTextBoxColumn64.DataPropertyName = "iva"
+        Me.DataGridViewTextBoxColumn64.HeaderText = "iva"
+        Me.DataGridViewTextBoxColumn64.Name = "DataGridViewTextBoxColumn64"
+        Me.DataGridViewTextBoxColumn64.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn65
+        '
+        Me.DataGridViewTextBoxColumn65.DataPropertyName = "total"
+        Me.DataGridViewTextBoxColumn65.HeaderText = "total"
+        Me.DataGridViewTextBoxColumn65.Name = "DataGridViewTextBoxColumn65"
+        Me.DataGridViewTextBoxColumn65.ReadOnly = True
+        '
+        'Factura_egresoBindingSource
+        '
+        Me.Factura_egresoBindingSource.DataMember = "factura_egreso"
+        Me.Factura_egresoBindingSource.DataSource = Me.ControlinventarioDataSet
+        '
+        'ControlinventarioDataSet
+        '
+        Me.ControlinventarioDataSet.DataSetName = "ControlinventarioDataSet"
+        Me.ControlinventarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'DataGridViewTextBoxColumn37
         '
@@ -628,166 +670,257 @@ Partial Class BuscarFacturas
         Me.DataGridViewTextBoxColumn51.Name = "DataGridViewTextBoxColumn51"
         Me.DataGridViewTextBoxColumn51.ReadOnly = True
         '
-        'Factura_egresoBindingSource
+        'Guia_despachoBindingSource
         '
-        Me.Factura_egresoBindingSource.DataMember = "factura_egreso"
-        Me.Factura_egresoBindingSource.DataSource = Me.ControlinventarioDataSet
+        Me.Guia_despachoBindingSource.DataMember = "guia_despacho"
+        Me.Guia_despachoBindingSource.DataSource = Me.ControlinventarioDataSet
+        '
+        'DataGridViewTextBoxColumn23
+        '
+        Me.DataGridViewTextBoxColumn23.DataPropertyName = "n_factura"
+        Me.DataGridViewTextBoxColumn23.HeaderText = "n_factura"
+        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
+        Me.DataGridViewTextBoxColumn23.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn24
+        '
+        Me.DataGridViewTextBoxColumn24.DataPropertyName = "rut_prov"
+        Me.DataGridViewTextBoxColumn24.HeaderText = "rut_prov"
+        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        Me.DataGridViewTextBoxColumn24.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn25
+        '
+        Me.DataGridViewTextBoxColumn25.DataPropertyName = "nombre_prov"
+        Me.DataGridViewTextBoxColumn25.HeaderText = "nombre_prov"
+        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
+        Me.DataGridViewTextBoxColumn25.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.DataPropertyName = "direccion"
+        Me.DataGridViewTextBoxColumn26.HeaderText = "direccion"
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        Me.DataGridViewTextBoxColumn26.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn27
+        '
+        Me.DataGridViewTextBoxColumn27.DataPropertyName = "comuna"
+        Me.DataGridViewTextBoxColumn27.HeaderText = "comuna"
+        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        Me.DataGridViewTextBoxColumn27.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.DataPropertyName = "ciudad"
+        Me.DataGridViewTextBoxColumn28.HeaderText = "ciudad"
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        Me.DataGridViewTextBoxColumn28.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn29
+        '
+        Me.DataGridViewTextBoxColumn29.DataPropertyName = "email"
+        Me.DataGridViewTextBoxColumn29.HeaderText = "email"
+        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
+        Me.DataGridViewTextBoxColumn29.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn30
+        '
+        Me.DataGridViewTextBoxColumn30.DataPropertyName = "fono"
+        Me.DataGridViewTextBoxColumn30.HeaderText = "fono"
+        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
+        Me.DataGridViewTextBoxColumn30.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn31
+        '
+        Me.DataGridViewTextBoxColumn31.DataPropertyName = "rut_cliente"
+        Me.DataGridViewTextBoxColumn31.HeaderText = "rut_cliente"
+        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
+        Me.DataGridViewTextBoxColumn31.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn32
+        '
+        Me.DataGridViewTextBoxColumn32.DataPropertyName = "fecha"
+        Me.DataGridViewTextBoxColumn32.HeaderText = "fecha"
+        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
+        Me.DataGridViewTextBoxColumn32.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn33
+        '
+        Me.DataGridViewTextBoxColumn33.DataPropertyName = "observacion"
+        Me.DataGridViewTextBoxColumn33.HeaderText = "observacion"
+        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
+        Me.DataGridViewTextBoxColumn33.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn34
+        '
+        Me.DataGridViewTextBoxColumn34.DataPropertyName = "valor_neto"
+        Me.DataGridViewTextBoxColumn34.HeaderText = "valor_neto"
+        Me.DataGridViewTextBoxColumn34.Name = "DataGridViewTextBoxColumn34"
+        Me.DataGridViewTextBoxColumn34.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn35
+        '
+        Me.DataGridViewTextBoxColumn35.DataPropertyName = "iva"
+        Me.DataGridViewTextBoxColumn35.HeaderText = "iva"
+        Me.DataGridViewTextBoxColumn35.Name = "DataGridViewTextBoxColumn35"
+        Me.DataGridViewTextBoxColumn35.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn36
+        '
+        Me.DataGridViewTextBoxColumn36.DataPropertyName = "total"
+        Me.DataGridViewTextBoxColumn36.HeaderText = "total"
+        Me.DataGridViewTextBoxColumn36.Name = "DataGridViewTextBoxColumn36"
+        Me.DataGridViewTextBoxColumn36.ReadOnly = True
+        '
+        'Factura_ingresoBindingSource
+        '
+        Me.Factura_ingresoBindingSource.DataMember = "factura_ingreso"
+        Me.Factura_ingresoBindingSource.DataSource = Me.ControlinventarioDataSet
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "n_boleta"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "n_boleta"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "rut_empresa"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "rut_empresa"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "rut_cliente"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "rut_cliente"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "nombre_empresa"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "nombre_empresa"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "direcion"
+        Me.DataGridViewTextBoxColumn20.HeaderText = "direcion"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn21
+        '
+        Me.DataGridViewTextBoxColumn21.DataPropertyName = "fecha"
+        Me.DataGridViewTextBoxColumn21.HeaderText = "fecha"
+        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        Me.DataGridViewTextBoxColumn21.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn22
+        '
+        Me.DataGridViewTextBoxColumn22.DataPropertyName = "total"
+        Me.DataGridViewTextBoxColumn22.HeaderText = "total"
+        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
+        Me.DataGridViewTextBoxColumn22.ReadOnly = True
+        '
+        'BoletaBindingSource
+        '
+        Me.BoletaBindingSource.DataMember = "boleta"
+        Me.BoletaBindingSource.DataSource = Me.ControlinventarioDataSet
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.boletaTableAdapter = Nothing
+        Me.TableAdapterManager.clienteTableAdapter = Nothing
+        Me.TableAdapterManager.Connection = Nothing
+        Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_guiaTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.factura_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.factura_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.guia_despachoTableAdapter = Nothing
+        Me.TableAdapterManager.mermasTableAdapter = Nothing
+        Me.TableAdapterManager.productoTableAdapter = Nothing
+        Me.TableAdapterManager.proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.registroTableAdapter = Nothing
+        Me.TableAdapterManager.tipousuarioTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.usuarioTableAdapter = Nothing
+        '
+        'BoletaTableAdapter
+        '
+        Me.BoletaTableAdapter.ClearBeforeFill = True
+        '
+        'Factura_ingresoTableAdapter
+        '
+        Me.Factura_ingresoTableAdapter.ClearBeforeFill = True
+        '
+        'MermasBindingSource
+        '
+        Me.MermasBindingSource.DataMember = "mermas"
+        Me.MermasBindingSource.DataSource = Me.ControlinventarioDataSet
+        '
+        'MermasTableAdapter
+        '
+        Me.MermasTableAdapter.ClearBeforeFill = True
+        '
+        'Guia_despachoTableAdapter
+        '
+        Me.Guia_despachoTableAdapter.ClearBeforeFill = True
         '
         'Factura_egresoTableAdapter
         '
         Me.Factura_egresoTableAdapter.ClearBeforeFill = True
         '
-        'Button2
+        'N_factura
         '
-        Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(675, 451)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(202, 94)
-        Me.Button2.TabIndex = 12
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_verdocumentos
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(329, 376)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(201, 94)
-        Me.Button1.TabIndex = 11
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Factura_egresoDataGridView
-        '
-        Me.Factura_egresoDataGridView.AllowUserToAddRows = False
-        Me.Factura_egresoDataGridView.AllowUserToDeleteRows = False
-        Me.Factura_egresoDataGridView.AutoGenerateColumns = False
-        Me.Factura_egresoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Factura_egresoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn52, Me.DataGridViewTextBoxColumn53, Me.DataGridViewTextBoxColumn54, Me.DataGridViewTextBoxColumn55, Me.DataGridViewTextBoxColumn56, Me.DataGridViewTextBoxColumn57, Me.DataGridViewTextBoxColumn58, Me.DataGridViewTextBoxColumn59, Me.DataGridViewTextBoxColumn60, Me.DataGridViewTextBoxColumn61, Me.DataGridViewTextBoxColumn62, Me.DataGridViewTextBoxColumn63, Me.DataGridViewTextBoxColumn64, Me.DataGridViewTextBoxColumn65})
-        Me.Factura_egresoDataGridView.DataSource = Me.Factura_egresoBindingSource
-        Me.Factura_egresoDataGridView.Location = New System.Drawing.Point(156, 124)
-        Me.Factura_egresoDataGridView.Name = "Factura_egresoDataGridView"
-        Me.Factura_egresoDataGridView.ReadOnly = True
-        Me.Factura_egresoDataGridView.RowHeadersVisible = False
-        Me.Factura_egresoDataGridView.Size = New System.Drawing.Size(630, 235)
-        Me.Factura_egresoDataGridView.TabIndex = 19
-        '
-        'DataGridViewTextBoxColumn52
-        '
-        Me.DataGridViewTextBoxColumn52.DataPropertyName = "n_factura"
-        Me.DataGridViewTextBoxColumn52.HeaderText = "n_factura"
-        Me.DataGridViewTextBoxColumn52.Name = "DataGridViewTextBoxColumn52"
-        '
-        'DataGridViewTextBoxColumn53
-        '
-        Me.DataGridViewTextBoxColumn53.DataPropertyName = "rut_prov"
-        Me.DataGridViewTextBoxColumn53.HeaderText = "rut_prov"
-        Me.DataGridViewTextBoxColumn53.Name = "DataGridViewTextBoxColumn53"
-        '
-        'DataGridViewTextBoxColumn54
-        '
-        Me.DataGridViewTextBoxColumn54.DataPropertyName = "nombre_prov"
-        Me.DataGridViewTextBoxColumn54.HeaderText = "nombre_prov"
-        Me.DataGridViewTextBoxColumn54.Name = "DataGridViewTextBoxColumn54"
-        '
-        'DataGridViewTextBoxColumn55
-        '
-        Me.DataGridViewTextBoxColumn55.DataPropertyName = "direccion"
-        Me.DataGridViewTextBoxColumn55.HeaderText = "direccion"
-        Me.DataGridViewTextBoxColumn55.Name = "DataGridViewTextBoxColumn55"
-        '
-        'DataGridViewTextBoxColumn56
-        '
-        Me.DataGridViewTextBoxColumn56.DataPropertyName = "comuna"
-        Me.DataGridViewTextBoxColumn56.HeaderText = "comuna"
-        Me.DataGridViewTextBoxColumn56.Name = "DataGridViewTextBoxColumn56"
-        '
-        'DataGridViewTextBoxColumn57
-        '
-        Me.DataGridViewTextBoxColumn57.DataPropertyName = "ciudad"
-        Me.DataGridViewTextBoxColumn57.HeaderText = "ciudad"
-        Me.DataGridViewTextBoxColumn57.Name = "DataGridViewTextBoxColumn57"
-        '
-        'DataGridViewTextBoxColumn58
-        '
-        Me.DataGridViewTextBoxColumn58.DataPropertyName = "email"
-        Me.DataGridViewTextBoxColumn58.HeaderText = "email"
-        Me.DataGridViewTextBoxColumn58.Name = "DataGridViewTextBoxColumn58"
-        '
-        'DataGridViewTextBoxColumn59
-        '
-        Me.DataGridViewTextBoxColumn59.DataPropertyName = "fono"
-        Me.DataGridViewTextBoxColumn59.HeaderText = "fono"
-        Me.DataGridViewTextBoxColumn59.Name = "DataGridViewTextBoxColumn59"
-        '
-        'DataGridViewTextBoxColumn60
-        '
-        Me.DataGridViewTextBoxColumn60.DataPropertyName = "rut_cliente"
-        Me.DataGridViewTextBoxColumn60.HeaderText = "rut_cliente"
-        Me.DataGridViewTextBoxColumn60.Name = "DataGridViewTextBoxColumn60"
-        '
-        'DataGridViewTextBoxColumn61
-        '
-        Me.DataGridViewTextBoxColumn61.DataPropertyName = "fecha"
-        Me.DataGridViewTextBoxColumn61.HeaderText = "fecha"
-        Me.DataGridViewTextBoxColumn61.Name = "DataGridViewTextBoxColumn61"
-        '
-        'DataGridViewTextBoxColumn62
-        '
-        Me.DataGridViewTextBoxColumn62.DataPropertyName = "observacion"
-        Me.DataGridViewTextBoxColumn62.HeaderText = "observacion"
-        Me.DataGridViewTextBoxColumn62.Name = "DataGridViewTextBoxColumn62"
-        '
-        'DataGridViewTextBoxColumn63
-        '
-        Me.DataGridViewTextBoxColumn63.DataPropertyName = "valor_neto"
-        Me.DataGridViewTextBoxColumn63.HeaderText = "valor_neto"
-        Me.DataGridViewTextBoxColumn63.Name = "DataGridViewTextBoxColumn63"
-        '
-        'DataGridViewTextBoxColumn64
-        '
-        Me.DataGridViewTextBoxColumn64.DataPropertyName = "iva"
-        Me.DataGridViewTextBoxColumn64.HeaderText = "iva"
-        Me.DataGridViewTextBoxColumn64.Name = "DataGridViewTextBoxColumn64"
-        '
-        'DataGridViewTextBoxColumn65
-        '
-        Me.DataGridViewTextBoxColumn65.DataPropertyName = "total"
-        Me.DataGridViewTextBoxColumn65.HeaderText = "total"
-        Me.DataGridViewTextBoxColumn65.Name = "DataGridViewTextBoxColumn65"
+        Me.N_factura.Location = New System.Drawing.Point(428, 59)
+        Me.N_factura.Name = "N_factura"
+        Me.N_factura.Size = New System.Drawing.Size(100, 22)
+        Me.N_factura.TabIndex = 53
         '
         'BuscarFacturas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(897, 605)
+        Me.ClientSize = New System.Drawing.Size(1196, 769)
+        Me.Controls.Add(Me.N_factura)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Factura_egresoDataGridView)
         Me.Controls.Add(Me.Guia_despachoDataGridView)
         Me.Controls.Add(Me.Factura_ingresoDataGridView)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.N_factura)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BoletaDataGridView)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "BuscarFacturas"
         Me.Text = "BuscarFacturas"
         CType(Me.BoletaDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BoletaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.Factura_ingresoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Factura_ingresoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MermasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guia_despachoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guia_despachoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Factura_egresoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FacturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Factura_egresoDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.Factura_egresoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guia_despachoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Factura_ingresoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BoletaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MermasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -822,11 +955,9 @@ Partial Class BuscarFacturas
     Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
-    Friend WithEvents N_factura As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents Label1 As Label
     Friend WithEvents Factura_ingresoBindingSource As BindingSource
     Friend WithEvents Factura_ingresoTableAdapter As ControlinventarioDataSetTableAdapters.factura_ingresoTableAdapter
     Friend WithEvents Factura_ingresoDataGridView As DataGridView
@@ -883,4 +1014,14 @@ Partial Class BuscarFacturas
     Friend WithEvents DataGridViewTextBoxColumn63 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn64 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn65 As DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents DateTimePicker3 As DateTimePicker
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents RadioButton8 As RadioButton
+    Friend WithEvents RadioButton9 As RadioButton
+    Friend WithEvents RadioButton10 As RadioButton
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents N_factura As TextBox
 End Class

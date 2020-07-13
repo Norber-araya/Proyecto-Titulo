@@ -37,11 +37,25 @@ Public Class Bodega
 
     End Function
     Public Sub dato2()
+        If RadioButton5.Checked = True Then
+            Dim comando = New SqlDataAdapter(" select * from producto where cod_producto LIKE'" & TextBox1.Text & "%'", GetConnection)
+            Dim DS As New DataSet
+            comando.Fill(DS, "producto")
+            DataGridView1.DataSource = DS.Tables("producto")
+        End If
 
-        Dim comando = New SqlDataAdapter(" select * from producto where cod_producto LIKE'" & TextBox1.Text & "%'", GetConnection)
-        Dim DS As New DataSet
-        comando.Fill(DS, "producto")
-        DataGridView1.DataSource = DS.Tables("producto")
+        If RadioButton7.Checked = True Then
+            Dim comando = New SqlDataAdapter(" select * from producto where nombre LIKE'" & TextBox3.Text & "%'", GetConnection)
+            Dim DS As New DataSet
+            comando.Fill(DS, "producto")
+            DataGridView1.DataSource = DS.Tables("producto")
+        End If
+        If RadioButton6.Checked = True Then
+            Dim comando = New SqlDataAdapter(" select * from producto where tipo_producto LIKE'" & ComboBox3.Text & "%'", GetConnection)
+            Dim DS As New DataSet
+            comando.Fill(DS, "producto")
+            DataGridView1.DataSource = DS.Tables("producto")
+        End If
     End Sub
 
 
@@ -91,5 +105,18 @@ Public Class Bodega
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         ProductoProveedor.Show()
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        dato2()
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        dato2()
     End Sub
 End Class

@@ -183,7 +183,7 @@ Public Class BuscarFacturas
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs)
         dato2()
     End Sub
-    Private Sub N_factura_TextChanged(sender As Object, e As EventArgs) Handles N_factura.TextChanged
+    Private Sub N_factura_TextChanged(sender As Object, e As EventArgs)
         dato1()
     End Sub
 
@@ -191,5 +191,207 @@ Public Class BuscarFacturas
         dato3()
     End Sub
 
+    Private Sub RadioButton10_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton10.CheckedChanged
+        If RadioButton10.Checked = True Then
+            RadioButton9.Checked = False
+            RadioButton8.Checked = False
+            DateTimePicker3.Enabled = True
+            ComboBox1.Enabled = False
+            ComboBox4.Enabled = False
+            If DateTimePicker3.Text = "" Then
 
+            Else
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker3.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker3.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy(Me.ControlinventarioDataSet.boleta, DateTimePicker3.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker3.Text)
+                End If
+
+            End If
+        End If
+    End Sub
+
+    Private Sub DateTimePicker3_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker3.ValueChanged
+        If RadioButton10.Checked = True Then
+            RadioButton9.Checked = False
+            RadioButton8.Checked = False
+            DateTimePicker3.Enabled = True
+            ComboBox1.Enabled = False
+            ComboBox4.Enabled = False
+            If DateTimePicker3.Text = "" Then
+
+            Else
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker3.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker3.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy(Me.ControlinventarioDataSet.boleta, DateTimePicker3.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker3.Text)
+                End If
+
+            End If
+        End If
+    End Sub
+
+    Private Sub RadioButton9_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton9.CheckedChanged
+        If RadioButton9.Checked = True Then
+            RadioButton10.Checked = False
+            RadioButton8.Checked = False
+            DateTimePicker3.Enabled = False
+            ComboBox1.Enabled = True
+            ComboBox4.Enabled = True
+            If ComboBox4.Text = "enero" Then
+                DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 1 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+
+            ElseIf ComboBox4.Text = "febrero" Then
+                DateTimePicker1.Text = "1 / 2 /" + ComboBox1.Text
+                DateTimePicker2.Text = "28 / 2 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "marzo" Then
+                DateTimePicker1.Text = "1 / 3 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 3 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "abril" Then
+                DateTimePicker1.Text = "1 / 4 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 4 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "mayo" Then
+                DateTimePicker1.Text = "1 / 5 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 5 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "junio" Then
+                DateTimePicker1.Text = "1 / 6 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 6 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "julio" Then
+                DateTimePicker1.Text = "1 / 7 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 7 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "agosto" Then
+                DateTimePicker1.Text = "1 / 8 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 8 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "septiembre" Then
+                DateTimePicker1.Text = "1 / 9 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 9/" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "octubre" Then
+                DateTimePicker1.Text = "1 / 10 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 10 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "noviembre" Then
+                DateTimePicker1.Text = "1 / 11 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 12 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "diciembre" Then
+
+                DateTimePicker1.Text = "1 / 12 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+
+            End If
+        End If
+    End Sub
+
+    Private Sub RadioButton8_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton8.CheckedChanged
+        If RadioButton8.Checked = True Then
+            RadioButton10.Checked = False
+            RadioButton9.Checked = False
+            DateTimePicker3.Enabled = False
+            ComboBox4.Enabled = False
+            ComboBox1.Enabled = True
+            DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
+            DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
+            Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+        End If
+    End Sub
+
+    Private Sub ComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox4.SelectedIndexChanged
+        If RadioButton9.Checked = True Then
+            RadioButton10.Checked = False
+            RadioButton8.Checked = False
+            DateTimePicker3.Enabled = False
+            ComboBox1.Enabled = True
+            ComboBox4.Enabled = True
+            If ComboBox4.Text = "enero" Then
+                DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 1 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+
+            ElseIf ComboBox4.Text = "febrero" Then
+                DateTimePicker1.Text = "1 / 2 /" + ComboBox1.Text
+                DateTimePicker2.Text = "28 / 2 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "marzo" Then
+                DateTimePicker1.Text = "1 / 3 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 3 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "abril" Then
+                DateTimePicker1.Text = "1 / 4 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 4 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "mayo" Then
+                DateTimePicker1.Text = "1 / 5 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 5 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "junio" Then
+                DateTimePicker1.Text = "1 / 6 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 6 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "julio" Then
+                DateTimePicker1.Text = "1 / 7 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 7 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "agosto" Then
+                DateTimePicker1.Text = "1 / 8 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 8 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "septiembre" Then
+                DateTimePicker1.Text = "1 / 9 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 9/" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "octubre" Then
+                DateTimePicker1.Text = "1 / 10 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 10 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "noviembre" Then
+                DateTimePicker1.Text = "1 / 11 /" + ComboBox1.Text
+                DateTimePicker2.Text = "30 / 12 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            ElseIf ComboBox4.Text = "diciembre" Then
+
+                DateTimePicker1.Text = "1 / 12 /" + ComboBox1.Text
+                DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+
+            End If
+        End If
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        If RadioButton8.Checked = True Then
+            RadioButton10.Checked = False
+            RadioButton9.Checked = False
+            DateTimePicker3.Enabled = False
+            ComboBox4.Enabled = False
+            ComboBox1.Enabled = True
+            DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
+            DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
+            Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+        End If
+    End Sub
 End Class

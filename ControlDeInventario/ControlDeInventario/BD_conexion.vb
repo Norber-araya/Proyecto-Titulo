@@ -31,6 +31,13 @@ Public Class BD_conexion
             Navegacion.Button13.Visible = False 'boleta
             Navegacion.Button5.Visible = False 'Factura ingreso
             Navegacion.Button10.Visible = False 'Factura ventas
+            Navegacion.Button4.Location = New Point(106, 127) 'bodega
+            Navegacion.Button7.Location = New Point(106, 236) 'merma
+            Navegacion.Button14.Location = New Point(387, 236) 'datos personales
+            Navegacion.Button9.Location = New Point(683, 127) ' documento
+            Navegacion.Button6.Location = New Point(675, 236) 'reportes
+            Navegacion.Button12.Location = New Point(387, 370) 'Cerrar sesion
+            Navegacion.Size = New Size(1000, 550)
 
         End If
         If tipo = "103" Then
@@ -39,7 +46,15 @@ Public Class BD_conexion
             Navegacion.Button2.Visible = False 'producto
             Navegacion.Button3.Visible = False 'usuario
             Navegacion.Button11.Visible = False 'cliente
-            Navegacion.Button5.Visible = False 'Factura ingreso
+            Navegacion.Button6.Visible = False 'Reportes 
+            Navegacion.Button4.Location = New Point(106, 127) 'bodega
+            Navegacion.Button7.Location = New Point(106, 236) 'merma
+            Navegacion.Button5.Location = New Point(683, 127) 'factura ingreso
+            Navegacion.Button10.Location = New Point(675, 236) 'factura egreso
+            Navegacion.Button9.Location = New Point(685, 343) 'documento
+            Navegacion.Button13.Location = New Point(106, 343) 'boleta
+            Navegacion.Button14.Location = New Point(387, 236) 'datos personales
+            Navegacion.Button12.Location = New Point(387, 450) 'Cerrar sesion
 
 
         End If
@@ -52,6 +67,13 @@ Public Class BD_conexion
             Navegacion.Button13.Visible = False 'boleta
             Navegacion.Button5.Visible = False 'Factura ingreso
             Navegacion.Button10.Visible = False 'Factura ventas
+            Navegacion.Button4.Location = New Point(106, 127) 'bodega
+            Navegacion.Button7.Location = New Point(106, 236) 'merma
+            Navegacion.Button14.Location = New Point(387, 236) 'datos personales
+            Navegacion.Button9.Location = New Point(683, 127) ' documento
+            Navegacion.Button6.Location = New Point(675, 236) 'reportes
+            Navegacion.Button12.Location = New Point(387, 370) 'Cerrar sesion
+            Navegacion.Size = New Size(1000, 550)
         End If
         If tipo = "105" Then
             Navegacion.permiso.Text = "Vendedor"
@@ -59,9 +81,19 @@ Public Class BD_conexion
             Navegacion.Button2.Visible = False 'producto
             Navegacion.Button3.Visible = False 'usuario
             Navegacion.Button11.Visible = False 'cliente
-            Navegacion.Button13.Visible = False 'boleta
+            'Navegacion.Button13.Visible = False 'boleta
             Navegacion.Button5.Visible = False 'Factura ingreso
-            Navegacion.Button10.Visible = False 'Factura ventas
+            'Navegacion.Button10.Visible = False 'Factura ventas
+            Navegacion.Button7.Visible = False 'merma
+            Navegacion.Button6.Visible = False 'Reportes 
+            Navegacion.Button4.Location = New Point(106, 127) 'bodega
+            Navegacion.Button9.Location = New Point(106, 236) 'documento
+            Navegacion.Button10.Location = New Point(678, 127) 'factura egreso
+            Navegacion.Button13.Location = New Point(683, 236) 'boleta
+            Navegacion.Button14.Location = New Point(387, 236) 'datos personales
+            Navegacion.Button12.Location = New Point(387, 370) 'Cerrar sesion
+            Navegacion.Size = New Size(1000, 550)
+
         End If
 
     End Sub
