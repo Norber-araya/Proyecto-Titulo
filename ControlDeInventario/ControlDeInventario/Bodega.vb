@@ -7,7 +7,7 @@ Public Class Bodega
         Return New SqlConnection("Data Source=.;Initial Catalog=Controlinventario;Integrated Security=True")
     End Function
 
-    Private Sub ProductoBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles ProductoBindingNavigatorSaveItem.Click
+    Private Sub ProductoBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.ProductoBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.ControlinventarioDataSet)
@@ -89,25 +89,7 @@ Public Class Bodega
         Me.Close()
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        If tipo = "100" Or tipo = "101" Then
-            For Each Fila As DataGridViewRow In DataGridView1.Rows
-
-
-                If Fila.Cells("eliminar").Value <> Nothing Then
-                    Dim dato As String = Fila.Cells(1).Value.ToString
-                    bdconexion.eliminar_prod(dato)
-                    'bdconexion.insertar_registro()
-
-                End If
-
-            Next
-            Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)
-        Else
-            MsgBox("No tiene permiso")
-        End If
-
-
-
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        ProductoProveedor.Show()
     End Sub
 End Class

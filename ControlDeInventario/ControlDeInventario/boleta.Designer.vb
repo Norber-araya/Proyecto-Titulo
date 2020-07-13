@@ -39,7 +39,6 @@ Partial Class boleta
         Me.PrecioTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.Cod_productoTextBox = New System.Windows.Forms.TextBox()
-        Me.N_boletaTextBox = New System.Windows.Forms.TextBox()
         Me.Rut_empresaTextBox = New System.Windows.Forms.TextBox()
         Me.Nombre_empresaTextBox = New System.Windows.Forms.TextBox()
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
@@ -77,6 +76,7 @@ Partial Class boleta
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.N_boletaTextBox = New System.Windows.Forms.TextBox()
         CantidadLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
@@ -242,13 +242,6 @@ Partial Class boleta
         Me.Cod_productoTextBox.Size = New System.Drawing.Size(98, 20)
         Me.Cod_productoTextBox.TabIndex = 44
         '
-        'N_boletaTextBox
-        '
-        Me.N_boletaTextBox.Location = New System.Drawing.Point(182, 13)
-        Me.N_boletaTextBox.Name = "N_boletaTextBox"
-        Me.N_boletaTextBox.Size = New System.Drawing.Size(112, 20)
-        Me.N_boletaTextBox.TabIndex = 35
-        '
         'Rut_empresaTextBox
         '
         Me.Rut_empresaTextBox.Location = New System.Drawing.Point(182, 39)
@@ -340,7 +333,13 @@ Partial Class boleta
         Me.TableAdapterManager.boletaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Nothing
         Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_guiaTableAdapter = Nothing
         Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.factura_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.factura_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.guia_despachoTableAdapter = Nothing
         Me.TableAdapterManager.mermasTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Me.ProductoTableAdapter
         Me.TableAdapterManager.proveedorTableAdapter = Nothing
@@ -543,12 +542,21 @@ Partial Class boleta
         Me.Button1.TabIndex = 50
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'N_boletaTextBox
+        '
+        Me.N_boletaTextBox.Enabled = False
+        Me.N_boletaTextBox.Location = New System.Drawing.Point(182, 13)
+        Me.N_boletaTextBox.Name = "N_boletaTextBox"
+        Me.N_boletaTextBox.Size = New System.Drawing.Size(112, 20)
+        Me.N_boletaTextBox.TabIndex = 36
+        '
         'boleta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
         Me.ClientSize = New System.Drawing.Size(777, 557)
+        Me.Controls.Add(Me.N_boletaTextBox)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Rut_clienteLabel)
@@ -568,7 +576,6 @@ Partial Class boleta
         Me.Controls.Add(Cod_productoLabel)
         Me.Controls.Add(Me.Cod_productoTextBox)
         Me.Controls.Add(N_boletaLabel)
-        Me.Controls.Add(Me.N_boletaTextBox)
         Me.Controls.Add(Rut_empresaLabel)
         Me.Controls.Add(Me.Rut_empresaTextBox)
         Me.Controls.Add(Nombre_empresaLabel)
@@ -604,7 +611,6 @@ Partial Class boleta
     Friend WithEvents PrecioTextBox As TextBox
     Friend WithEvents NombreTextBox As TextBox
     Friend WithEvents Cod_productoTextBox As TextBox
-    Friend WithEvents N_boletaTextBox As TextBox
     Friend WithEvents Rut_empresaTextBox As TextBox
     Friend WithEvents Nombre_empresaTextBox As TextBox
     Friend WithEvents DireccionTextBox As TextBox
@@ -638,4 +644,5 @@ Partial Class boleta
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents N_boletaTextBox As TextBox
 End Class

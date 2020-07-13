@@ -26,7 +26,6 @@ Partial Class Navegacion
         Me.rut = New System.Windows.Forms.Label()
         Me.nombre = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
@@ -86,16 +85,6 @@ Partial Class Navegacion
         Me.Label3.TabIndex = 54
         Me.Label3.Text = "Bienvenido Usuario:"
         '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(461, 370)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(85, 41)
-        Me.Button8.TabIndex = 66
-        Me.Button8.Text = "Detalle Proveedor"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -123,7 +112,7 @@ Partial Class Navegacion
         Me.Button13.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_boletas
         Me.Button13.FlatAppearance.BorderSize = 0
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.Location = New System.Drawing.Point(391, 444)
+        Me.Button13.Location = New System.Drawing.Point(396, 345)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(203, 93)
         Me.Button13.TabIndex = 72
@@ -274,7 +263,6 @@ Partial Class Navegacion
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -301,7 +289,6 @@ Partial Class Navegacion
     Friend WithEvents Label3 As Label
     Friend WithEvents Button10 As Button
     Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button

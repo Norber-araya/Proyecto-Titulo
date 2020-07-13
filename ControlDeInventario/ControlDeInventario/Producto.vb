@@ -88,4 +88,8 @@ Public Class Producto
     Private Sub PrecioTextBox_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        ProductoProveedor.Show()
+    End Sub
 End Class

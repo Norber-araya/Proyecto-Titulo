@@ -20,7 +20,7 @@ Public Class boleta
         Me.BoletaTableAdapter.Fill(Me.ControlinventarioDataSet.boleta)
         'TODO: esta línea de código carga datos en la tabla 'ControlinventarioDataSet.producto' Puede moverla o quitarla según sea necesario.
         Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)
-
+        numeracion()
         Panel1.Visible = False
         Rut_empresaTextBox.Text = "44.300.251-0"
         Nombre_empresaTextBox.Text = "MiOficinaS.A"
@@ -45,6 +45,20 @@ Public Class boleta
         comando.Fill(DS, "cliente")
         ClienteDataGridView.DataSource = DS.Tables("cliente")
     End Sub
+    Public Sub numeracion()
+        conexion.Open()
+        Dim nun As String
+        Dim comando = New SqlCommand("select * from boleta ", conexion)
+        Dim dr As SqlDataReader = comando.ExecuteReader()
+
+        While dr.Read()
+            nun = Convert.ToString(dr("n_boleta"))
+        End While
+
+        nun = Val(nun) + 1
+        N_boletaTextBox.Text = nun
+        conexion.Close()
+    End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         elegir_producto.tipo = 1
@@ -66,7 +80,7 @@ Public Class boleta
         End If
     End Sub
 
-    Private Sub N_boletaTextBox_TextChanged_1(sender As Object, e As KeyPressEventArgs) Handles N_boletaTextBox.KeyPress
+    Private Sub N_boletaTextBox_TextChanged_1(sender As Object, e As KeyPressEventArgs)
         Dim prod As String
         Dim can As String
         Dim toll As String

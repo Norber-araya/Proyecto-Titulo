@@ -122,6 +122,11 @@ ControlDeInventario
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_listarcliente">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_listarprod">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

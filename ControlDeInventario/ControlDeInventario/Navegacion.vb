@@ -1,26 +1,7 @@
 ﻿Public Class Navegacion
     Public tipo As String
     Private Sub Navegacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If tipo = "100" Then
-            permiso.Text = "Root"
-            'Button4.Location = New Point(359, 10)
 
-        End If
-        If tipo = "101" Then
-            permiso.Text = "Administardor Gerente"
-        End If
-        If tipo = "102" Then
-            permiso.Text = "Gerente"
-        End If
-        If tipo = "103" Then
-            permiso.Text = "Operador Bodega"
-        End If
-        If tipo = "104" Then
-            permiso.Text = "Visita"
-        End If
-        If tipo = "105" Then
-            permiso.Text = "Vendedor"
-        End If
     End Sub
 
 
@@ -140,7 +121,7 @@
         Close()
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(sender As Object, e As EventArgs)
 
     End Sub
 

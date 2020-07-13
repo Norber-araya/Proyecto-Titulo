@@ -4,6 +4,7 @@ Public Class BD_conexion
     Dim conexion As New System.Data.SqlClient.SqlConnection()
     Dim direccion As ConnectionStringSettings
     Dim comando As SqlCommand
+    Public tipo As String
     Sub conectar()
         ' hay que entrar a app.config y cambiar los valores connection string x nuestra conexion y name x un nombre
         direccion = ConfigurationManager.ConnectionStrings("conexion")
@@ -11,6 +12,58 @@ Public Class BD_conexion
         conexion.Open()
 
         'MsgBox("conectado")
+    End Sub
+    Sub dato1()
+        If tipo = "100" Then
+            Navegacion.permiso.Text = "Root"
+            'Button4.Location = New Point(359, 10)
+            'Navegacion.Size = New Size(100, 100)
+        End If
+        If tipo = "101" Then
+            Navegacion.permiso.Text = "Administardor Gerente"
+        End If
+        If tipo = "102" Then
+            Navegacion.permiso.Text = "Gerente"
+            Navegacion.Button1.Visible = False 'proveedor
+            Navegacion.Button2.Visible = False 'producto
+            Navegacion.Button3.Visible = False 'usuario
+            Navegacion.Button11.Visible = False 'cliente
+            Navegacion.Button13.Visible = False 'boleta
+            Navegacion.Button5.Visible = False 'Factura ingreso
+            Navegacion.Button10.Visible = False 'Factura ventas
+
+        End If
+        If tipo = "103" Then
+            Navegacion.permiso.Text = "Operador Bodega"
+            Navegacion.Button1.Visible = False 'proveedor
+            Navegacion.Button2.Visible = False 'producto
+            Navegacion.Button3.Visible = False 'usuario
+            Navegacion.Button11.Visible = False 'cliente
+            Navegacion.Button5.Visible = False 'Factura ingreso
+
+
+        End If
+        If tipo = "104" Then
+            Navegacion.permiso.Text = "Visita"
+            Navegacion.Button1.Visible = False 'proveedor
+            Navegacion.Button2.Visible = False 'producto
+            Navegacion.Button3.Visible = False 'usuario
+            Navegacion.Button11.Visible = False 'cliente
+            Navegacion.Button13.Visible = False 'boleta
+            Navegacion.Button5.Visible = False 'Factura ingreso
+            Navegacion.Button10.Visible = False 'Factura ventas
+        End If
+        If tipo = "105" Then
+            Navegacion.permiso.Text = "Vendedor"
+            Navegacion.Button1.Visible = False 'proveedor
+            Navegacion.Button2.Visible = False 'producto
+            Navegacion.Button3.Visible = False 'usuario
+            Navegacion.Button11.Visible = False 'cliente
+            Navegacion.Button13.Visible = False 'boleta
+            Navegacion.Button5.Visible = False 'Factura ingreso
+            Navegacion.Button10.Visible = False 'Factura ventas
+        End If
+
     End Sub
 
     'RECUPERAR CONTRASEÑA'
@@ -93,7 +146,6 @@ Public Class BD_conexion
     End Sub
     Sub prueba(usuario As String)
         conectar()
-        Dim tipo As String
         Dim nombre As String
         Dim rut As String
         comando = New SqlCommand(" select * from usuario where rut ='" + usuario + "'", conexion)
@@ -106,9 +158,8 @@ Public Class BD_conexion
         'enviar datos al menu'
         Navegacion.tipo = tipo
         Navegacion.rut.Text = rut
-        Navegacion.nombre.text = nombre
-
-
+        Navegacion.nombre.Text = nombre
+        dato1()
         desconectar()
     End Sub
     Sub login(usuario As String, contraseña As String)
