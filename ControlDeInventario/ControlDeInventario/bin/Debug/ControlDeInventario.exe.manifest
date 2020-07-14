@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ControlDeInventario.exe" size="833992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ControlDeInventario.exe" size="840648">
       <assemblyIdentity name="ControlDeInventario" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jxdjkdh1PORxcLOPH5NBZX4x2o0oFJY0ZZRFfx25ecA=</dsig:DigestValue>
+        <dsig:DigestValue>Fc5V7DxWrPocRsa2ka7gq2Zgytwb6Zw9Q7JiJKZL7CM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
