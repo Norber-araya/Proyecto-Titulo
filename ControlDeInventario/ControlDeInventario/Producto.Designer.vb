@@ -32,8 +32,6 @@ Partial Class Producto
         Me.PrecioTextBox = New System.Windows.Forms.TextBox()
         Me.Fecha_ultiDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ProveedorDataGridView = New System.Windows.Forms.DataGridView()
@@ -52,6 +50,8 @@ Partial Class Producto
         Me.TableAdapterManager = New ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager()
         Me.ProveedorTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.proveedorTableAdapter()
         Me.ProductoTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.productoTableAdapter()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -145,32 +145,10 @@ Partial Class Producto
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.ProveedorDataGridView)
-        Me.Panel1.Location = New System.Drawing.Point(14, 20)
+        Me.Panel1.Location = New System.Drawing.Point(14, 33)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(519, 387)
         Me.Panel1.TabIndex = 35
-        '
-        'Button7
-        '
-        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(0, 299)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(154, 73)
-        Me.Button7.TabIndex = 4
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(192, 286)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(199, 101)
-        Me.Button6.TabIndex = 3
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -314,12 +292,34 @@ Partial Class Producto
         '
         Me.ProductoTableAdapter.ClearBeforeFill = True
         '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(0, 299)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(154, 73)
+        Me.Button7.TabIndex = 4
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(192, 286)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(199, 101)
+        Me.Button6.TabIndex = 3
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Button5
         '
         Me.Button5.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(332, 353)
+        Me.Button5.Location = New System.Drawing.Point(214, 367)
         Me.Button5.Name = "Button5"
         Me.Button5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Button5.Size = New System.Drawing.Size(198, 91)
@@ -332,7 +332,7 @@ Partial Class Producto
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(11, 359)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(204, 101)
         Me.Button2.TabIndex = 31
@@ -344,7 +344,7 @@ Partial Class Producto
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Location = New System.Drawing.Point(11, 169)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(199, 95)
         Me.Button4.TabIndex = 33
@@ -356,7 +356,7 @@ Partial Class Producto
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(11, 266)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(199, 96)
         Me.Button1.TabIndex = 30
@@ -364,12 +364,14 @@ Partial Class Producto
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(276, 182)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button8.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_detalleproveedor
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Location = New System.Drawing.Point(214, 270)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(64, 35)
+        Me.Button8.Size = New System.Drawing.Size(200, 92)
         Me.Button8.TabIndex = 69
-        Me.Button8.Text = "Detalle Proveedor"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Producto
@@ -383,6 +385,7 @@ Partial Class Producto
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Cod_productoLabel)
         Me.Controls.Add(Me.Cod_productoTextBox)
@@ -391,7 +394,6 @@ Partial Class Producto
         Me.Controls.Add(PrecioLabel)
         Me.Controls.Add(Me.PrecioTextBox)
         Me.Controls.Add(Me.Fecha_ultiDateTimePicker)
-        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Tipo_productoLabel)
         Me.Controls.Add(Me.Tipo_productoTextBox)
         Me.Name = "Producto"

@@ -241,12 +241,14 @@ Partial Class proveedorEdid
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button3.Location = New System.Drawing.Point(21, 411)
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_volver
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(0, 402)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(196, 81)
         Me.Button3.TabIndex = 20
-        Me.Button3.Text = "Volver"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'ProveedorDataGridView
@@ -350,7 +352,7 @@ Partial Class proveedorEdid
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(895, 444)
+        Me.ClientSize = New System.Drawing.Size(895, 487)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

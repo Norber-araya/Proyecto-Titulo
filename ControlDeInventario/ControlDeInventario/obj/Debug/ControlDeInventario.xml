@@ -87,6 +87,11 @@ ControlDeInventario
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_detalleproveedor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_editar">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -208,6 +213,11 @@ ControlDeInventario
 </summary>
 </member>
 <member name="P:ControlDeInventario.My.Resources.Resources.boton_verificar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ControlDeInventario.My.Resources.Resources.boton_volver">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

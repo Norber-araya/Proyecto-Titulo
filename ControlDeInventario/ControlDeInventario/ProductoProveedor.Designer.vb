@@ -30,9 +30,9 @@ Partial Class ProductoProveedor
         Me.Detalle_proveedorDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Detalle_proveedorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Detalle_proveedorDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,15 +78,15 @@ Partial Class ProductoProveedor
         Me.Detalle_proveedorDataGridView.AllowUserToAddRows = False
         Me.Detalle_proveedorDataGridView.AllowUserToDeleteRows = False
         Me.Detalle_proveedorDataGridView.AutoGenerateColumns = False
+        Me.Detalle_proveedorDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Detalle_proveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Detalle_proveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
         Me.Detalle_proveedorDataGridView.DataSource = Me.Detalle_proveedorBindingSource
-        Me.Detalle_proveedorDataGridView.Location = New System.Drawing.Point(121, 107)
-        Me.Detalle_proveedorDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Detalle_proveedorDataGridView.Location = New System.Drawing.Point(91, 87)
         Me.Detalle_proveedorDataGridView.Name = "Detalle_proveedorDataGridView"
         Me.Detalle_proveedorDataGridView.ReadOnly = True
         Me.Detalle_proveedorDataGridView.RowHeadersVisible = False
-        Me.Detalle_proveedorDataGridView.Size = New System.Drawing.Size(315, 231)
+        Me.Detalle_proveedorDataGridView.Size = New System.Drawing.Size(204, 188)
         Me.Detalle_proveedorDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -103,44 +103,44 @@ Partial Class ProductoProveedor
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(16, 422)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 28)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Volver"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(225, 52)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(160, 45)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(135, 20)
         Me.TextBox1.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(165, 55)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(105, 45)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 17)
+        Me.Label1.Size = New System.Drawing.Size(49, 17)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Buscar:"
         '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_volver
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(-5, 290)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(193, 76)
+        Me.Button1.TabIndex = 2
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'ProductoProveedor
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(616, 465)
+        Me.BackColor = System.Drawing.Color.LemonChiffon
+        Me.ClientSize = New System.Drawing.Size(462, 378)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Detalle_proveedorDataGridView)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "ProductoProveedor"
         Me.Text = "ProductoProveedor"
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()

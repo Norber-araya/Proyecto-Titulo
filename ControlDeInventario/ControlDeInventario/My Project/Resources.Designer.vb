@@ -193,6 +193,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property boton_detalleproveedor() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("boton-detalleproveedor", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property boton_editar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("boton-editar", resourceCulture)
@@ -436,6 +446,16 @@ Namespace My.Resources
         Friend ReadOnly Property boton_verificar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("boton-verificar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property boton_volver() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("boton-volver", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

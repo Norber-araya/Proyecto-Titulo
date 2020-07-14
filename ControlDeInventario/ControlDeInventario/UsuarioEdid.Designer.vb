@@ -43,7 +43,6 @@ Partial Class UsuarioEdid
         Me.UsuarioTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.usuarioTableAdapter()
         Me.TableAdapterManager = New ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager()
         Me.UsuarioDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -52,6 +51,7 @@ Partial Class UsuarioEdid
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button3 = New System.Windows.Forms.Button()
         RutLabel1 = New System.Windows.Forms.Label()
         NombreLabel1 = New System.Windows.Forms.Label()
         ContactoLabel1 = New System.Windows.Forms.Label()
@@ -114,11 +114,13 @@ Partial Class UsuarioEdid
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(12, 371)
+        Me.Button6.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_volver
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(-3, 362)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(54, 23)
+        Me.Button6.Size = New System.Drawing.Size(195, 80)
         Me.Button6.TabIndex = 35
-        Me.Button6.Text = "Volver"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
@@ -215,7 +217,13 @@ Partial Class UsuarioEdid
         Me.TableAdapterManager.boletaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Nothing
         Me.TableAdapterManager.detalle_boletaTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_fac_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.detalle_guiaTableAdapter = Nothing
         Me.TableAdapterManager.detalle_proveedorTableAdapter = Nothing
+        Me.TableAdapterManager.factura_egresoTableAdapter = Nothing
+        Me.TableAdapterManager.factura_ingresoTableAdapter = Nothing
+        Me.TableAdapterManager.guia_despachoTableAdapter = Nothing
         Me.TableAdapterManager.mermasTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedorTableAdapter = Nothing
@@ -238,18 +246,6 @@ Partial Class UsuarioEdid
         Me.UsuarioDataGridView.RowHeadersVisible = False
         Me.UsuarioDataGridView.Size = New System.Drawing.Size(494, 151)
         Me.UsuarioDataGridView.TabIndex = 36
-        '
-        'Button3
-        '
-        Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_eliminar
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(11, 246)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(200, 97)
-        Me.Button3.TabIndex = 44
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'eliminar
         '
@@ -298,12 +294,24 @@ Partial Class UsuarioEdid
         Me.DataGridViewTextBoxColumn7.HeaderText = "email"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_eliminar
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(11, 246)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(200, 97)
+        Me.Button3.TabIndex = 44
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'UsuarioEdid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(793, 406)
+        Me.ClientSize = New System.Drawing.Size(793, 442)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.UsuarioDataGridView)
         Me.Controls.Add(Me.Button6)

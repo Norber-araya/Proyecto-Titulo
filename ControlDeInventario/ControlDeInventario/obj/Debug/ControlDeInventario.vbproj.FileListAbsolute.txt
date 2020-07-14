@@ -224,3 +224,4 @@ C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\De
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerGuia.resources
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.exe.manifest
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.application
+C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.ProductoProveedor.resources
