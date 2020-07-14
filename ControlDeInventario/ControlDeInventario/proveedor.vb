@@ -27,6 +27,7 @@
             Rut_provTextBox.Text = ""
             Nombre_provTextBox.Text = ""
             DireccionTextBox.Text = ""
+            CiudadTextBox.Text = ""
             ComunaTextBox.Text = ""
             EmailTextBox.Text = ""
             FonoTextBox.Text = ""

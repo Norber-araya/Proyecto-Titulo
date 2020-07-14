@@ -60,6 +60,10 @@ Public Class proveedorEdid
 
 
     Private Sub Button4_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
         For Each Fila As DataGridViewRow In ProveedorDataGridView.Rows
 
             If Fila.Cells("eliminar").Value <> Nothing Then

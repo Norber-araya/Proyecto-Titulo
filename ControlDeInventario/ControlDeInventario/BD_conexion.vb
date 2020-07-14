@@ -493,7 +493,7 @@ Public Class BD_conexion
             comando.ExecuteNonQuery()
             MsgBox("El Proveedor: " & UCase(rut_prov) & " ha sido borrado")
         Else
-            MsgBox("El Proveedor: " & UCase(rut_prov) & " no existe")
+
         End If
 
         desconectar()

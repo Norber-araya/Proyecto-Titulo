@@ -72,10 +72,9 @@ Partial Class proveedorEdid
         '
         Rut_provLabel.AutoSize = True
         Rut_provLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Rut_provLabel.Location = New System.Drawing.Point(844, 112)
-        Rut_provLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Rut_provLabel.Location = New System.Drawing.Point(633, 91)
         Rut_provLabel.Name = "Rut_provLabel"
-        Rut_provLabel.Size = New System.Drawing.Size(109, 21)
+        Rut_provLabel.Size = New System.Drawing.Size(85, 17)
         Rut_provLabel.TabIndex = 5
         Rut_provLabel.Text = "Rut proveedor"
         '
@@ -83,10 +82,9 @@ Partial Class proveedorEdid
         '
         Nombre_provLabel.AutoSize = True
         Nombre_provLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Nombre_provLabel.Location = New System.Drawing.Point(844, 140)
-        Nombre_provLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Nombre_provLabel.Location = New System.Drawing.Point(633, 114)
         Nombre_provLabel.Name = "Nombre_provLabel"
-        Nombre_provLabel.Size = New System.Drawing.Size(141, 21)
+        Nombre_provLabel.Size = New System.Drawing.Size(110, 17)
         Nombre_provLabel.TabIndex = 7
         Nombre_provLabel.Text = "Nombre proveedor"
         '
@@ -94,10 +92,9 @@ Partial Class proveedorEdid
         '
         DireccionLabel.AutoSize = True
         DireccionLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DireccionLabel.Location = New System.Drawing.Point(844, 172)
-        DireccionLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        DireccionLabel.Location = New System.Drawing.Point(633, 140)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(78, 21)
+        DireccionLabel.Size = New System.Drawing.Size(61, 17)
         DireccionLabel.TabIndex = 9
         DireccionLabel.Text = "Direccion"
         '
@@ -105,10 +102,9 @@ Partial Class proveedorEdid
         '
         ComunaLabel.AutoSize = True
         ComunaLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ComunaLabel.Location = New System.Drawing.Point(844, 204)
-        ComunaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        ComunaLabel.Location = New System.Drawing.Point(633, 166)
         ComunaLabel.Name = "ComunaLabel"
-        ComunaLabel.Size = New System.Drawing.Size(68, 21)
+        ComunaLabel.Size = New System.Drawing.Size(53, 17)
         ComunaLabel.TabIndex = 11
         ComunaLabel.Text = "Comuna"
         '
@@ -116,10 +112,9 @@ Partial Class proveedorEdid
         '
         CiudadLabel.AutoSize = True
         CiudadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        CiudadLabel.Location = New System.Drawing.Point(844, 236)
-        CiudadLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        CiudadLabel.Location = New System.Drawing.Point(633, 192)
         CiudadLabel.Name = "CiudadLabel"
-        CiudadLabel.Size = New System.Drawing.Size(60, 21)
+        CiudadLabel.Size = New System.Drawing.Size(47, 17)
         CiudadLabel.TabIndex = 13
         CiudadLabel.Text = "Ciudad"
         '
@@ -127,10 +122,9 @@ Partial Class proveedorEdid
         '
         EmailLabel.AutoSize = True
         EmailLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        EmailLabel.Location = New System.Drawing.Point(844, 272)
-        EmailLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        EmailLabel.Location = New System.Drawing.Point(633, 221)
         EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(49, 21)
+        EmailLabel.Size = New System.Drawing.Size(38, 17)
         EmailLabel.TabIndex = 15
         EmailLabel.Text = "Email"
         '
@@ -138,10 +132,9 @@ Partial Class proveedorEdid
         '
         FonoLabel.AutoSize = True
         FonoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        FonoLabel.Location = New System.Drawing.Point(844, 300)
-        FonoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        FonoLabel.Location = New System.Drawing.Point(633, 244)
         FonoLabel.Name = "FonoLabel"
-        FonoLabel.Size = New System.Drawing.Size(72, 21)
+        FonoLabel.Size = New System.Drawing.Size(56, 17)
         FonoLabel.TabIndex = 17
         FonoLabel.Text = "Telefono"
         '
@@ -182,102 +175,93 @@ Partial Class proveedorEdid
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(293, 53)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(220, 43)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(179, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(135, 20)
         Me.TextBox1.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(220, 53)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(165, 43)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 21)
+        Me.Label1.Size = New System.Drawing.Size(46, 17)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Buscar"
         '
         'Rut_provTextBox
         '
-        Me.Rut_provTextBox.Location = New System.Drawing.Point(999, 108)
-        Me.Rut_provTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Rut_provTextBox.Location = New System.Drawing.Point(749, 88)
         Me.Rut_provTextBox.Name = "Rut_provTextBox"
-        Me.Rut_provTextBox.Size = New System.Drawing.Size(163, 22)
+        Me.Rut_provTextBox.Size = New System.Drawing.Size(123, 20)
         Me.Rut_provTextBox.TabIndex = 6
         '
         'Nombre_provTextBox
         '
-        Me.Nombre_provTextBox.Location = New System.Drawing.Point(999, 140)
-        Me.Nombre_provTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Nombre_provTextBox.Location = New System.Drawing.Point(749, 114)
         Me.Nombre_provTextBox.Name = "Nombre_provTextBox"
-        Me.Nombre_provTextBox.Size = New System.Drawing.Size(163, 22)
+        Me.Nombre_provTextBox.Size = New System.Drawing.Size(123, 20)
         Me.Nombre_provTextBox.TabIndex = 8
         '
         'DireccionTextBox
         '
-        Me.DireccionTextBox.Location = New System.Drawing.Point(997, 172)
-        Me.DireccionTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(748, 140)
         Me.DireccionTextBox.Name = "DireccionTextBox"
-        Me.DireccionTextBox.Size = New System.Drawing.Size(164, 22)
+        Me.DireccionTextBox.Size = New System.Drawing.Size(124, 20)
         Me.DireccionTextBox.TabIndex = 10
         '
         'ComunaTextBox
         '
-        Me.ComunaTextBox.Location = New System.Drawing.Point(997, 204)
-        Me.ComunaTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComunaTextBox.Location = New System.Drawing.Point(748, 166)
         Me.ComunaTextBox.Name = "ComunaTextBox"
-        Me.ComunaTextBox.Size = New System.Drawing.Size(164, 22)
+        Me.ComunaTextBox.Size = New System.Drawing.Size(124, 20)
         Me.ComunaTextBox.TabIndex = 12
         '
         'CiudadTextBox
         '
-        Me.CiudadTextBox.Location = New System.Drawing.Point(997, 236)
-        Me.CiudadTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CiudadTextBox.Location = New System.Drawing.Point(748, 192)
         Me.CiudadTextBox.Name = "CiudadTextBox"
-        Me.CiudadTextBox.Size = New System.Drawing.Size(164, 22)
+        Me.CiudadTextBox.Size = New System.Drawing.Size(124, 20)
         Me.CiudadTextBox.TabIndex = 14
         '
         'EmailTextBox
         '
-        Me.EmailTextBox.Location = New System.Drawing.Point(997, 268)
-        Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.EmailTextBox.Location = New System.Drawing.Point(748, 218)
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(164, 22)
+        Me.EmailTextBox.Size = New System.Drawing.Size(124, 20)
         Me.EmailTextBox.TabIndex = 16
         '
         'FonoTextBox
         '
-        Me.FonoTextBox.Location = New System.Drawing.Point(997, 300)
-        Me.FonoTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FonoTextBox.Location = New System.Drawing.Point(748, 244)
         Me.FonoTextBox.Name = "FonoTextBox"
-        Me.FonoTextBox.Size = New System.Drawing.Size(164, 22)
+        Me.FonoTextBox.Size = New System.Drawing.Size(124, 20)
         Me.FonoTextBox.TabIndex = 18
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button3.Location = New System.Drawing.Point(28, 506)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Location = New System.Drawing.Point(21, 411)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 28)
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 20
         Me.Button3.Text = "Volver"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'ProveedorDataGridView
         '
+        Me.ProveedorDataGridView.AllowUserToAddRows = False
+        Me.ProveedorDataGridView.AllowUserToDeleteRows = False
         Me.ProveedorDataGridView.AutoGenerateColumns = False
         Me.ProveedorDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ProveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ProveedorDataGridView.DataSource = Me.ProveedorBindingSource
-        Me.ProveedorDataGridView.Location = New System.Drawing.Point(12, 80)
-        Me.ProveedorDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ProveedorDataGridView.Location = New System.Drawing.Point(9, 65)
         Me.ProveedorDataGridView.Name = "ProveedorDataGridView"
         Me.ProveedorDataGridView.RowHeadersVisible = False
-        Me.ProveedorDataGridView.Size = New System.Drawing.Size(784, 283)
+        Me.ProveedorDataGridView.Size = New System.Drawing.Size(588, 230)
         Me.ProveedorDataGridView.TabIndex = 1
         '
         'eliminar
@@ -332,10 +316,9 @@ Partial Class proveedorEdid
         Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_actualizar
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(911, 332)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Location = New System.Drawing.Point(683, 270)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(267, 123)
+        Me.Button2.Size = New System.Drawing.Size(200, 100)
         Me.Button2.TabIndex = 19
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -344,10 +327,9 @@ Partial Class proveedorEdid
         Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(389, 369)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(292, 300)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(265, 113)
+        Me.Button1.Size = New System.Drawing.Size(199, 92)
         Me.Button1.TabIndex = 2
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -356,19 +338,19 @@ Partial Class proveedorEdid
         Me.Button4.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_eliminar
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(43, 369)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button4.Location = New System.Drawing.Point(32, 300)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(271, 119)
+        Me.Button4.Size = New System.Drawing.Size(203, 97)
         Me.Button4.TabIndex = 34
         Me.Button4.UseVisualStyleBackColor = True
         '
         'proveedorEdid
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(1193, 546)
+        Me.ClientSize = New System.Drawing.Size(895, 444)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -390,7 +372,6 @@ Partial Class proveedorEdid
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ProveedorDataGridView)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "proveedorEdid"
         Me.Text = "proveedorEdid"
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()

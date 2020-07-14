@@ -1083,7 +1083,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
   <xs:element name="ControlinventarioDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ControlinventarioDataSet" msprop:Generator_UserDSName="ControlinventarioDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="usuario" msprop:Generator_TableClassName="usuarioDataTable" msprop:Generator_TableVarName="tableusuario" msprop:Generator_TablePropName="usuario" msprop:Generator_RowDeletingName="usuarioRowDeleting" msprop:Generator_RowChangingName="usuarioRowChanging" msprop:Generator_RowEvHandlerName="usuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="usuarioRowDeleted" msprop:Generator_UserTableName="usuario" msprop:Generator_RowChangedName="usuarioRowChanged" msprop:Generator_RowEvArgName="usuarioRowChangeEvent" msprop:Generator_RowClassName="usuarioRow">
+        <xs:element name="usuario" msprop:Generator_TableClassName="usuarioDataTable" msprop:Generator_TableVarName="tableusuario" msprop:Generator_RowChangedName="usuarioRowChanged" msprop:Generator_TablePropName="usuario" msprop:Generator_RowDeletingName="usuarioRowDeleting" msprop:Generator_RowChangingName="usuarioRowChanging" msprop:Generator_RowEvHandlerName="usuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="usuarioRowDeleted" msprop:Generator_RowClassName="usuarioRow" msprop:Generator_UserTableName="usuario" msprop:Generator_RowEvArgName="usuarioRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="rut" msprop:Generator_ColumnVarNameInTable="columnrut" msprop:Generator_ColumnPropNameInRow="rut" msprop:Generator_ColumnPropNameInTable="rutColumn" msprop:Generator_UserColumnName="rut">
@@ -1132,7 +1132,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tipousuario" msprop:Generator_TableClassName="tipousuarioDataTable" msprop:Generator_TableVarName="tabletipousuario" msprop:Generator_TablePropName="tipousuario" msprop:Generator_RowDeletingName="tipousuarioRowDeleting" msprop:Generator_RowChangingName="tipousuarioRowChanging" msprop:Generator_RowEvHandlerName="tipousuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="tipousuarioRowDeleted" msprop:Generator_UserTableName="tipousuario" msprop:Generator_RowChangedName="tipousuarioRowChanged" msprop:Generator_RowEvArgName="tipousuarioRowChangeEvent" msprop:Generator_RowClassName="tipousuarioRow">
+        <xs:element name="tipousuario" msprop:Generator_TableClassName="tipousuarioDataTable" msprop:Generator_TableVarName="tabletipousuario" msprop:Generator_RowChangedName="tipousuarioRowChanged" msprop:Generator_TablePropName="tipousuario" msprop:Generator_RowDeletingName="tipousuarioRowDeleting" msprop:Generator_RowChangingName="tipousuarioRowChanging" msprop:Generator_RowEvHandlerName="tipousuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="tipousuarioRowDeleted" msprop:Generator_RowClassName="tipousuarioRow" msprop:Generator_UserTableName="tipousuario" msprop:Generator_RowEvArgName="tipousuarioRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_tipousuario" msprop:Generator_ColumnVarNameInTable="columnid_tipousuario" msprop:Generator_ColumnPropNameInRow="id_tipousuario" msprop:Generator_ColumnPropNameInTable="id_tipousuarioColumn" msprop:Generator_UserColumnName="id_tipousuario" type="xs:int" />
@@ -1146,7 +1146,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="proveedor" msprop:Generator_TableClassName="proveedorDataTable" msprop:Generator_TableVarName="tableproveedor" msprop:Generator_TablePropName="proveedor" msprop:Generator_RowDeletingName="proveedorRowDeleting" msprop:Generator_RowChangingName="proveedorRowChanging" msprop:Generator_RowEvHandlerName="proveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="proveedorRowDeleted" msprop:Generator_UserTableName="proveedor" msprop:Generator_RowChangedName="proveedorRowChanged" msprop:Generator_RowEvArgName="proveedorRowChangeEvent" msprop:Generator_RowClassName="proveedorRow">
+        <xs:element name="proveedor" msprop:Generator_TableClassName="proveedorDataTable" msprop:Generator_TableVarName="tableproveedor" msprop:Generator_RowChangedName="proveedorRowChanged" msprop:Generator_TablePropName="proveedor" msprop:Generator_RowDeletingName="proveedorRowDeleting" msprop:Generator_RowChangingName="proveedorRowChanging" msprop:Generator_RowEvHandlerName="proveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="proveedorRowDeleted" msprop:Generator_RowClassName="proveedorRow" msprop:Generator_UserTableName="proveedor" msprop:Generator_RowEvArgName="proveedorRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="rut_prov" msprop:Generator_ColumnVarNameInTable="columnrut_prov" msprop:Generator_ColumnPropNameInRow="rut_prov" msprop:Generator_ColumnPropNameInTable="rut_provColumn" msprop:Generator_UserColumnName="rut_prov" minOccurs="0">
@@ -1201,7 +1201,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="cliente" msprop:Generator_TableClassName="clienteDataTable" msprop:Generator_TableVarName="tablecliente" msprop:Generator_TablePropName="cliente" msprop:Generator_RowDeletingName="clienteRowDeleting" msprop:Generator_RowChangingName="clienteRowChanging" msprop:Generator_RowEvHandlerName="clienteRowChangeEventHandler" msprop:Generator_RowDeletedName="clienteRowDeleted" msprop:Generator_UserTableName="cliente" msprop:Generator_RowChangedName="clienteRowChanged" msprop:Generator_RowEvArgName="clienteRowChangeEvent" msprop:Generator_RowClassName="clienteRow">
+        <xs:element name="cliente" msprop:Generator_TableClassName="clienteDataTable" msprop:Generator_TableVarName="tablecliente" msprop:Generator_RowChangedName="clienteRowChanged" msprop:Generator_TablePropName="cliente" msprop:Generator_RowDeletingName="clienteRowDeleting" msprop:Generator_RowChangingName="clienteRowChanging" msprop:Generator_RowEvHandlerName="clienteRowChangeEventHandler" msprop:Generator_RowDeletedName="clienteRowDeleted" msprop:Generator_RowClassName="clienteRow" msprop:Generator_UserTableName="cliente" msprop:Generator_RowEvArgName="clienteRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="rut_cliente" msprop:Generator_ColumnVarNameInTable="columnrut_cliente" msprop:Generator_ColumnPropNameInRow="rut_cliente" msprop:Generator_ColumnPropNameInTable="rut_clienteColumn" msprop:Generator_UserColumnName="rut_cliente" minOccurs="0">
@@ -1256,7 +1256,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mermas" msprop:Generator_TableClassName="mermasDataTable" msprop:Generator_TableVarName="tablemermas" msprop:Generator_TablePropName="mermas" msprop:Generator_RowDeletingName="mermasRowDeleting" msprop:Generator_RowChangingName="mermasRowChanging" msprop:Generator_RowEvHandlerName="mermasRowChangeEventHandler" msprop:Generator_RowDeletedName="mermasRowDeleted" msprop:Generator_UserTableName="mermas" msprop:Generator_RowChangedName="mermasRowChanged" msprop:Generator_RowEvArgName="mermasRowChangeEvent" msprop:Generator_RowClassName="mermasRow">
+        <xs:element name="mermas" msprop:Generator_TableClassName="mermasDataTable" msprop:Generator_TableVarName="tablemermas" msprop:Generator_RowChangedName="mermasRowChanged" msprop:Generator_TablePropName="mermas" msprop:Generator_RowDeletingName="mermasRowDeleting" msprop:Generator_RowChangingName="mermasRowChanging" msprop:Generator_RowEvHandlerName="mermasRowChangeEventHandler" msprop:Generator_RowDeletedName="mermasRowDeleted" msprop:Generator_RowClassName="mermasRow" msprop:Generator_UserTableName="mermas" msprop:Generator_RowEvArgName="mermasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_mermas" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_mermas" msprop:Generator_ColumnPropNameInRow="id_mermas" msprop:Generator_ColumnPropNameInTable="id_mermasColumn" msprop:Generator_UserColumnName="id_mermas" type="xs:int" />
@@ -1286,7 +1286,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="detalle_proveedor" msprop:Generator_TableClassName="detalle_proveedorDataTable" msprop:Generator_TableVarName="tabledetalle_proveedor" msprop:Generator_TablePropName="detalle_proveedor" msprop:Generator_RowDeletingName="detalle_proveedorRowDeleting" msprop:Generator_RowChangingName="detalle_proveedorRowChanging" msprop:Generator_RowEvHandlerName="detalle_proveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_proveedorRowDeleted" msprop:Generator_UserTableName="detalle_proveedor" msprop:Generator_RowChangedName="detalle_proveedorRowChanged" msprop:Generator_RowEvArgName="detalle_proveedorRowChangeEvent" msprop:Generator_RowClassName="detalle_proveedorRow">
+        <xs:element name="detalle_proveedor" msprop:Generator_TableClassName="detalle_proveedorDataTable" msprop:Generator_TableVarName="tabledetalle_proveedor" msprop:Generator_RowChangedName="detalle_proveedorRowChanged" msprop:Generator_TablePropName="detalle_proveedor" msprop:Generator_RowDeletingName="detalle_proveedorRowDeleting" msprop:Generator_RowChangingName="detalle_proveedorRowChanging" msprop:Generator_RowEvHandlerName="detalle_proveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_proveedorRowDeleted" msprop:Generator_RowClassName="detalle_proveedorRow" msprop:Generator_UserTableName="detalle_proveedor" msprop:Generator_RowEvArgName="detalle_proveedorRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="cod_producto" msprop:Generator_ColumnVarNameInTable="columncod_producto" msprop:Generator_ColumnPropNameInRow="cod_producto" msprop:Generator_ColumnPropNameInTable="cod_productoColumn" msprop:Generator_UserColumnName="cod_producto" minOccurs="0">
@@ -1306,7 +1306,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="producto" msprop:Generator_TableClassName="productoDataTable" msprop:Generator_TableVarName="tableproducto" msprop:Generator_RowChangedName="productoRowChanged" msprop:Generator_TablePropName="producto" msprop:Generator_RowDeletingName="productoRowDeleting" msprop:Generator_RowChangingName="productoRowChanging" msprop:Generator_RowEvHandlerName="productoRowChangeEventHandler" msprop:Generator_RowDeletedName="productoRowDeleted" msprop:Generator_RowClassName="productoRow" msprop:Generator_UserTableName="producto" msprop:Generator_RowEvArgName="productoRowChangeEvent">
+        <xs:element name="producto" msprop:Generator_TableClassName="productoDataTable" msprop:Generator_TableVarName="tableproducto" msprop:Generator_TablePropName="producto" msprop:Generator_RowDeletingName="productoRowDeleting" msprop:Generator_RowChangingName="productoRowChanging" msprop:Generator_RowEvHandlerName="productoRowChangeEventHandler" msprop:Generator_RowDeletedName="productoRowDeleted" msprop:Generator_UserTableName="producto" msprop:Generator_RowChangedName="productoRowChanged" msprop:Generator_RowEvArgName="productoRowChangeEvent" msprop:Generator_RowClassName="productoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="cod_producto" msprop:Generator_ColumnVarNameInTable="columncod_producto" msprop:Generator_ColumnPropNameInRow="cod_producto" msprop:Generator_ColumnPropNameInTable="cod_productoColumn" msprop:Generator_UserColumnName="cod_producto">
@@ -1335,7 +1335,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="detalle_boleta" msprop:Generator_TableClassName="detalle_boletaDataTable" msprop:Generator_TableVarName="tabledetalle_boleta" msprop:Generator_RowChangedName="detalle_boletaRowChanged" msprop:Generator_TablePropName="detalle_boleta" msprop:Generator_RowDeletingName="detalle_boletaRowDeleting" msprop:Generator_RowChangingName="detalle_boletaRowChanging" msprop:Generator_RowEvHandlerName="detalle_boletaRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_boletaRowDeleted" msprop:Generator_RowClassName="detalle_boletaRow" msprop:Generator_UserTableName="detalle_boleta" msprop:Generator_RowEvArgName="detalle_boletaRowChangeEvent">
+        <xs:element name="detalle_boleta" msprop:Generator_TableClassName="detalle_boletaDataTable" msprop:Generator_TableVarName="tabledetalle_boleta" msprop:Generator_TablePropName="detalle_boleta" msprop:Generator_RowDeletingName="detalle_boletaRowDeleting" msprop:Generator_RowChangingName="detalle_boletaRowChanging" msprop:Generator_RowEvHandlerName="detalle_boletaRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_boletaRowDeleted" msprop:Generator_UserTableName="detalle_boleta" msprop:Generator_RowChangedName="detalle_boletaRowChanged" msprop:Generator_RowEvArgName="detalle_boletaRowChangeEvent" msprop:Generator_RowClassName="detalle_boletaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_boleta" msprop:Generator_ColumnVarNameInTable="columnn_boleta" msprop:Generator_ColumnPropNameInRow="n_boleta" msprop:Generator_ColumnPropNameInTable="n_boletaColumn" msprop:Generator_UserColumnName="n_boleta" type="xs:int" minOccurs="0" />
@@ -1350,7 +1350,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="boleta" msprop:Generator_TableClassName="boletaDataTable" msprop:Generator_TableVarName="tableboleta" msprop:Generator_TablePropName="boleta" msprop:Generator_RowDeletingName="boletaRowDeleting" msprop:Generator_RowChangingName="boletaRowChanging" msprop:Generator_RowEvHandlerName="boletaRowChangeEventHandler" msprop:Generator_RowDeletedName="boletaRowDeleted" msprop:Generator_UserTableName="boleta" msprop:Generator_RowChangedName="boletaRowChanged" msprop:Generator_RowEvArgName="boletaRowChangeEvent" msprop:Generator_RowClassName="boletaRow">
+        <xs:element name="boleta" msprop:Generator_TableClassName="boletaDataTable" msprop:Generator_TableVarName="tableboleta" msprop:Generator_RowChangedName="boletaRowChanged" msprop:Generator_TablePropName="boleta" msprop:Generator_RowDeletingName="boletaRowDeleting" msprop:Generator_RowChangingName="boletaRowChanging" msprop:Generator_RowEvHandlerName="boletaRowChangeEventHandler" msprop:Generator_RowDeletedName="boletaRowDeleted" msprop:Generator_RowClassName="boletaRow" msprop:Generator_UserTableName="boleta" msprop:Generator_RowEvArgName="boletaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_boleta" msprop:Generator_ColumnVarNameInTable="columnn_boleta" msprop:Generator_ColumnPropNameInRow="n_boleta" msprop:Generator_ColumnPropNameInTable="n_boletaColumn" msprop:Generator_UserColumnName="n_boleta" type="xs:int" minOccurs="0" />
@@ -1387,7 +1387,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="registro" msprop:Generator_TableClassName="registroDataTable" msprop:Generator_TableVarName="tableregistro" msprop:Generator_TablePropName="registro" msprop:Generator_RowDeletingName="registroRowDeleting" msprop:Generator_RowChangingName="registroRowChanging" msprop:Generator_RowEvHandlerName="registroRowChangeEventHandler" msprop:Generator_RowDeletedName="registroRowDeleted" msprop:Generator_UserTableName="registro" msprop:Generator_RowChangedName="registroRowChanged" msprop:Generator_RowEvArgName="registroRowChangeEvent" msprop:Generator_RowClassName="registroRow">
+        <xs:element name="registro" msprop:Generator_TableClassName="registroDataTable" msprop:Generator_TableVarName="tableregistro" msprop:Generator_RowChangedName="registroRowChanged" msprop:Generator_TablePropName="registro" msprop:Generator_RowDeletingName="registroRowDeleting" msprop:Generator_RowChangingName="registroRowChanging" msprop:Generator_RowEvHandlerName="registroRowChangeEventHandler" msprop:Generator_RowDeletedName="registroRowDeleted" msprop:Generator_RowClassName="registroRow" msprop:Generator_UserTableName="registro" msprop:Generator_RowEvArgName="registroRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_registro" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_registro" msprop:Generator_ColumnPropNameInRow="id_registro" msprop:Generator_ColumnPropNameInTable="id_registroColumn" msprop:Generator_UserColumnName="id_registro" type="xs:int" />
@@ -1426,7 +1426,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="detalle_fac_ingreso" msprop:Generator_TableClassName="detalle_fac_ingresoDataTable" msprop:Generator_TableVarName="tabledetalle_fac_ingreso" msprop:Generator_TablePropName="detalle_fac_ingreso" msprop:Generator_RowDeletingName="detalle_fac_ingresoRowDeleting" msprop:Generator_RowChangingName="detalle_fac_ingresoRowChanging" msprop:Generator_RowEvHandlerName="detalle_fac_ingresoRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_fac_ingresoRowDeleted" msprop:Generator_UserTableName="detalle_fac_ingreso" msprop:Generator_RowChangedName="detalle_fac_ingresoRowChanged" msprop:Generator_RowEvArgName="detalle_fac_ingresoRowChangeEvent" msprop:Generator_RowClassName="detalle_fac_ingresoRow">
+        <xs:element name="detalle_fac_ingreso" msprop:Generator_TableClassName="detalle_fac_ingresoDataTable" msprop:Generator_TableVarName="tabledetalle_fac_ingreso" msprop:Generator_RowChangedName="detalle_fac_ingresoRowChanged" msprop:Generator_TablePropName="detalle_fac_ingreso" msprop:Generator_RowDeletingName="detalle_fac_ingresoRowDeleting" msprop:Generator_RowChangingName="detalle_fac_ingresoRowChanging" msprop:Generator_RowEvHandlerName="detalle_fac_ingresoRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_fac_ingresoRowDeleted" msprop:Generator_RowClassName="detalle_fac_ingresoRow" msprop:Generator_UserTableName="detalle_fac_ingreso" msprop:Generator_RowEvArgName="detalle_fac_ingresoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_factura" msprop:Generator_ColumnVarNameInTable="columnn_factura" msprop:Generator_ColumnPropNameInRow="n_factura" msprop:Generator_ColumnPropNameInTable="n_facturaColumn" msprop:Generator_UserColumnName="n_factura" type="xs:int" minOccurs="0" />
@@ -1450,7 +1450,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="factura_ingreso" msprop:Generator_TableClassName="factura_ingresoDataTable" msprop:Generator_TableVarName="tablefactura_ingreso" msprop:Generator_TablePropName="factura_ingreso" msprop:Generator_RowDeletingName="factura_ingresoRowDeleting" msprop:Generator_RowChangingName="factura_ingresoRowChanging" msprop:Generator_RowEvHandlerName="factura_ingresoRowChangeEventHandler" msprop:Generator_RowDeletedName="factura_ingresoRowDeleted" msprop:Generator_UserTableName="factura_ingreso" msprop:Generator_RowChangedName="factura_ingresoRowChanged" msprop:Generator_RowEvArgName="factura_ingresoRowChangeEvent" msprop:Generator_RowClassName="factura_ingresoRow">
+        <xs:element name="factura_ingreso" msprop:Generator_TableClassName="factura_ingresoDataTable" msprop:Generator_TableVarName="tablefactura_ingreso" msprop:Generator_RowChangedName="factura_ingresoRowChanged" msprop:Generator_TablePropName="factura_ingreso" msprop:Generator_RowDeletingName="factura_ingresoRowDeleting" msprop:Generator_RowChangingName="factura_ingresoRowChanging" msprop:Generator_RowEvHandlerName="factura_ingresoRowChangeEventHandler" msprop:Generator_RowDeletedName="factura_ingresoRowDeleted" msprop:Generator_RowClassName="factura_ingresoRow" msprop:Generator_UserTableName="factura_ingreso" msprop:Generator_RowEvArgName="factura_ingresoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_factura" msprop:Generator_ColumnVarNameInTable="columnn_factura" msprop:Generator_ColumnPropNameInRow="n_factura" msprop:Generator_ColumnPropNameInTable="n_facturaColumn" msprop:Generator_UserColumnName="n_factura" type="xs:int" />
@@ -1524,7 +1524,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="detalle_fac_egreso" msprop:Generator_TableClassName="detalle_fac_egresoDataTable" msprop:Generator_TableVarName="tabledetalle_fac_egreso" msprop:Generator_RowChangedName="detalle_fac_egresoRowChanged" msprop:Generator_TablePropName="detalle_fac_egreso" msprop:Generator_RowDeletingName="detalle_fac_egresoRowDeleting" msprop:Generator_RowChangingName="detalle_fac_egresoRowChanging" msprop:Generator_RowEvHandlerName="detalle_fac_egresoRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_fac_egresoRowDeleted" msprop:Generator_RowClassName="detalle_fac_egresoRow" msprop:Generator_UserTableName="detalle_fac_egreso" msprop:Generator_RowEvArgName="detalle_fac_egresoRowChangeEvent">
+        <xs:element name="detalle_fac_egreso" msprop:Generator_TableClassName="detalle_fac_egresoDataTable" msprop:Generator_TableVarName="tabledetalle_fac_egreso" msprop:Generator_TablePropName="detalle_fac_egreso" msprop:Generator_RowDeletingName="detalle_fac_egresoRowDeleting" msprop:Generator_RowChangingName="detalle_fac_egresoRowChanging" msprop:Generator_RowEvHandlerName="detalle_fac_egresoRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_fac_egresoRowDeleted" msprop:Generator_UserTableName="detalle_fac_egreso" msprop:Generator_RowChangedName="detalle_fac_egresoRowChanged" msprop:Generator_RowEvArgName="detalle_fac_egresoRowChangeEvent" msprop:Generator_RowClassName="detalle_fac_egresoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_factura" msprop:Generator_ColumnVarNameInTable="columnn_factura" msprop:Generator_ColumnPropNameInRow="n_factura" msprop:Generator_ColumnPropNameInTable="n_facturaColumn" msprop:Generator_UserColumnName="n_factura" type="xs:int" minOccurs="0" />
@@ -1548,7 +1548,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="factura_egreso" msprop:Generator_TableClassName="factura_egresoDataTable" msprop:Generator_TableVarName="tablefactura_egreso" msprop:Generator_RowChangedName="factura_egresoRowChanged" msprop:Generator_TablePropName="factura_egreso" msprop:Generator_RowDeletingName="factura_egresoRowDeleting" msprop:Generator_RowChangingName="factura_egresoRowChanging" msprop:Generator_RowEvHandlerName="factura_egresoRowChangeEventHandler" msprop:Generator_RowDeletedName="factura_egresoRowDeleted" msprop:Generator_RowClassName="factura_egresoRow" msprop:Generator_UserTableName="factura_egreso" msprop:Generator_RowEvArgName="factura_egresoRowChangeEvent">
+        <xs:element name="factura_egreso" msprop:Generator_TableClassName="factura_egresoDataTable" msprop:Generator_TableVarName="tablefactura_egreso" msprop:Generator_TablePropName="factura_egreso" msprop:Generator_RowDeletingName="factura_egresoRowDeleting" msprop:Generator_RowChangingName="factura_egresoRowChanging" msprop:Generator_RowEvHandlerName="factura_egresoRowChangeEventHandler" msprop:Generator_RowDeletedName="factura_egresoRowDeleted" msprop:Generator_UserTableName="factura_egreso" msprop:Generator_RowChangedName="factura_egresoRowChanged" msprop:Generator_RowEvArgName="factura_egresoRowChangeEvent" msprop:Generator_RowClassName="factura_egresoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_factura" msprop:Generator_ColumnVarNameInTable="columnn_factura" msprop:Generator_ColumnPropNameInRow="n_factura" msprop:Generator_ColumnPropNameInTable="n_facturaColumn" msprop:Generator_UserColumnName="n_factura" type="xs:int" />
@@ -1622,7 +1622,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="detalle_guia" msprop:Generator_TableClassName="detalle_guiaDataTable" msprop:Generator_TableVarName="tabledetalle_guia" msprop:Generator_TablePropName="detalle_guia" msprop:Generator_RowDeletingName="detalle_guiaRowDeleting" msprop:Generator_RowChangingName="detalle_guiaRowChanging" msprop:Generator_RowEvHandlerName="detalle_guiaRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_guiaRowDeleted" msprop:Generator_UserTableName="detalle_guia" msprop:Generator_RowChangedName="detalle_guiaRowChanged" msprop:Generator_RowEvArgName="detalle_guiaRowChangeEvent" msprop:Generator_RowClassName="detalle_guiaRow">
+        <xs:element name="detalle_guia" msprop:Generator_TableClassName="detalle_guiaDataTable" msprop:Generator_TableVarName="tabledetalle_guia" msprop:Generator_RowChangedName="detalle_guiaRowChanged" msprop:Generator_TablePropName="detalle_guia" msprop:Generator_RowDeletingName="detalle_guiaRowDeleting" msprop:Generator_RowChangingName="detalle_guiaRowChanging" msprop:Generator_RowEvHandlerName="detalle_guiaRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_guiaRowDeleted" msprop:Generator_RowClassName="detalle_guiaRow" msprop:Generator_UserTableName="detalle_guia" msprop:Generator_RowEvArgName="detalle_guiaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_guia" msprop:Generator_ColumnVarNameInTable="columnn_guia" msprop:Generator_ColumnPropNameInRow="n_guia" msprop:Generator_ColumnPropNameInTable="n_guiaColumn" msprop:Generator_UserColumnName="n_guia" type="xs:int" minOccurs="0" />
@@ -1646,7 +1646,7 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="guia_despacho" msprop:Generator_TableClassName="guia_despachoDataTable" msprop:Generator_TableVarName="tableguia_despacho" msprop:Generator_TablePropName="guia_despacho" msprop:Generator_RowDeletingName="guia_despachoRowDeleting" msprop:Generator_RowChangingName="guia_despachoRowChanging" msprop:Generator_RowEvHandlerName="guia_despachoRowChangeEventHandler" msprop:Generator_RowDeletedName="guia_despachoRowDeleted" msprop:Generator_UserTableName="guia_despacho" msprop:Generator_RowChangedName="guia_despachoRowChanged" msprop:Generator_RowEvArgName="guia_despachoRowChangeEvent" msprop:Generator_RowClassName="guia_despachoRow">
+        <xs:element name="guia_despacho" msprop:Generator_TableClassName="guia_despachoDataTable" msprop:Generator_TableVarName="tableguia_despacho" msprop:Generator_RowChangedName="guia_despachoRowChanged" msprop:Generator_TablePropName="guia_despacho" msprop:Generator_RowDeletingName="guia_despachoRowDeleting" msprop:Generator_RowChangingName="guia_despachoRowChanging" msprop:Generator_RowEvHandlerName="guia_despachoRowChangeEventHandler" msprop:Generator_RowDeletedName="guia_despachoRowDeleted" msprop:Generator_RowClassName="guia_despachoRow" msprop:Generator_UserTableName="guia_despacho" msprop:Generator_RowEvArgName="guia_despachoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="n_guia" msprop:Generator_ColumnVarNameInTable="columnn_guia" msprop:Generator_ColumnPropNameInRow="n_guia" msprop:Generator_ColumnPropNameInTable="n_guiaColumn" msprop:Generator_UserColumnName="n_guia" type="xs:int" />
@@ -1748,9 +1748,4 @@ WHERE  (fecha BETWEEN @Param1 AND @Param2)</CommandText>
       <xs:field xpath="mstns:n_guia" />
     </xs:unique>
   </xs:element>
-  <xs:annotation>
-    <xs:appinfo>
-      <msdata:Relationship name="FK_detalle_proveedor_proveedor" msdata:parent="proveedor" msdata:child="detalle_proveedor" msdata:parentkey="rut_prov" msdata:childkey="rut_prov" msprop:Generator_UserChildTable="detalle_proveedor" msprop:Generator_ChildPropName="Getdetalle_proveedorRows" msprop:Generator_UserRelationName="FK_detalle_proveedor_proveedor" msprop:Generator_RelationVarName="relationFK_detalle_proveedor_proveedor" msprop:Generator_UserParentTable="proveedor" msprop:Generator_ParentPropName="proveedorRow" />
-    </xs:appinfo>
-  </xs:annotation>
 </xs:schema>

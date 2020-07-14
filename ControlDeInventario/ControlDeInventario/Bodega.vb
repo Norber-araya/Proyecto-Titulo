@@ -81,7 +81,8 @@ Public Class Bodega
                         e.CellStyle.BackColor = Color.Red
                         e.CellStyle.ForeColor = Color.Black
                     End If
-                    If Convert.ToInt32(e.Value) > 20 Then
+
+                    If Convert.ToInt32(e.Value) > 30 Then
                         e.CellStyle.BackColor = Color.LightGreen
                         e.CellStyle.ForeColor = Color.Black
                     End If

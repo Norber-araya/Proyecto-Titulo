@@ -78,10 +78,9 @@ Partial Class mermas
         '
         Cod_productoLabel.AutoSize = True
         Cod_productoLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Cod_productoLabel.Location = New System.Drawing.Point(-4, 102)
-        Cod_productoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Cod_productoLabel.Location = New System.Drawing.Point(-3, 83)
         Cod_productoLabel.Name = "Cod_productoLabel"
-        Cod_productoLabel.Size = New System.Drawing.Size(127, 21)
+        Cod_productoLabel.Size = New System.Drawing.Size(99, 17)
         Cod_productoLabel.TabIndex = 4
         Cod_productoLabel.Text = "Codigo producto"
         '
@@ -89,10 +88,9 @@ Partial Class mermas
         '
         NombreLabel.AutoSize = True
         NombreLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        NombreLabel.Location = New System.Drawing.Point(-4, 137)
-        NombreLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        NombreLabel.Location = New System.Drawing.Point(-3, 111)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(65, 21)
+        NombreLabel.Size = New System.Drawing.Size(51, 17)
         NombreLabel.TabIndex = 6
         NombreLabel.Text = "Nombre"
         '
@@ -100,10 +98,9 @@ Partial Class mermas
         '
         CantidadLabel.AutoSize = True
         CantidadLabel.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        CantidadLabel.Location = New System.Drawing.Point(-4, 165)
-        CantidadLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        CantidadLabel.Location = New System.Drawing.Point(-3, 134)
         CantidadLabel.Name = "CantidadLabel"
-        CantidadLabel.Size = New System.Drawing.Size(74, 21)
+        CantidadLabel.Size = New System.Drawing.Size(58, 17)
         CantidadLabel.TabIndex = 8
         CantidadLabel.Text = "Cantidad"
         '
@@ -141,35 +138,31 @@ Partial Class mermas
         '
         'Cod_productoTextBox
         '
-        Me.Cod_productoTextBox.Location = New System.Drawing.Point(131, 101)
-        Me.Cod_productoTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Cod_productoTextBox.Location = New System.Drawing.Point(98, 82)
         Me.Cod_productoTextBox.Name = "Cod_productoTextBox"
-        Me.Cod_productoTextBox.Size = New System.Drawing.Size(121, 22)
+        Me.Cod_productoTextBox.Size = New System.Drawing.Size(92, 20)
         Me.Cod_productoTextBox.TabIndex = 5
         '
         'NombreTextBox
         '
-        Me.NombreTextBox.Location = New System.Drawing.Point(131, 133)
-        Me.NombreTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NombreTextBox.Location = New System.Drawing.Point(98, 108)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(121, 22)
+        Me.NombreTextBox.Size = New System.Drawing.Size(92, 20)
         Me.NombreTextBox.TabIndex = 7
         '
         'CantidadTextBox
         '
-        Me.CantidadTextBox.Location = New System.Drawing.Point(131, 165)
-        Me.CantidadTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CantidadTextBox.Location = New System.Drawing.Point(98, 134)
         Me.CantidadTextBox.Name = "CantidadTextBox"
-        Me.CantidadTextBox.Size = New System.Drawing.Size(121, 22)
+        Me.CantidadTextBox.Size = New System.Drawing.Size(92, 20)
         Me.CantidadTextBox.TabIndex = 9
         '
         'FechaDateTimePicker
         '
         Me.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(873, 34)
-        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(655, 28)
         Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
-        Me.FechaDateTimePicker.Size = New System.Drawing.Size(137, 22)
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(104, 20)
         Me.FechaDateTimePicker.TabIndex = 11
         '
         'Button1
@@ -177,19 +170,17 @@ Partial Class mermas
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.ControlDeInventario.My.Resources.Resources.boton_ingresar
-        Me.Button1.Location = New System.Drawing.Point(0, 330)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(0, 268)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(280, 106)
+        Me.Button1.Size = New System.Drawing.Size(210, 86)
         Me.Button1.TabIndex = 12
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(261, 95)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Location = New System.Drawing.Point(196, 77)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(48, 28)
+        Me.Button2.Size = New System.Drawing.Size(36, 23)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "..."
         Me.Button2.UseVisualStyleBackColor = True
@@ -201,10 +192,9 @@ Partial Class mermas
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Location = New System.Drawing.Point(411, 34)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Location = New System.Drawing.Point(350, 28)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(601, 459)
+        Me.Panel1.Size = New System.Drawing.Size(451, 373)
         Me.Panel1.TabIndex = 14
         '
         'ProductoDataGridView
@@ -215,12 +205,11 @@ Partial Class mermas
         Me.ProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11})
         Me.ProductoDataGridView.DataSource = Me.ProductoBindingSource
-        Me.ProductoDataGridView.Location = New System.Drawing.Point(44, 68)
-        Me.ProductoDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ProductoDataGridView.Location = New System.Drawing.Point(33, 55)
         Me.ProductoDataGridView.Name = "ProductoDataGridView"
         Me.ProductoDataGridView.ReadOnly = True
         Me.ProductoDataGridView.RowHeadersVisible = False
-        Me.ProductoDataGridView.Size = New System.Drawing.Size(493, 247)
+        Me.ProductoDataGridView.Size = New System.Drawing.Size(370, 201)
         Me.ProductoDataGridView.TabIndex = 3
         '
         'DataGridViewTextBoxColumn6
@@ -268,10 +257,9 @@ Partial Class mermas
         Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(155, 322)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Location = New System.Drawing.Point(116, 262)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(271, 123)
+        Me.Button3.Size = New System.Drawing.Size(203, 100)
         Me.Button3.TabIndex = 3
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -279,19 +267,17 @@ Partial Class mermas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(128, 36)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(96, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 21)
+        Me.Label1.Size = New System.Drawing.Size(46, 17)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Buscar"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(201, 36)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(151, 29)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 1
         '
         'ProductoTableAdapter
@@ -305,10 +291,9 @@ Partial Class mermas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(172, 292)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(129, 237)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 17)
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "Label2"
         '
@@ -317,10 +302,9 @@ Partial Class mermas
         Me.Button4.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_eliminar
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(0, 443)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Location = New System.Drawing.Point(0, 360)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(267, 116)
+        Me.Button4.Size = New System.Drawing.Size(200, 94)
         Me.Button4.TabIndex = 16
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -329,10 +313,9 @@ Partial Class mermas
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Image = Global.ControlDeInventario.My.Resources.Resources.boton_menu
-        Me.Button5.Location = New System.Drawing.Point(1020, 469)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Location = New System.Drawing.Point(765, 381)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(273, 106)
+        Me.Button5.Size = New System.Drawing.Size(205, 86)
         Me.Button5.TabIndex = 17
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -342,10 +325,9 @@ Partial Class mermas
         '
         'rtbMensaje
         '
-        Me.rtbMensaje.Location = New System.Drawing.Point(131, 197)
-        Me.rtbMensaje.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rtbMensaje.Location = New System.Drawing.Point(98, 160)
         Me.rtbMensaje.Name = "rtbMensaje"
-        Me.rtbMensaje.Size = New System.Drawing.Size(121, 90)
+        Me.rtbMensaje.Size = New System.Drawing.Size(92, 74)
         Me.rtbMensaje.TabIndex = 18
         Me.rtbMensaje.Text = ""
         '
@@ -353,10 +335,9 @@ Partial Class mermas
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(16, 234)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(12, 190)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(98, 21)
+        Me.Label3.Size = New System.Drawing.Size(76, 17)
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "Observacion"
         '
@@ -369,11 +350,10 @@ Partial Class mermas
         Me.MermasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.MermasDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn12})
         Me.MermasDataGridView.DataSource = Me.MermasBindingSource
-        Me.MermasDataGridView.Location = New System.Drawing.Point(317, 66)
-        Me.MermasDataGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MermasDataGridView.Location = New System.Drawing.Point(238, 54)
         Me.MermasDataGridView.Name = "MermasDataGridView"
         Me.MermasDataGridView.RowHeadersVisible = False
-        Me.MermasDataGridView.Size = New System.Drawing.Size(967, 271)
+        Me.MermasDataGridView.Size = New System.Drawing.Size(725, 220)
         Me.MermasDataGridView.TabIndex = 19
         '
         'eliminar
@@ -386,6 +366,7 @@ Partial Class mermas
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "id_mermas"
         Me.DataGridViewTextBoxColumn1.HeaderText = "id_mermas"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
         'DataGridViewTextBoxColumn2
         '
@@ -421,23 +402,21 @@ Partial Class mermas
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 288)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(12, 234)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(129, 21)
+        Me.Label4.Size = New System.Drawing.Size(100, 17)
         Me.Label4.TabIndex = 20
         Me.Label4.Text = "Stock disponible"
         '
         'mermas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(1284, 577)
+        Me.ClientSize = New System.Drawing.Size(963, 469)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.rtbMensaje)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
@@ -451,7 +430,7 @@ Partial Class mermas
         Me.Controls.Add(Me.CantidadTextBox)
         Me.Controls.Add(Me.FechaDateTimePicker)
         Me.Controls.Add(Me.MermasDataGridView)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Controls.Add(Me.Button5)
         Me.Name = "mermas"
         Me.Text = "mermas"
         CType(Me.ControlinventarioDataSet, System.ComponentModel.ISupportInitialize).EndInit()

@@ -69,22 +69,8 @@ Public Class mermas
         dato1()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim prod As String
-        Dim can As String
-        Dim id As Integer
-        For Each r As DataGridViewRow In MermasDataGridView.SelectedRows
-            id = r.Cells(0).Value
-            prod = r.Cells(1).Value
-            can = r.Cells(3).Value
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
 
-            MsgBox(prod)
-            MsgBox(can)
-            bdconexion.actua_prod(prod, can)
-            bdconexion.eliminar_mermas(id)
-            Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)
-            Me.MermasTableAdapter.Fill(Me.ControlinventarioDataSet.mermas)
-        Next
 
     End Sub
 
@@ -94,6 +80,30 @@ Public Class mermas
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim prod As String
+        Dim can As String
+        Dim id As Integer
+        For Each Fila As DataGridViewRow In MermasDataGridView.Rows
+
+            If Fila.Cells("eliminar").Value <> Nothing Then
+                id = Fila.Cells(1).Value.ToString
+                prod = Fila.Cells(2).Value.ToString
+                can = Fila.Cells(4).Value.ToString
+                MsgBox(prod)
+                MsgBox(prod)
+                MsgBox(can)
+                bdconexion.actua_prod(prod, can)
+                bdconexion.eliminar_mermas(id)
+                Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)
+                Me.MermasTableAdapter.Fill(Me.ControlinventarioDataSet.mermas)
+            End If
+        Next
+
+
 
     End Sub
 End Class

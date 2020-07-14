@@ -175,8 +175,10 @@ Public Class Factura
                         bdconexion.insertar_fac_deta(N_facturaTextBox.Text, prod, nom, can, prec, toll)
 
                     End If
+
                     MsgBox("factura creada")
-                    dato2()
+                    Me.Close()
+                    Navegacion.Show()
                 Next
 
             End If
