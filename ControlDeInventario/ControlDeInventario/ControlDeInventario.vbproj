@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{602BD372-E390-4FDA-8354-FC930BDD1B11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ControlDeInventario.My.MyApplication</StartupObject>
+    <RootNamespace>ControlDeInventario</RootNamespace>
+    <AssemblyName>ControlDeInventario</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Diegoandres\Desktop\esta wea no funciona ni cagando\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ControlDeInventario.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ControlDeInventario.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C91245ED1A89FE92261327273F27C80A78950150</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ControlDeInventario_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD_conexion.vb" />
+    <Compile Include="Bodega.Designer.vb">
+      <DependentUpon>Bodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boleta.Designer.vb">
+      <DependentUpon>boleta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="boleta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarFacturas.Designer.vb">
+      <DependentUpon>BuscarFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarContraseña.Designer.vb">
+      <DependentUpon>CambiarContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarContraseña.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente.Designer.vb">
+      <DependentUpon>cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clienteEdid.Designer.vb">
+      <DependentUpon>clienteEdid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clienteEdid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta.Designer.vb">
+      <DependentUpon>Consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlinventarioDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlinventarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlinventarioDataSet.vb">
+      <DependentUpon>ControlinventarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Correo.vb" />
+    <Compile Include="DatosUsuario.Designer.vb">
+      <DependentUpon>DatosUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DatosUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="elegir_producto.Designer.vb">
+      <DependentUpon>elegir_producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="elegir_producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encriptador.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaVenta.Designer.vb">
+      <DependentUpon>FacturaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura.Designer.vb">
+      <DependentUpon>Factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mermas.Designer.vb">
+      <DependentUpon>mermas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mermas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Navegacion.Designer.vb">
+      <DependentUpon>Navegacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Navegacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto.Designer.vb">
+      <DependentUpon>Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductoProveedor.Designer.vb">
+      <DependentUpon>ProductoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedor.Designer.vb">
+      <DependentUpon>proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedorEdid.Designer.vb">
+      <DependentUpon>proveedorEdid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="proveedorEdid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.vb">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioEdid.Designer.vb">
+      <DependentUpon>UsuarioEdid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioEdid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerBoleta.Designer.vb">
+      <DependentUpon>VerBoleta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerBoleta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verfactura.Designer.vb">
+      <DependentUpon>Verfactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Verfactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerGuia.Designer.vb">
+      <DependentUpon>VerGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bodega.resx">
+      <DependentUpon>Bodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boleta.resx">
+      <DependentUpon>boleta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarFacturas.resx">
+      <DependentUpon>BuscarFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarContraseña.resx">
+      <DependentUpon>CambiarContraseña.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente.resx">
+      <DependentUpon>cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clienteEdid.resx">
+      <DependentUpon>clienteEdid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta.resx">
+      <DependentUpon>Consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosUsuario.resx">
+      <DependentUpon>DatosUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="elegir_producto.resx">
+      <DependentUpon>elegir_producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaVenta.resx">
+      <DependentUpon>FacturaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factura.resx">
+      <DependentUpon>Factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mermas.resx">
+      <DependentUpon>mermas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegacion.resx">
+      <DependentUpon>Navegacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto.resx">
+      <DependentUpon>Producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductoProveedor.resx">
+      <DependentUpon>ProductoProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proveedor.resx">
+      <DependentUpon>proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proveedorEdid.resx">
+      <DependentUpon>proveedorEdid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioEdid.resx">
+      <DependentUpon>UsuarioEdid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerBoleta.resx">
+      <DependentUpon>VerBoleta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verfactura.resx">
+      <DependentUpon>Verfactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerGuia.resx">
+      <DependentUpon>VerGuia.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlDeInventario_TemporaryKey.pfx" />
+    <None Include="ControlinventarioDataSet.xsc">
+      <DependentUpon>ControlinventarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControlinventarioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlinventarioDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlinventarioDataSet.xss">
+      <DependentUpon>ControlinventarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-proveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productos-boton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin-título-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-cerrar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-buscardoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-facturaingre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-facsalida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-boletas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-seleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-agregarprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-crearboleta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-ver-factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-seleccionarprov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-crearprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-selectprov2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-mermas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-crearfac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-verdocumentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-dias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\este-mes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\este-año.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-datospersonales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarprod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarprod2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarusuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarproveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiar-contra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-verificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-recuperarcontra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-enviarcorreo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-iniciarsesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-listarcliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-detalleproveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-volver.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
