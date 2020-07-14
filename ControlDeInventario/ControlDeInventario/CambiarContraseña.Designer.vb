@@ -35,9 +35,9 @@ Partial Class CambiarContraseña
         Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(-5, 273)
+        Me.Button2.Location = New System.Drawing.Point(-5, 272)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(156, 72)
+        Me.Button2.Size = New System.Drawing.Size(156, 73)
         Me.Button2.TabIndex = 11
         Me.Button2.UseVisualStyleBackColor = True
         '

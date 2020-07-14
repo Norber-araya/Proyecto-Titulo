@@ -402,7 +402,6 @@ Public Class BD_conexion
             comando.ExecuteNonQuery()
             MsgBox("El Producto: " & UCase(cod_producto) & " ha sido borrado")
         Else
-            MsgBox("El Producto: " & UCase(cod_producto) & " no existe")
         End If
 
         desconectar()
@@ -510,7 +509,7 @@ Public Class BD_conexion
 
         comando = New SqlCommand("INSERT INTO  [registro] ([documento], [n_documento], [id_producto], [precio], [cantidad], [fecha], [usuario], [tipo])  VALUES ('" & documento & "','" & n_documento & "','" & id_producto & "','" & precio & "','" & cantidad & "','" & fecha & "','" & usuario & "','" & tipo & "')", conexion)
         comando.ExecuteNonQuery()
-        MsgBox("El Registro ha sido ingresado con exito")
+        'MsgBox("El Registro ha sido ingresado con exito")
 
         desconectar()
     End Sub
@@ -520,7 +519,7 @@ Public Class BD_conexion
 
         comando = New SqlCommand("DELETE FROM registro WHERE id_producto ='" & id_pro & "' and n_documento ='" & n_documento & "'", conexion)
         comando.ExecuteNonQuery()
-        MsgBox("El registro ha sido borrado")
+        'MsgBox("El registro ha sido borrado")
 
         desconectar()
 
@@ -540,9 +539,9 @@ Public Class BD_conexion
         If validador > 0 Then
             comando = New SqlCommand("DELETE FROM mermas WHERE id_mermas ='" & id_mermas & "'", conexion)
             comando.ExecuteNonQuery()
-            MsgBox("El Producto: " & UCase(id_mermas) & " ha sido borrado")
+            MsgBox("El registro: " & UCase(id_mermas) & " ha sido borrado")
         Else
-            MsgBox("El Producto: " & UCase(id_mermas) & " no existe")
+            'MsgBox("El Producto: " & UCase(id_mermas) & " no existe")
         End If
 
         desconectar()
@@ -564,7 +563,6 @@ Public Class BD_conexion
             can = Convert.ToString(dr("cantidad"))
         End If
         cantidad = cantidad + Val(can)
-        MsgBox(cantidad)
         desconectar()
         conectar()
         comando = New SqlCommand("UPDATE producto SET cantidad ='" & cantidad & "' where cod_producto = '" & cod_producto & "'", conexion)
@@ -584,7 +582,6 @@ Public Class BD_conexion
             can = Convert.ToString(dr("cantidad"))
         End If
         cantidad = Val(can) - cantidad
-        MsgBox(cantidad)
         desconectar()
         conectar()
         comando = New SqlCommand("UPDATE producto SET cantidad ='" & cantidad & "' where cod_producto = '" & cod_producto & "'", conexion)
@@ -693,7 +690,6 @@ Public Class BD_conexion
 
             comando = New SqlCommand("INSERT INTO [factura_egreso] ([n_factura], [rut_prov], [nombre_prov], [direccion], [comuna], [ciudad], [email], [fono], [rut_cliente], [fecha], [observacion], [valor_neto], [iva], [total])  VALUES ('" & n_factura & "','" & rut_prov & "','" & nombre_prov & "','" & direccion & "','" & comuna & "','" & ciudad & "','" & email & "','" & fono & "','" & rut_cliente & "','" & fecha & "','" & observacion & "','" & valor_neto & "','" & iva & "','" & total & "')", conexion)
             comando.ExecuteNonQuery()
-            MsgBox("La Factura " & UCase(n_factura) & " ha sido ingresadoa con exito")
         End If
         desconectar()
     End Sub
@@ -755,7 +751,7 @@ Public Class BD_conexion
         If validar > 0 Then
 
             'Si existe el Clientehh
-            MsgBox("El boleta: " & UCase(n_boleta) & " ya existe en la base de datos")
+            'MsgBox("El boleta: " & UCase(n_boleta) & " ya existe en la base de datos")
             boleta.validador = 1
         End If
         desconectar()
@@ -889,7 +885,7 @@ Public Class BD_conexion
             MsgBox("El cliente: " & UCase(rut_cliente) & " fue actualizado")
         Else
 
-            MsgBox("El cliente: " & UCase(rut) & " No existe en la base de datos")
+            'MsgBox("El cliente: " & UCase(rut) & " No existe en la base de datos")
 
         End If
 

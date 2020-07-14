@@ -12,4 +12,8 @@
             bdconexion.editar_contraseña(rut, TextBox1.Text)
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
+    End Sub
 End Class

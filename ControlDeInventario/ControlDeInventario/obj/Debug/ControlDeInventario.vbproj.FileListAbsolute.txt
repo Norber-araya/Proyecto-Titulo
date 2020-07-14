@@ -210,11 +210,7 @@ C:\Users\Joc\Documents\Visual Studio 2015\Projects\ControlDeInventario\ControlDe
 C:\Users\Joc\Documents\Visual Studio 2015\Projects\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Verfactura.resources
 C:\Users\Joc\Documents\Visual Studio 2015\Projects\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerGuia.resources
 C:\Users\Joc\Documents\Visual Studio 2015\Projects\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.vbproj.GenerateResource.Cache
-C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.exe.manifest
-C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.application
 C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.ProductoProveedor.resources
-C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.exe.manifest
-C:\Users\Diegoandres\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.application
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.exe.manifest
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.application
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.CambiarContraseña.resources

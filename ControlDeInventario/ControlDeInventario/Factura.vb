@@ -180,7 +180,8 @@ Public Class Factura
                     Me.Close()
                     Navegacion.Show()
                 Next
-
+            Else
+                MsgBox("No hay producto asociados al documento")
             End If
         End If
 

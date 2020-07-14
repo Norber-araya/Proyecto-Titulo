@@ -93,9 +93,6 @@ Public Class mermas
                 id = Fila.Cells(1).Value.ToString
                 prod = Fila.Cells(2).Value.ToString
                 can = Fila.Cells(4).Value.ToString
-                MsgBox(prod)
-                MsgBox(prod)
-                MsgBox(can)
                 bdconexion.actua_prod(prod, can)
                 bdconexion.eliminar_mermas(id)
                 Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)

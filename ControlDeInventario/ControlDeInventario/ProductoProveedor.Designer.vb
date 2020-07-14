@@ -105,16 +105,16 @@ Partial Class ProductoProveedor
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(160, 45)
+        Me.TextBox1.Location = New System.Drawing.Point(154, 46)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
         Me.TextBox1.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(105, 45)
+        Me.Label1.Location = New System.Drawing.Point(99, 46)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 17)
         Me.Label1.TabIndex = 4
@@ -136,7 +136,7 @@ Partial Class ProductoProveedor
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(462, 378)
+        Me.ClientSize = New System.Drawing.Size(427, 373)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
