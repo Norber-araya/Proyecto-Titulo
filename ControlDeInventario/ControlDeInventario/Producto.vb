@@ -36,7 +36,7 @@ Public Class Producto
         ElseIf proveedor.Text = "" Then
             MsgBox("No a seleccionad a un proveedor")
         Else
-            bdconexion.insertar_prod(Cod_productoTextBox.Text, ProductoTextBox.Text, PrecioTextBox.Text, Tipo_productoTextBox.Text)
+            bdconexion.insertar_prod(Cod_productoTextBox.Text, ProductoTextBox.Text, PrecioTextBox.Text, ComboBox1.Text)
             bdconexion.insertar_DetaProv(Cod_productoTextBox.Text, proveedor.Text)
             Me.ProductoTableAdapter.Fill(Me.ControlinventarioDataSet.producto)
 
@@ -44,7 +44,7 @@ Public Class Producto
             ProductoTextBox.Text = ""
             PrecioTextBox.Text = ""
             proveedor.Text = ""
-            Tipo_productoTextBox.Text = ""
+            ComboBox1.Text = ""
         End If
 
     End Sub

@@ -50,10 +50,9 @@ Partial Class Navegacion
         '
         Me.permiso.AutoSize = True
         Me.permiso.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.permiso.Location = New System.Drawing.Point(203, 98)
-        Me.permiso.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.permiso.Location = New System.Drawing.Point(152, 80)
         Me.permiso.Name = "permiso"
-        Me.permiso.Size = New System.Drawing.Size(38, 21)
+        Me.permiso.Size = New System.Drawing.Size(30, 17)
         Me.permiso.TabIndex = 57
         Me.permiso.Text = "tipo"
         '
@@ -61,10 +60,9 @@ Partial Class Navegacion
         '
         Me.rut.AutoSize = True
         Me.rut.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rut.Location = New System.Drawing.Point(203, 77)
-        Me.rut.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.rut.Location = New System.Drawing.Point(152, 63)
         Me.rut.Name = "rut"
-        Me.rut.Size = New System.Drawing.Size(30, 21)
+        Me.rut.Size = New System.Drawing.Size(24, 17)
         Me.rut.TabIndex = 56
         Me.rut.Text = "rut"
         '
@@ -72,10 +70,9 @@ Partial Class Navegacion
         '
         Me.nombre.AutoSize = True
         Me.nombre.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nombre.Location = New System.Drawing.Point(203, 50)
-        Me.nombre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.nombre.Location = New System.Drawing.Point(152, 41)
         Me.nombre.Name = "nombre"
-        Me.nombre.Size = New System.Drawing.Size(65, 21)
+        Me.nombre.Size = New System.Drawing.Size(51, 17)
         Me.nombre.TabIndex = 55
         Me.nombre.Text = "nombre"
         '
@@ -83,9 +80,10 @@ Partial Class Navegacion
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(39, 50)
+        Me.Label3.Location = New System.Drawing.Point(29, 41)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(151, 21)
+        Me.Label3.Size = New System.Drawing.Size(118, 17)
         Me.Label3.TabIndex = 54
         Me.Label3.Text = "Bienvenido Usuario:"
         '
@@ -93,9 +91,10 @@ Partial Class Navegacion
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Impact", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(480, 50)
+        Me.Label1.Location = New System.Drawing.Point(360, 41)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(267, 48)
+        Me.Label1.Size = New System.Drawing.Size(213, 39)
         Me.Label1.TabIndex = 58
         Me.Label1.Text = "Menu Principal"
         '
@@ -104,10 +103,9 @@ Partial Class Navegacion
         Me.Button14.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_datospersonales
         Me.Button14.FlatAppearance.BorderSize = 0
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.Location = New System.Drawing.Point(528, 547)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button14.Location = New System.Drawing.Point(396, 444)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(269, 114)
+        Me.Button14.Size = New System.Drawing.Size(202, 93)
         Me.Button14.TabIndex = 73
         Me.Button14.UseVisualStyleBackColor = True
         '
@@ -116,20 +114,18 @@ Partial Class Navegacion
         Me.Button13.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_boletas
         Me.Button13.FlatAppearance.BorderSize = 0
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.Location = New System.Drawing.Point(528, 425)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button13.Location = New System.Drawing.Point(396, 345)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(271, 114)
+        Me.Button13.Size = New System.Drawing.Size(203, 93)
         Me.Button13.TabIndex = 72
         Me.Button13.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ControlDeInventario.My.Resources.Resources.admin
-        Me.PictureBox1.Location = New System.Drawing.Point(970, 41)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Location = New System.Drawing.Point(728, 33)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(62, 65)
+        Me.PictureBox1.Size = New System.Drawing.Size(46, 53)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 71
         Me.PictureBox1.TabStop = False
@@ -139,10 +135,10 @@ Partial Class Navegacion
         Me.Button12.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cerrar_sesion
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Location = New System.Drawing.Point(468, 667)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button12.Location = New System.Drawing.Point(393, 542)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(260, 118)
+        Me.Button12.Size = New System.Drawing.Size(195, 96)
         Me.Button12.TabIndex = 70
         Me.Button12.UseVisualStyleBackColor = True
         '
@@ -151,10 +147,9 @@ Partial Class Navegacion
         Me.Button11.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_clientes
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Location = New System.Drawing.Point(141, 546)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button11.Location = New System.Drawing.Point(106, 444)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(265, 116)
+        Me.Button11.Size = New System.Drawing.Size(199, 94)
         Me.Button11.TabIndex = 69
         Me.Button11.UseVisualStyleBackColor = True
         '
@@ -163,10 +158,9 @@ Partial Class Navegacion
         Me.Button10.FlatAppearance.BorderSize = 0
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Image = Global.ControlDeInventario.My.Resources.Resources.boton_facsalida
-        Me.Button10.Location = New System.Drawing.Point(900, 294)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button10.Location = New System.Drawing.Point(675, 239)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(292, 121)
+        Me.Button10.Size = New System.Drawing.Size(219, 98)
         Me.Button10.TabIndex = 68
         Me.Button10.UseVisualStyleBackColor = True
         '
@@ -175,10 +169,9 @@ Partial Class Navegacion
         Me.Button9.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_buscardoc
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Location = New System.Drawing.Point(913, 425)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button9.Location = New System.Drawing.Point(685, 345)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(267, 112)
+        Me.Button9.Size = New System.Drawing.Size(200, 91)
         Me.Button9.TabIndex = 67
         Me.Button9.UseVisualStyleBackColor = True
         '
@@ -187,10 +180,9 @@ Partial Class Navegacion
         Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_mermas
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(528, 292)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button7.Location = New System.Drawing.Point(396, 237)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(264, 118)
+        Me.Button7.Size = New System.Drawing.Size(198, 96)
         Me.Button7.TabIndex = 65
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -199,10 +191,9 @@ Partial Class Navegacion
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.ControlDeInventario.My.Resources.Resources.boton_reportes
-        Me.Button6.Location = New System.Drawing.Point(913, 546)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button6.Location = New System.Drawing.Point(685, 444)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(275, 118)
+        Me.Button6.Size = New System.Drawing.Size(206, 96)
         Me.Button6.TabIndex = 64
         Me.Button6.UseVisualStyleBackColor = True
         '
@@ -211,10 +202,9 @@ Partial Class Navegacion
         Me.Button5.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_facturaingre
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(929, 162)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button5.Location = New System.Drawing.Point(697, 132)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(269, 117)
+        Me.Button5.Size = New System.Drawing.Size(202, 95)
         Me.Button5.TabIndex = 63
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -223,10 +213,9 @@ Partial Class Navegacion
         Me.Button4.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.Sin_título_3
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(524, 160)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Location = New System.Drawing.Point(393, 130)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(268, 121)
+        Me.Button4.Size = New System.Drawing.Size(201, 98)
         Me.Button4.TabIndex = 62
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -235,10 +224,9 @@ Partial Class Navegacion
         Me.Button3.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_usuario
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(141, 422)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Location = New System.Drawing.Point(106, 343)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(265, 117)
+        Me.Button3.Size = New System.Drawing.Size(199, 95)
         Me.Button3.TabIndex = 61
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -247,10 +235,9 @@ Partial Class Navegacion
         Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.productos_boton
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(141, 290)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Location = New System.Drawing.Point(106, 236)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(265, 121)
+        Me.Button2.Size = New System.Drawing.Size(199, 98)
         Me.Button2.TabIndex = 60
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -259,10 +246,9 @@ Partial Class Navegacion
         Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_proveedor
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(141, 156)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(106, 127)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(265, 128)
+        Me.Button1.Size = New System.Drawing.Size(199, 104)
         Me.Button1.TabIndex = 59
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -270,9 +256,10 @@ Partial Class Navegacion
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Impact", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1017, 50)
+        Me.Label2.Location = New System.Drawing.Point(763, 41)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(238, 48)
+        Me.Label2.Size = New System.Drawing.Size(191, 39)
         Me.Label2.TabIndex = 74
         Me.Label2.Text = "Tu Ofinica S.A"
         '
@@ -280,18 +267,19 @@ Partial Class Navegacion
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(122, 77)
+        Me.Label4.Location = New System.Drawing.Point(92, 63)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(68, 21)
+        Me.Label4.Size = New System.Drawing.Size(54, 17)
         Me.Label4.TabIndex = 75
         Me.Label4.Text = "Usuario:"
         '
         'Navegacion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
-        Me.ClientSize = New System.Drawing.Size(1332, 788)
+        Me.ClientSize = New System.Drawing.Size(999, 640)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button14)
@@ -313,7 +301,6 @@ Partial Class Navegacion
         Me.Controls.Add(Me.rut)
         Me.Controls.Add(Me.nombre)
         Me.Controls.Add(Me.Label3)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Navegacion"
         Me.Text = "Navegacion"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

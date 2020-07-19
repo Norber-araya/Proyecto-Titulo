@@ -19,14 +19,21 @@ Public Class Usuario
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If tipo = "100" Then
-            If RutTextBox.Text = "" Or NombreTextBox.Text = "" Or GeneroTextBox.Text = "" Or EmailTextBox.Text = "" Or tipousuario.Text = "" Then
+            If RutTextBox.Text = "" Or NombreTextBox.Text = "" Or GeneroBox1.Text = "" Or EmailTextBox.Text = "" Or tipousuario.Text = "" Then
                 MsgBox("Hay campos en blancos ")
             Else
                 If ContraseñaTextBox.Text = "" Or confirmar.Text = "" Then
                     MsgBox("Campos contraseña en blanco")
                 ElseIf ContraseñaTextBox.Text = confirmar.Text Then
-                    bdconexion.insertar_usuario(RutTextBox.Text, NombreTextBox.Text, ContactoTextBox.Text, GeneroTextBox.Text, ContraseñaTextBox.Text, tipo1.Text, EmailTextBox.Text)
+                    bdconexion.insertar_usuario(RutTextBox.Text, NombreTextBox.Text, ContactoTextBox.Text, GeneroBox1.Text, ContraseñaTextBox.Text, tipo1.Text, EmailTextBox.Text)
                     Me.UsuarioTableAdapter.Fill(Me.ControlinventarioDataSet.usuario)
+                    RutTextBox.Text = ""
+                    NombreTextBox.Text = ""
+                    ContactoTextBox.Text = ""
+                    GeneroBox1.Text = ""
+                    EmailTextBox.Text = ""
+                    ContraseñaTextBox.Text = ""
+                    confirmar.Text = ""
                 Else
                     MsgBox("Las contraseñas no coinciden")
 
@@ -36,14 +43,21 @@ Public Class Usuario
             If tipo1.Text = "100" Then
                 MsgBox("no tiene permiso para crear usuario root")
             Else
-                If RutTextBox.Text = "" Or NombreTextBox.Text = "" Or GeneroTextBox.Text = "" Or EmailTextBox.Text = "" Or tipousuario.Text = "" Then
+                If RutTextBox.Text = "" Or NombreTextBox.Text = "" Or GeneroBox1.Text = "" Or EmailTextBox.Text = "" Or tipousuario.Text = "" Then
                     MsgBox("Hay campos en blanco")
                 Else
                     If ContraseñaTextBox.Text = "" Or confirmar.Text = "" Then
                         MsgBox("Campos contraseña en blanco")
                     ElseIf ContraseñaTextBox.Text = confirmar.Text Then
-                        bdconexion.insertar_usuario(RutTextBox.Text, NombreTextBox.Text, ContactoTextBox.Text, GeneroTextBox.Text, ContraseñaTextBox.Text, tipo1.Text, EmailTextBox.Text)
+                        bdconexion.insertar_usuario(RutTextBox.Text, NombreTextBox.Text, ContactoTextBox.Text, GeneroBox1.Text, ContraseñaTextBox.Text, tipo1.Text, EmailTextBox.Text)
                         Me.UsuarioTableAdapter.Fill(Me.ControlinventarioDataSet.usuario)
+                        RutTextBox.Text = ""
+                        NombreTextBox.Text = ""
+                        ContactoTextBox.Text = ""
+                        GeneroBox1.Text = ""
+                        EmailTextBox.Text = ""
+                        ContraseñaTextBox.Text = ""
+                        confirmar.Text = ""
                     Else
                         MsgBox("Las contraseñas no coinciden")
 
@@ -80,9 +94,6 @@ Public Class Usuario
     Private Sub UsuarioDataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
     End Sub
 
-
-
-
     Private Sub EmailTextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
@@ -96,7 +107,5 @@ Public Class Usuario
 
     End Sub
 
-    Private Sub Tipo1_Click(sender As Object, e As EventArgs) Handles tipo1.Click
 
-    End Sub
 End Class

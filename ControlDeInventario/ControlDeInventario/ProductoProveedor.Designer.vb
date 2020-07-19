@@ -82,7 +82,7 @@ Partial Class ProductoProveedor
         Me.Detalle_proveedorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Detalle_proveedorDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
         Me.Detalle_proveedorDataGridView.DataSource = Me.Detalle_proveedorBindingSource
-        Me.Detalle_proveedorDataGridView.Location = New System.Drawing.Point(91, 87)
+        Me.Detalle_proveedorDataGridView.Location = New System.Drawing.Point(102, 86)
         Me.Detalle_proveedorDataGridView.Name = "Detalle_proveedorDataGridView"
         Me.Detalle_proveedorDataGridView.ReadOnly = True
         Me.Detalle_proveedorDataGridView.RowHeadersVisible = False

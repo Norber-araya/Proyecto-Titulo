@@ -40,7 +40,6 @@ Partial Class Usuario
         Me.RutTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.ContactoTextBox = New System.Windows.Forms.TextBox()
-        Me.GeneroTextBox = New System.Windows.Forms.TextBox()
         Me.ContraseñaTextBox = New System.Windows.Forms.TextBox()
         Me.EmailTextBox = New System.Windows.Forms.TextBox()
         Me.TipousuarioTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.tipousuarioTableAdapter()
@@ -50,6 +49,7 @@ Partial Class Usuario
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.tipo1 = New System.Windows.Forms.Label()
+        Me.GeneroBox1 = New System.Windows.Forms.ComboBox()
         RutLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ContactoLabel = New System.Windows.Forms.Label()
@@ -227,14 +227,6 @@ Partial Class Usuario
         Me.ContactoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ContactoTextBox.TabIndex = 33
         '
-        'GeneroTextBox
-        '
-        Me.GeneroTextBox.Location = New System.Drawing.Point(217, 139)
-        Me.GeneroTextBox.Margin = New System.Windows.Forms.Padding(2)
-        Me.GeneroTextBox.Name = "GeneroTextBox"
-        Me.GeneroTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.GeneroTextBox.TabIndex = 35
-        '
         'ContraseñaTextBox
         '
         Me.ContraseñaTextBox.Location = New System.Drawing.Point(217, 214)
@@ -314,11 +306,20 @@ Partial Class Usuario
         '
         Me.tipo1.AutoSize = True
         Me.tipo1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TipousuarioBindingSource, "id_tipousuario", True))
-        Me.tipo1.Location = New System.Drawing.Point(242, 192)
+        Me.tipo1.Location = New System.Drawing.Point(251, 191)
         Me.tipo1.Name = "tipo1"
         Me.tipo1.Size = New System.Drawing.Size(39, 13)
         Me.tipo1.TabIndex = 48
         Me.tipo1.Text = "Label3"
+        '
+        'GeneroBox1
+        '
+        Me.GeneroBox1.FormattingEnabled = True
+        Me.GeneroBox1.Items.AddRange(New Object() {"Masculino", "Femenino", "otro"})
+        Me.GeneroBox1.Location = New System.Drawing.Point(217, 139)
+        Me.GeneroBox1.Name = "GeneroBox1"
+        Me.GeneroBox1.Size = New System.Drawing.Size(100, 21)
+        Me.GeneroBox1.TabIndex = 50
         '
         'Usuario
         '
@@ -326,6 +327,7 @@ Partial Class Usuario
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LemonChiffon
         Me.ClientSize = New System.Drawing.Size(464, 469)
+        Me.Controls.Add(Me.GeneroBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.tipo1)
         Me.Controls.Add(Me.confirmar)
@@ -341,7 +343,6 @@ Partial Class Usuario
         Me.Controls.Add(ContactoLabel)
         Me.Controls.Add(Me.ContactoTextBox)
         Me.Controls.Add(GeneroLabel)
-        Me.Controls.Add(Me.GeneroTextBox)
         Me.Controls.Add(ContraseñaLabel)
         Me.Controls.Add(Me.ContraseñaTextBox)
         Me.Controls.Add(Id_tipousuarioLabel)
@@ -365,7 +366,6 @@ Partial Class Usuario
     Friend WithEvents RutTextBox As TextBox
     Friend WithEvents NombreTextBox As TextBox
     Friend WithEvents ContactoTextBox As TextBox
-    Friend WithEvents GeneroTextBox As TextBox
     Friend WithEvents ContraseñaTextBox As TextBox
     Friend WithEvents EmailTextBox As TextBox
     Friend WithEvents ControlinventarioDataSet As ControlinventarioDataSet
@@ -377,4 +377,5 @@ Partial Class Usuario
     Friend WithEvents Button4 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents tipo1 As Label
+    Friend WithEvents GeneroBox1 As ComboBox
 End Class

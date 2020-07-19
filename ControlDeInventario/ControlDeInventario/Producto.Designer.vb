@@ -32,6 +32,8 @@ Partial Class Producto
         Me.PrecioTextBox = New System.Windows.Forms.TextBox()
         Me.Fecha_ultiDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ProveedorDataGridView = New System.Windows.Forms.DataGridView()
@@ -46,17 +48,15 @@ Partial Class Producto
         Me.ControlinventarioDataSet = New ControlDeInventario.ControlinventarioDataSet()
         Me.proveedor = New System.Windows.Forms.Label()
         Me.ProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Tipo_productoTextBox = New System.Windows.Forms.TextBox()
         Me.TableAdapterManager = New ControlDeInventario.ControlinventarioDataSetTableAdapters.TableAdapterManager()
         Me.ProveedorTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.proveedorTableAdapter()
         Me.ProductoTableAdapter = New ControlDeInventario.ControlinventarioDataSetTableAdapters.productoTableAdapter()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Cod_productoLabel = New System.Windows.Forms.Label()
         ProductoLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
@@ -145,10 +145,32 @@ Partial Class Producto
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.ProveedorDataGridView)
-        Me.Panel1.Location = New System.Drawing.Point(14, 33)
+        Me.Panel1.Location = New System.Drawing.Point(302, 20)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(519, 387)
         Me.Panel1.TabIndex = 35
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(0, 299)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(154, 73)
+        Me.Button7.TabIndex = 4
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(192, 286)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(199, 101)
+        Me.Button6.TabIndex = 3
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -255,13 +277,6 @@ Partial Class Producto
         Me.ProductoBindingSource.DataMember = "producto"
         Me.ProductoBindingSource.DataSource = Me.ControlinventarioDataSet
         '
-        'Tipo_productoTextBox
-        '
-        Me.Tipo_productoTextBox.Location = New System.Drawing.Point(135, 127)
-        Me.Tipo_productoTextBox.Name = "Tipo_productoTextBox"
-        Me.Tipo_productoTextBox.Size = New System.Drawing.Size(95, 20)
-        Me.Tipo_productoTextBox.TabIndex = 37
-        '
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
@@ -292,34 +307,12 @@ Partial Class Producto
         '
         Me.ProductoTableAdapter.ClearBeforeFill = True
         '
-        'Button7
-        '
-        Me.Button7.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_cancelar
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(0, 299)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(154, 73)
-        Me.Button7.TabIndex = 4
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_seleccionar
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(192, 286)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(199, 101)
-        Me.Button6.TabIndex = 3
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'Button5
         '
         Me.Button5.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(214, 367)
+        Me.Button5.Location = New System.Drawing.Point(320, 358)
         Me.Button5.Name = "Button5"
         Me.Button5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Button5.Size = New System.Drawing.Size(198, 91)
@@ -331,7 +324,7 @@ Partial Class Producto
         Me.Button2.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_listarprod2
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(11, 359)
+        Me.Button2.Location = New System.Drawing.Point(6, 261)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(204, 101)
@@ -355,7 +348,7 @@ Partial Class Producto
         Me.Button1.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_crearprod
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(11, 266)
+        Me.Button1.Location = New System.Drawing.Point(214, 170)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(199, 96)
@@ -367,12 +360,21 @@ Partial Class Producto
         Me.Button8.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_detalleproveedor
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(214, 270)
+        Me.Button8.Location = New System.Drawing.Point(6, 357)
         Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(200, 92)
         Me.Button8.TabIndex = 69
         Me.Button8.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"oficina", "escritorio", "muebles"})
+        Me.ComboBox1.Location = New System.Drawing.Point(135, 130)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(95, 21)
+        Me.ComboBox1.TabIndex = 70
         '
         'Producto
         '
@@ -395,7 +397,7 @@ Partial Class Producto
         Me.Controls.Add(Me.PrecioTextBox)
         Me.Controls.Add(Me.Fecha_ultiDateTimePicker)
         Me.Controls.Add(Tipo_productoLabel)
-        Me.Controls.Add(Me.Tipo_productoTextBox)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Producto"
         Me.Text = "Producto"
         Me.Panel1.ResumeLayout(False)
@@ -437,6 +439,6 @@ Partial Class Producto
     Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
     Friend WithEvents proveedor As Label
     Friend WithEvents ProductoTableAdapter As ControlinventarioDataSetTableAdapters.productoTableAdapter
-    Friend WithEvents Tipo_productoTextBox As TextBox
     Friend WithEvents Button8 As Button
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

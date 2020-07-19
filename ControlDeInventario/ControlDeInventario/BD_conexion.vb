@@ -231,7 +231,6 @@ Public Class BD_conexion
         mensaje2 = ", y su clave es: "
         mensaje2 = mensaje2 + contraseña
         mensaje = mensaje + mensaje2
-        MsgBox(mensaje)
         Dim enc As New Encriptador
         conectar()
 
@@ -355,7 +354,7 @@ Public Class BD_conexion
             Dim cantidad As Integer = 0
             comando = New SqlCommand("INSERT INTO [producto] ([cod_producto], [nombre], [precio], [tipo_producto], [cantidad]) VALUES ('" & cod_producto & "','" & producto & "','" & precio & "','" & tipo_producto & "','" & cantidad & "')", conexion)
             comando.ExecuteNonQuery()
-            'MsgBox("El Producto: " & UCase(producto) & " ha sido ingresado con exito")
+            MsgBox("El Producto: " & UCase(producto) & " ha sido ingresado con exito")
 
         End If
         desconectar()

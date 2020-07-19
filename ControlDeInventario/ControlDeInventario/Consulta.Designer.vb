@@ -78,7 +78,7 @@ Partial Class Consulta
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(449, 361)
+        Me.Label3.Location = New System.Drawing.Point(498, 337)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 17)
         Me.Label3.TabIndex = 25
@@ -86,7 +86,7 @@ Partial Class Consulta
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(519, 358)
+        Me.TextBox1.Location = New System.Drawing.Point(558, 337)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 24
@@ -95,9 +95,9 @@ Partial Class Consulta
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(71, 119)
+        Me.DataGridView2.Location = New System.Drawing.Point(83, 108)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(596, 209)
+        Me.DataGridView2.Size = New System.Drawing.Size(581, 209)
         Me.DataGridView2.TabIndex = 23
         '
         'Button6
@@ -105,7 +105,7 @@ Partial Class Consulta
         Me.Button6.BackgroundImage = Global.ControlDeInventario.My.Resources.Resources.boton_menu
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(6, 393)
+        Me.Button6.Location = New System.Drawing.Point(11, 384)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(198, 88)
