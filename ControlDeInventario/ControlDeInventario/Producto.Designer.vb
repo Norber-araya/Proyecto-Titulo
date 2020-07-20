@@ -145,7 +145,7 @@ Partial Class Producto
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.ProveedorDataGridView)
-        Me.Panel1.Location = New System.Drawing.Point(302, 20)
+        Me.Panel1.Location = New System.Drawing.Point(14, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(519, 387)
         Me.Panel1.TabIndex = 35
