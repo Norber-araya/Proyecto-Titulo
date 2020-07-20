@@ -68,7 +68,6 @@ Public Class proveedorEdid
 
             If Fila.Cells("eliminar").Value <> Nothing Then
                 Dim dato As String = Fila.Cells(1).Value.ToString
-                MsgBox(dato)
                 bdconexion.eliminar_prov(dato)
 
             End If
