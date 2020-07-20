@@ -221,3 +221,41 @@ C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\De
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.exe.manifest
 C:\Users\Diegoandres\Documents\bd\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.application
 C:\Users\sebha\OneDrive\Documentos\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.ProductoProveedor.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.exe.config
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.exe
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.xml
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.pdb
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.exe
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.pdb
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.xml
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.vbprojResolveAssemblyReference.cache
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Bodega.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.boleta.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.BuscarFacturas.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.CambiarContraseña.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.cliente.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.clienteEdid.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Consulta.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.DatosUsuario.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.elegir_producto.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Form1.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Form2.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.FacturaVenta.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Factura.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.mermas.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Resources.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Navegacion.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Producto.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.ProductoProveedor.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.proveedor.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.proveedorEdid.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Usuario.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.UsuarioEdid.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerBoleta.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.Verfactura.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.VerGuia.resources
+C:\Users\Joc\Documents\GitHub\Proyecto-Titulo\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.vbproj.GenerateResource.Cache
+C:\Users\Joc\Desktop\Nueva carpeta\ControlDeInventario\ControlDeInventario\bin\Debug\ControlDeInventario.exe.config
+C:\Users\Joc\Desktop\Nueva carpeta\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.exe
+C:\Users\Joc\Desktop\Nueva carpeta\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.xml
+C:\Users\Joc\Desktop\Nueva carpeta\ControlDeInventario\ControlDeInventario\obj\Debug\ControlDeInventario.pdb

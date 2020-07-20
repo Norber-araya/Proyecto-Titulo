@@ -71,7 +71,7 @@ Public Class Bodega
                 If e.Value.[GetType]() <> GetType(System.DBNull) Then
                     'Stock menor a 20'
 
-                    If Convert.ToInt32(e.Value) <= 20 Then
+                    If Convert.ToInt32(e.Value) <= 29 Then
                         e.CellStyle.BackColor = Color.LightSalmon
                         e.CellStyle.ForeColor = Color.Black
 
@@ -82,7 +82,7 @@ Public Class Bodega
                         e.CellStyle.ForeColor = Color.Black
                     End If
 
-                    If Convert.ToInt32(e.Value) > 30 Then
+                    If Convert.ToInt32(e.Value) >= 30 Then
                         e.CellStyle.BackColor = Color.LightGreen
                         e.CellStyle.ForeColor = Color.Black
                     End If

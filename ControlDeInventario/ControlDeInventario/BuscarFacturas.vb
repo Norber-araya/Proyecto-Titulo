@@ -255,54 +255,187 @@ Public Class BuscarFacturas
             If ComboBox4.Text = "enero" Then
                 DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 1 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+
+
 
             ElseIf ComboBox4.Text = "febrero" Then
                 DateTimePicker1.Text = "1 / 2 /" + ComboBox1.Text
                 DateTimePicker2.Text = "28 / 2 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "marzo" Then
                 DateTimePicker1.Text = "1 / 3 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 3 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "abril" Then
                 DateTimePicker1.Text = "1 / 4 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 4 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "mayo" Then
                 DateTimePicker1.Text = "1 / 5 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 5 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "junio" Then
                 DateTimePicker1.Text = "1 / 6 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 6 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "julio" Then
                 DateTimePicker1.Text = "1 / 7 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 7 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "agosto" Then
                 DateTimePicker1.Text = "1 / 8 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 8 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "septiembre" Then
                 DateTimePicker1.Text = "1 / 9 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 9/" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "octubre" Then
                 DateTimePicker1.Text = "1 / 10 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 10 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "noviembre" Then
                 DateTimePicker1.Text = "1 / 11 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 12 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "diciembre" Then
 
                 DateTimePicker1.Text = "1 / 12 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
-
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             End If
         End If
     End Sub
@@ -316,7 +449,18 @@ Public Class BuscarFacturas
             ComboBox1.Enabled = True
             DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
             DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
-            Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            If documento = "1" Then
+                Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
+            If documento = "2" Then
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
+            If documento = "3" Then
+                Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
+            If documento = "4" Then
+                Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
         End If
     End Sub
 
@@ -330,54 +474,187 @@ Public Class BuscarFacturas
             If ComboBox4.Text = "enero" Then
                 DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 1 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+
+
 
             ElseIf ComboBox4.Text = "febrero" Then
                 DateTimePicker1.Text = "1 / 2 /" + ComboBox1.Text
                 DateTimePicker2.Text = "28 / 2 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "marzo" Then
                 DateTimePicker1.Text = "1 / 3 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 3 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "abril" Then
                 DateTimePicker1.Text = "1 / 4 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 4 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "mayo" Then
                 DateTimePicker1.Text = "1 / 5 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 5 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "junio" Then
                 DateTimePicker1.Text = "1 / 6 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 6 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "julio" Then
                 DateTimePicker1.Text = "1 / 7 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 7 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "agosto" Then
                 DateTimePicker1.Text = "1 / 8 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 8 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "septiembre" Then
                 DateTimePicker1.Text = "1 / 9 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 9/" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "octubre" Then
                 DateTimePicker1.Text = "1 / 10 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 10 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "noviembre" Then
                 DateTimePicker1.Text = "1 / 11 /" + ComboBox1.Text
                 DateTimePicker2.Text = "30 / 12 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             ElseIf ComboBox4.Text = "diciembre" Then
 
                 DateTimePicker1.Text = "1 / 12 /" + ComboBox1.Text
                 DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
-                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
-
+                If documento = "1" Then
+                    Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "2" Then
+                    Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "3" Then
+                    Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
+                If documento = "4" Then
+                    Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+                End If
             End If
         End If
     End Sub
@@ -391,7 +668,34 @@ Public Class BuscarFacturas
             ComboBox1.Enabled = True
             DateTimePicker1.Text = "1 / 1 /" + ComboBox1.Text
             DateTimePicker2.Text = "31 / 12 /" + ComboBox1.Text
-            Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            If documento = "1" Then
+                Me.Factura_ingresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_ingreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
+            If documento = "2" Then
+                Me.Factura_egresoTableAdapter.FillBy1(Me.ControlinventarioDataSet.factura_egreso, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
+            If documento = "3" Then
+                Me.BoletaTableAdapter.FillBy1(Me.ControlinventarioDataSet.boleta, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
+            If documento = "4" Then
+                Me.Guia_despachoTableAdapter.FillBy1(Me.ControlinventarioDataSet.guia_despacho, DateTimePicker1.Text, DateTimePicker2.Text)
+            End If
+        End If
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If documento = "1" Then
+            Me.Factura_ingresoTableAdapter.Fill(Me.ControlinventarioDataSet.factura_ingreso)
+        End If
+        If documento = "2" Then
+            Me.Factura_egresoTableAdapter.Fill(Me.ControlinventarioDataSet.factura_egreso)
+        End If
+        If documento = "3" Then
+            Me.BoletaTableAdapter.Fill(Me.ControlinventarioDataSet.boleta)
+        End If
+        If documento = "4" Then
+            Me.Guia_despachoTableAdapter.Fill(Me.ControlinventarioDataSet.guia_despacho)
         End If
     End Sub
 End Class
